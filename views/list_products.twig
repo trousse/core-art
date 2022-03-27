@@ -1,0 +1,48 @@
+{% extends 'templates/layout.twig' %}
+
+{% block body %}
+    <div id="list_main_container" class="container">
+        <h1 id="list_categorie_name">{{ categorieName | upper }}</h1>
+        <div id="list_divider" class="divider is-fullwidth"></div>
+        <div id="list_products_container" class="container is-fluid is-flex">
+            {% for product in categorie %}
+                <div class="product">
+                    <div class="card">
+                        <a href="../produit/{{ product.categorie }}/{{ product.id }}">
+                        <div class="card-image">
+                            <figure class="image">
+                               <img src="/images/product/{{ product.categorie }}_{{ product.id }}" alt="Placeholder image">
+                                <div class="eye_container"><div class="eye"><i class="fas fa-solid fa-eye"></i></div><div class="seeMore">Voir Plus</div></div>
+                            </figure>
+                        </div>
+                        </a>
+                        <div class="card-footer">
+                            <div class="info_container">
+                                <div class="price">
+                                    {% set splitPrice = product.prix|split('.') %}
+                                    {% include 'Includes/Price.twig' with {'unit': splitPrice[0], 'decimal': splitPrice[1]} %}
+                                </div>
+                               <span class="nb_list_container" data-id="{{ product.id }}" data-categorie="{{ product.categorie }}">
+                               </span>
+                                <div class="add" data-id="{{ product.id }}" data-categorie="{{ product.categorie }}"><i class="fas fa-solid fa-cart-plus"></i></div>
+                            </div>
+                            <hr>
+                            <div class="title_container">
+                                <span> {{ product.titre }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div id="pagination">
+           {% for i in Data.pagination %}
+            <a href="/categorie/{{ Data.categorieSlug }}?page={{ i+1 }}">
+              <div class="pagination_case {% if Data.page == i+1 %} pagination_current_page {% endif %}">
+                 {{ i+1 }}
+              </div>
+            </a>
+           {% endfor %}
+        </div>
+    </div>
+{% endblock %}

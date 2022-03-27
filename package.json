@@ -1,0 +1,26 @@
+{
+  "name": "table-art-online-shop",
+  "version": "0.0.0",
+  "main": "./bin/www",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "async": "^3.2.3",
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "bulma": "^0.9.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.17.2",
+    "file-system": "^2.2.2",
+    "firebase": "^9.1.3",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "slugify": "^1.6.5",
+    "twig": "~0.10.3"
+  }
+}

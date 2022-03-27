@@ -1,0 +1,174 @@
+#list_main_container{
+    margin-top: 60px;
+    width: 80%;
+}
+
+.chart_actif{
+    cursor: pointer;
+}
+
+.card{
+    background-color: #6d4c41;
+    height: 100%;
+    width: 100%;
+}
+
+.card-image{
+    position: relative;
+}
+
+.card-image:hover::before{
+    content: "";
+    background-color: #5d4037;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+img:hover + .eye_container{
+    display: flex;
+}
+
+.eye_container:hover{
+    display: flex;
+}
+
+.eye_container{
+    border: 15px solid #ffb74d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #ffb74d;
+    z-index: 3;
+}
+
+.card-footer{
+    border-top: 4px solid #ffb74d;
+    height: 140px;
+    padding: 2px 20px;
+    line-height: 27px;
+    background-color: #6d4c41;
+    color: #ffb74d;
+    display: block;
+}
+
+.title_container{
+    overflow-wrap: break-word;
+    font-weight: bold;
+}
+
+hr{
+    margin: 5px 0 ;
+    background-color: #ffb74d;
+}
+
+figure{
+    width: 100%;
+    margin-left: 0 !important;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #ffb74d;
+    cursor: pointer;
+}
+
+#list_categorie_name{
+    font-weight: bold;
+    font-size: 36px;
+    color: #5d4037;
+}
+
+#list_divider{
+    margin-bottom: 40px;
+}
+
+#list_products_container{
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 33%;
+    padding: 2% 2%;
+}
+
+.info_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+    color: antiquewhite;
+    height: 31px;
+}
+
+#pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.pagination_case{
+    background-color: #6d4c41;
+    font-weight: bold;
+    color: #ffb74d;
+    padding: 15px 20px;
+    font-size: 20px;
+    margin: 30px 10px;
+    cursor: pointer;
+}
+
+.pagination_current_page{
+    color: #6d4c41;
+    background-color: #ffb74d;
+}
+
+@media (max-width: 1160px) {
+    .product{
+        padding: 10px 10px;
+        width: 50%;
+    }
+    .card-footer{
+        padding: 20px;
+    }
+    .info_container{
+        margin-top: 0;
+    }
+}
+
+h1{
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.add{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.add:hover{
+    color: #ffb74d;
+}
+
+.unit{
+    font-size: 20px;
+}
+
+.price > p{
+    font-weight: bold;
+    display: inline;
+}

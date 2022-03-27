@@ -1,0 +1,736 @@
+[
+{
+      "photo": "https://static.bhv.fr/media/712/71202887/G_71202887_444_VPM_1.jpg",
+      "prix" : "44.95",
+      "titre" : "BLACK + BLUM Carafe verre soufflé Eau Good Charcoal Filter 100 cl",
+      "full_description": "Encouragés par le succès de notre bouteille d’eau filtrante « Eau Good », nous avons ajouté cette élégante carafe en verre soufflé à la main à notre collection. /n La carafe Eau Good est une bouteille d'eau qui utilise un filtre charbon de bois traditionnel japonais Binchotan pour donner à votre eau du robinet un goût délicieux. /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"28 cm",
+      "Contenance": "100 cl",
+      "Composition": "Verre soufflé à la main et bouchon de liège"
+}
+},
+
+{
+      "photo": "https://static.bhv.fr/media/654/65414593/G_65414593_91_VPM_1.jpg",
+      "prix" : "68.00",
+      "titre" : "BORDALLO PINHEIRO Pichet écureuil terre émaillé marron et blanc 1 L",
+      "full_description": "Les pichets font partie du patrimoine de Bordallo Pinheiro. Avec humour et avec la dose correcte d’irrévérence, le monde naturel est de nouveau transporté sur la table sous la forme d’animaux, de fruits, de fleurs et de plantes. /n Pichet prenant la forme d'un écureuil en terre cuite émaillée. /n ",
+      "caracteristiques": {
+      "Couleur": "Blanc et marron",
+      "Hauteur":"25,5 cm",
+      "Longueur":"24 cm",
+      "Largeur":"13 cm",
+      "Contenance": "1 L",
+      "Composition": "Terre cuite émaillée"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/611/61139943/G_61139943_283_VPM_1.jpg",
+      "prix" : "59.90",
+      "titre" : "BORDALLO PINHEIRO Pichet renard céramique vert et marron 1L",
+      "full_description": "Pichet en céramique représentant un renard. Ce produit est peint à la main et peut contenir jusqu’à 1 litre.",
+      "caracteristiques": {
+      "Couleur": "Marron et Vert",
+      "Hauteur":"18,5",
+      "Largeur":"14 cm",
+      "Longueur":"19,5 cm",
+      "Contenance": "1 L",
+      "Composition": "Barbotine"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/611/61139936/G_61139936_306_VPM_1.jpg",
+      "prix" : "106.00",
+      "titre" : "BORDALLO PINHEIRO Pichet canard céramique 1,5L",
+      "full_description": "Pichet en céramique représentant un canard. Ce produit est peint à la main et peut contenir jusqu’à 1,5 litres.",
+      "caracteristiques": {
+      "Couleur": "Multicolore",
+      "Hauteur":"17.5 cm",
+      "Largeur":"14 cm",
+      "Longueur":"19,5 cm",
+      "Contenance": "1,5 Litre",
+      "Composition": "Bobotine"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/673/67313674/G_67313674_444_VPM_1.jpg",
+      "prix" : "59.00",
+      "titre" : "EVA SOLO Carafe frigo stop goute verre 140 cl",
+      "full_description": "Derrière son design simple, inspiré des bouteilles de lait classiques, cette carafe cache de multiple fonctionnalités ! /n Elle accueillera tout type de boisson chaude ou froide. /n La taille de cette carafe est étudiée pour s'adapter à toutes les portes de réfrigérateur. /n Son large goulot permet de glisser facilement des glaçons ou des tranches de citron à l'intérieur. /n Pratique, son bec verseur stoppe-goutte vous facilitera la vie. /n Idéal pour l'eau ou les jus de fruits, on peut également y conserver du thé glacé ou du thé chaud qui peut être directement infusé dans la carafe puisqu'elle résiste à la chaleur et aux chocs thermiques. /n",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"31 cm",
+      "Diamètre":"10 cm",
+      "Contenance": "140 cl",
+      "Composition": "Verre borosilicate"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/611/61139941/G_61139941_69_VPM_1.jpg",
+      "prix" : "76.00",
+      "titre" : "BORDALLO PINHEIRO Pichet grenouille céramique beige et vert 1L",
+      "full_description": "Pichet en céramique représentant une grenouille. Ce produit est peint à la main et peut contenir jusqu’à 1 litres.",
+      "caracteristiques": {
+      "Couleur": "Beige et vert",
+      "Hauteur":"20 cm",
+      "Largeur":"13 cm",
+      "Longueur":"26,5 cm",
+      "Contenance": "1 L",
+      "Composition": "Barbotine" 
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/547/54759024/G_54759024_444_VPM_1.jpg",
+      "prix" : "39.95",
+      "titre" : "WMF Carage à eau BASIC verre 1 L",
+      "full_description": "Grâce à leur grande ouvertute, les carages peuvent être facilement remplies et les liquides peuvent être versés en toute sécurité dans le verre",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"38 cm",
+      "Largeur":"13,5 cm",
+      "Longueur":"13,7 cm",
+      "Contenance": "1 L",
+      "Composition": "Silicone et plastique verre"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/611/61139939/G_61139939_453_VPM_1.jpg",
+      "prix" : "76.00",
+      "titre" : "BORDALLO PINHEIRO Pichet granouille céramique vert 1L",
+      "full_description": "Pichet en céramique représentant une grenouille. Ce produit est peint à la main et peut contenir jusqu’à 1 litres.",
+      "caracteristiques": {
+      "Couleur": "Vert",
+      "Hauteur":"20 cm",
+      "Largeur":"13 cm",
+      "Longueur":"26,5 cm",
+      "Contenance": "1 L",
+      "Composition": "Barbotine"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/611/61139948/G_61139948_453_VPM_1.jpg",
+      "prix" : "54.00",
+      "titre" : "BORDALLO PINHEIRO Pichet melon céramique vert et orange 1L",
+      "full_description": "Pichet en céramique représentant un melon. Ce produit est peint à la main et peut contenir jusqu’à 1 litres.",
+      "caracteristiques": {
+      "Couleur": "Vert",
+      "Hauteur":"22,5 cm",
+      "Largeur":"15 cm",
+      "Longueur":"17 cm",
+      "Contenance": "1 L",
+      "Composition": "Barbotine" 
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/678/67848547/G_67848547_444_VPM_1.jpg",
+      "prix" : "57.95",
+      "titre" : "KILNER 2 distributeurs de boissons empilable avec support 2L et 3L ",
+      "full_description": "Les deux pots sont empilés l'un sur l'autre, une alternative peu encombrante. Chaque pot a un bouton poussoir, donc une seule main est nécessaire pour remplir les verres.",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"22,7 cm",
+      "Largeur":"19,6 cm",
+      "Longueur":"40 cm",
+      "Contenance": "2L et 3L",
+      "Composition": "Verre"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/373/37339654/G_37339654_444_VPM_1.jpg",
+      "prix" : "28.00",
+      "titre" : "GUZZINI Carage TIFFANY Plastique 1,75L",
+      "full_description": "Une collection de vaisselle, avec des effets de reliefs chatoyants et pétillants. Glamour, originale, stylée et élégante, cette collection, imaginée et dessinée par Pio et Tito Toso, est destinée à ceux qui aiment être entourés par la beauté tous les jours.",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"25,5 cm",
+      "Contenance": "1,75 L",
+      "Composition": "Acrylique"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/613/61388471/G_61388471_435_VPM_1.jpg",
+      "prix" : "52.50",
+      "titre" : "Carafe Mr Cruchot céramique taupe 50 cl",
+      "full_description": "Monsieur Cruchot fait instantanément sourire le spectateur. /n La forme reconnaissable de la carafe et l'utilisation sobre des couleurs parlent d'elles-mêmes : un classique en devenir. /n La carafe en céramique ou en verre peut non seulement servir à servir de l'eau, des jus de fruits et d'autres boissons, mais elle joue également parfaitement le rôle d'un arrosoir ou même d'un vase pour quelques fleurs. /n Un eye-catcher unique et original dans l'hôtellerie, mais aussi le cadeau parfait dans un magnifique coffret cadeau : seul ou accompagné du reste de sa famille, Monsieur Cruchot conquiert tous les cœurs. /n ",
+      "caracteristiques": {
+      "Couleur": "Taupe",
+      "Hauteur":"24 cm",
+      "Largeur":"22 cm",
+      "Longueur":"8 cm",
+      "Contenance": "50 cl",
+      "Composition": "Céramique"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/3004060/300406078977/G_300406078977_444_VPM_1.jpg",
+      "prix" : "24.00",
+      "titre" : "DEGRENNE EMPILEO-Carage 75 cl",
+      "full_description": "",
+      "caracteristiques": {
+      "Couleur": "Transparence"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/547/54759021/G_54759021_444_VPM_1.png",
+      "prix" : "39.95",
+      "titre" : "WMF Carafe à eau BASIC verre 1 L",
+      "full_description": "Grâce à leur grande ouverture, les carafes peuvent être facilement remplies et les liquides peuvent être versés en toute sécurité dans le verre.",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"38 cm",
+      "Largeur":"14 cm",
+      "Longueur":"14 cm",
+      "Contenance": "1 L",
+      "Composition": "Verre, Plastique, Silicone"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/3004018/300401807754/G_300401807754_444_VPM_1.jpg",
+      "prix" : "49.90",
+      "titre" : "VILLEROY & BOCH Carage à vin rouge Purismo",
+      "full_description": "Séduisez vos invités avec ce verre raffiné de la plus haute qualité de Villeroy & Boch. Un vin rouge gouleyant peut développer l‘intégralité de son bouquet lorsqu‘il est servi dans cette carafe pratique et attrayante.",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/805/80532626/G_80532626_444_VPM_1.jpg",
+      "prix" : "29.95",
+      "titre" : "EVA SOLO Carafe en verre recyclé et bouchon en liège 1 L",
+      "full_description": "https://static.bhv.fr/media/805/80532626/G_80532626_444_VPM_1.jpg",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"23,5 cm",
+      "Largeur":"9,5 cm",
+      "Longueur":"9,5 cm",
+      "Contenance": "2 L",
+      "Composition": "Verre et liège"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/712/71202891/G_71202891_101_VPM_1.jpg",
+      "prix" : "49.95",
+      "titre" : "Carafe frigo verre avec housse pétrole 1 L",
+      "full_description": "Le design de la carafe frigo Eva Solo s'inspire d'une bouteille de lait classique. /n Elle s'intégrera dans toutes les portes de réfrigérateur possibles. Le design est une création de Tools Design pour Eva Solo. /n La tête et le col de la carafe sont suffisamment larges pour accueillir des glaçons ou des tranches de citron. /n De plus, la carafe a un couvercle rabattable breveté qui ne s'ouvre pas automatiquement et empêche également les glaçons ou les tranches de citron de tomber directement dans le verre. /n ",
+      "caracteristiques": {
+      "Couleur": "Bleu",
+      "Hauteur":"26,5 cm",
+      "Largeur":"9,5 cm",
+      "Longueur":"9,5 cm", 
+      "Contenance": "1 L",
+      "Composition": "Inox", 
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/705/70526879/G_70526879_230_VPM_1.jpg",
+      "prix" : "54.90",
+      "titre" : "ABSOLUMENT MAISON Carafe à whisky Tobia verre fumé et carbochon plein",
+      "caracteristiques": {
+      "Couleur": "Gris",
+      "Hauteur":"22 cm",
+      "Composition": "Verre", 
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/622/62241358/G_62241358_101_VPM_1.jpg",
+      "prix" : "33.00",
+      "titre" : "BITOSSI HOME Carafe à eau Bloom verre teinté bleu 24 cm",
+      "full_description": "Une carafe en verre soufflé, au design coloré.",
+      "caracteristiques": {
+      "Couleur": "Bleu",
+      "Hauteur":"24 cm",
+      "Diamètre":"8 cm",
+      "Composition": "Verre", 
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/613/61373731/G_61373731_457_VPM_1.png",
+      "prix" : "51.50",
+      "titre" : "MANUFACTURE DE DIGOIN Pichet d'eau grès émaillé verveine citronnée 1L",
+      "full_description": "Pichet d’eau original en grès naturel, entièrement fait main dans les ateliers de la Manufacture de Digoin. /n Ce pichet typiquement français, mêle tradition et modernité grâce à sa finition brute et mate. /n ",
+      "caracteristiques": {
+      "Couleur": "Vert clair",
+      "Hauteur":"16 cm",
+      "Diamètre":"12 cm",
+      "Contenance":"1 L",
+      "Composition": "Grès émaillé" 
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/3004041/300404147259/G_300404147259_230_VPM_1.jpg",
+      "prix" : "LA REDOUTE INTERIEURS Carafe, Faraji",
+      "titre" : "25.99",
+      "full_description": "Une texture bullée réalisée dans la matière, une forme tout en rondeur qui mêle de jolies tonalités passant d'une transparence cristalline aux teintes plus contemporaines, on craque ! Cette carafe de qualité apporte du pep's à la table.",
+      "caracteristiques": {
+      "Hauteur":"25,5 cm",
+      "Contenance": "940 ml",
+      "Composition":"Verre bullé"
+}
+},
+{
+      "photo": "Une texture bullée réalisée dans la matière, une forme tout en rondeur qui mêle de jolies tonalités passant d'une transparence cristalline aux teintes plus contemporaines, on craque ! Cette carafe de qualité apporte du pep's à la table.",
+      "prix" : "33.00",
+      "titre" : "BITOSSI HOME Carafe à eau Bloom verre fumé 24 cm",
+      "full_description": "Une carafe en verre soufflé, au design coloré.",
+      "caracteristiques": {
+      "Couleur": "Brun",
+      "Hauteur":"24 cm",
+      "Diamètre": "8 cm",
+      "Composition": "Verre"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/716/71621869/G_71621869_444_VPM_1.jpg",
+      "prix" : "24.50",
+      "titre" : "LA ROCHERE Pichet à eau Abeille verre",
+      "full_description": "Pichet à eau, en verre pressé résistant. Il est décoré en 4 abeilles en relief. Cette collection reprend les symboles de la maroquinerie de Napoléon.",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"18 cm",
+      "Diamètre":"17 cm",
+      "Contenance": "100 cl",
+      "Composition": "Verre sodo-calcique"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/479/47973398/G_47973398_444_VPM_1.jpg",
+      "prix" : "34.90",
+      "titre" : "ABSOLUMENT MAISON Carafe Nosmo",
+      "full_description": "Carafe en verre fantaisie, avec anse",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/3004031/300403171724/G_300403171724_453_VPM_1.jpg",
+      "prix" : "25.99",
+      "titre" : "LA REDOUTE INTERIEURS Carafe en méatl, Octave",
+      "full_description": "Octave. La carafe Octave. Elle affiche le look joliment vintage des pichets émaillés à l'ancienne, jusque dans son liseré contrastant.",
+      "caracteristiques": {
+      "Couleur": "Vert",
+      "Hauteur":"23 cm",
+      "Diamètre":"10 cm"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/763/76318750/G_76318750_378_VPM_1.jpeg",
+      "prix" : "BORDALLO PONHEIRO Pichet Chien faïence 120 cl",
+      "titre" : "106.00",
+      "full_description": "Pichet à eau en faïence, en forme de chien. /n La queue vous servira de poignée, l'eau coulera par la gueule. /n ",
+      "caracteristiques": {
+      "Couleur": "Coloris Unique",
+      "Hauteur":"28 cm",
+      "Largeur": "12 cm",
+      "Longueur":"30 cm",
+      "Contenance": "120 cl",
+      "Composition": "Faïence"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/3004009/300400969835/G_300400969835_128_VPM_1.jpg",
+      "prix" : "59.00",
+      "titre" : "AM.PM Carafe en verre soufflé, Galindo",
+      "full_description": "La carafe Galindo. En verre soufflé à la bouche. Chaque pièce est unique. ",
+      "caracteristiques": {
+      "Couleur": "Bleu truquoise",
+      "Hauteur":"18 cm",
+      "Contenance": "1,5L"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/673/67313677/G_67313677_444_VPM_2.jpg",
+      "prix" : "49.95",
+      "titre" : "EVA SOLO Carafe My Flavour stop goutte 100 cl",
+      "full_description": "La carafe My Flavour stop-goutte, est simple, épurée et munie d’un bouchon avec une pique amovible, qui vous permet d’embrocher vos fruits préférés, pour les laisser ensuite tranquillement infuser dans votre boisson. /n Feuilles de menthe, rondelles de citron, quartiers d’orange, gingembre, concombre… laissez libre cours à votre créativité ! /n Résistante aux chocs thermiques, cette carafe aux formes épurées a été conçue pour servir tous les types de boissons, froides comme chaudes. Son format pratique est adapté à la plupart des portes de réfrigérateurs. /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"28,2 cm",
+      "Diamètre":"8,1 cm",
+      "Contenance": "100 cl",
+      "Composition": "Verre borosilicate"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/576/57683034/G_57683034_453_VPM_1.jpg",
+      "prix" : "34.90",
+      "titre" : "ABSOLUMENT MAISOn Carafe Nosmo verre ciselé 23 cm",
+      "full_description": "Carage en verre ciselé avec anse et bec verseur",
+      "caracteristiques": {
+      "Couleur": "Vert",
+      "Hauteur":"23 cm",
+      "Composition": "Verre"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/445/44558814/G_44558814_378_VPM_1.jpg",
+      "prix" : "49.90",
+      "titre" : "CRISTAL D'ARQUES Carafe 75 cl",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"20,5 cm",
+      "Diamètre":"10 cm",
+      "Contenance": "75 cl",
+      "Composition": "Verre"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/757/75747270/G_75747270_230_VPM_1.jpg",
+      "prix" : "26.90",
+      "titre" : "FAVECO Pichet isotherme Take Away inox 1L",
+      "full_description": "https://static.bhv.fr/media/757/75747270/G_75747270_230_VPM_1.jpg",
+      "caracteristiques": {
+      "Couleur": "Gris",
+      "Hauteur":"26 cm",
+      "Contenance": "1 L",
+      "Composition": "Acier inoxydable" 
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/492/49237473/G_49237473_444_VPM_1.jpg",
+      "prix" : "25,95€",
+      "titre" : "BLACK + BLUM Carfe Eau Good Charcoal Filter tritan 80 cl",
+      "full_description": "La carafe Eau Good est une bouteille d'eau qui utilise un filtre charbon de bois traditionnel japonais Binchotan pour donner à votre eau du robinet un goût délicieux.  /n Le filtre à charbon actif binchotan (durée de vie de 6 mois) est fourni avec la carafe. /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"24 cm",
+      "Diamètre":"8,5 cm",
+      "Contenance": "800 ml",
+      "Composition": "Verre"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/732/73276342/G_73276342_85_VPM_1.jpg",
+      "prix" : "29.00",
+      "titre" : "GUZZINI Carage avec couvercle Tierra blanc lait 1,6 cl",
+      "full_description": "Carafe Tierra avec couvercle, d'une contenance de1,6 litre et de coloris blanc lait.",
+      "caracteristiques": {
+      "Couleur": "Blanc",
+      "Hauteur":"26,9 cm",
+      "Largeur":"13,4 cm",
+      "Longeur": "18,7 L",
+      "Contenance": "1,6 L",
+      "Composition": "plastique recyclé post-consommation"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/712/71203448/G_71203448_85_VPM_1.jpg",
+      "prix" : "49.95",
+      "titre" : "EVA SOLO Carage frigo verre avec housse blanc 1L",
+      "full_description": "https://static.bhv.fr/media/712/71203448/G_71203448_85_VPM_1.jpg",
+      "caracteristiques": {
+      "Couleur": "Blanc",
+      "Hauteur":"26,5 cm",
+      "Contenance": "Blanc",
+      "Composition": "Inox"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/3004048/300404801902/G_300404801902_320_VPM_1.jpg",
+      "prix" : "59.00",
+      "titre" : "FERM LIVING Pot Flow - noir",
+      "full_description": "Flow est une série de vaisselle parfaitement imparfaite - fabriquée selon des techniques artisanales traditionnelles - combine le classique et le moderne - l'émail semi-mat crée un aspect unique - poignée allongée unique - lignes claires avec une touche expressive",
+      "caracteristiques": {
+      "Couleur": "Noir",
+      "Hauteur":"22 cm",
+      "Largeur":"15 cm",
+      "Longeur": "10 L",
+      "Contenance": "1 L",
+      "Composition": "Céramique" 
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/3004041/300404147259/G_300404147259_444_VPM_1.jpg",
+      "prix" : "25.99",
+      "titre" : "LA REDOUTE INTERIEURS Carage, Faraji",
+      "full_description": "Une texture bullée réalisée dans la matière, une forme tout en rondeur qui mêle de jolies tonalités passant d'une transparence cristalline aux teintes plus contemporaines, on craque ! Cette carafe de qualité apporte du pep's à la table.",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur":"25.5 cm",
+      "Contenance": "940 ml",
+      "Composition": "Verre bullé" 
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/613/61373727/G_61373727_85_VPM_1.png",
+      "prix" : "27.90",
+      "titre" : "MANUFACTURE DE DIGOIN Pichet d'eau grès émaillé blanc 250 ml",
+      "full_description": "Pichet d’eau original en grès naturel, entièrement fait main dans les ateliers de la Manufacture de Digoin. /n Ce pichet typiquement français, mêle tradition et modernité grâce à sa finition brute et mate. /n",
+      "caracteristiques": {
+      "Couleur": "Blanc",
+      "Hauteur":"10 cm",
+      "Diamètre":"8 cm",
+      "Contenance": "250 ml",
+      "Composition": "Grès émaillé"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/373/37339654/G_37339654_444_VPM_1.jpg",
+      "prix" : "28.00",
+      "titre" : "GUZZINI Carage TIFFANY Plastique 1,75 L",
+      "full_description": "Une collection de vaisselle, avec des effets de reliefs chatoyants et pétillants. Glamour, originale, stylée et élégante, cette collection, imaginée et dessinée par Pio et Tito Toso, est destinée à ceux qui aiment être entourés par la beauté tous les jours.",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Hauteur": "25,5 cm",
+      "Diamètre": "11,5 xm",
+      "Contenance": "1,75 L",
+      "Composition": "Plastique"
+}
+},
+{
+      "photo": "https://static.bhv.fr/media/749/74940276/G_74940276_191_VPM_1.jpg",
+      "prix" : "84.90",
+      "titre" : "URBAN NATURE CULTURE Pichet inox doré H28 cm",
+      "full_description": "Le pichet d'Urban Nature Culture est un autre accroche-regard pour votre collection de maison. /n Mais plus que cela, c'est un pichet qui aide à garder votre eau fraîche et saine. Il est prouvé que le cuivre utilisé dans le laiton le rend germicide, tuant les mauvaises bactéries et gardant votre eau fraîche. /n Les Egyptiens l'utilisaient pour stocker leur eau et les enseignements de l'Ayurveda le savaient bien avant que les scientifiques ne sachent même que les bactéries existaient. /n",
+      "caracteristiques": {
+      "Couleur": "Doré",
+      "Hauteur":"28 cm",
+      "Diamètre":"10 cm",
+      "Composition": "Acier inoxydable"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw1974f5ed/images/27264089/CARAFE-CALAFATE-27264089-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "40.00",
+      "titre" : "Calafate Carafe à décanter en verre transparent 1,2l",
+      "full_description": "Carafe à vin /n La carafe à décanter est l'accessoire idéal pour tout amateur de bons vins. En effet, la mise en carafe se révèle être une méthode très utile avec un vin jeune. Il s'avère que les vins jeunes peuvent présenter un goût un peu râpeux et légèrement amer en bouche. Ainsi, transvaser le vin dans une carafe aux parois larges permet de l'aérer et donc de développer ses arômes. C'est cela qu'on appelle 'décanter un vin' /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre",
+      "Longueur": "21 cm",
+      "Hauteur": "23 cm",
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw208ca65f/images/24705349/Carafe-whisky-Quadro-24705349-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "45.00",
+      "titre" : "Quadro Carafe à whisky en cristallite 75cl",
+      "full_description": "Classique revisité /n Cette superbe carafe à whisky accueillera les breuvages les plus raffinés. A offrir aux amateurs de whisky pour conserver leur précieuse boisson. /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre transparent cristallite",
+      "Contenance": "75 cl"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw86fce99c/images/21410673/CARAFE-A-ANSE-DELPHI-21410673-F-2.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "35.00",
+      "titre" : "Delphi Carafe à vin avec anse",
+      "full_description": "Inédite /n Une carafe à vin en verre qui bouscule la tradition avec son fond plat, sa anse moderne et sa silhouette profilée. /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre",
+      "Hauteur": "24,5 cm",
+      "Diamètre": "19 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwd3d0804d/images/24631662/Carafe-Vin-Optima-24631662-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "5.00",
+      "titre" : "Optima Carafe à vin forme bouteille 50cl",
+      "full_description": "Forme particulière /n Une petite carafe en verre en forme de bouteille pour vous permettre de faire aérer le vin avant de le servir avec originalité à table. /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre",
+      "Hauteur": "26 cm",
+      "Diamètre": "7 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw6d1813db/images/27299500/POMPE-FOUGO-27299500-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "22.00",
+      "titre" : "Fougo set pompe à vin avec 2 bouchons - noir",
+      "full_description": "Préserver le vin /n Ne prenez plus le risque de voir votre bouteille de vin favorite se dégrader une fois ouverte. Cette pompe à vin vous permet d'apprécier chaque jour votre vin comme si vous veniez de le déboucher. Utilisez la pompe pour faire le vide d'air et reboucher votre bouteille. En retirant l'air, vous évitez ainsi l'oxydation et les changements de pression à l'intérieur de la bouteille. Une pompe qui préserve le vin pendant une semaine après l'ouverture. /n",
+      "caracteristiques": {
+      "Couleur": "Noir",
+      "Composition": "Plastique",
+      "Hauteur": "19 cm",
+      "Longueur": "10 cm", 
+      "Largeur": "5 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw8460de2c/images/26001746/VERRE-WATERFALL-26001746-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "20.00",
+      "titre" : "Wateferfall Carafe en cristallin transparent 1,5L",
+      "full_description": "Haute distinction /n Créez une ambiance classique et distinguée à table avec cette belle carafe en cristallin transparent qui accompagnera à merveille les verres de la même gamme. Ornée de stries en relief, elle sublimera vos boissons et vous apprécierez l'harmonie et l'élégance qu'elle apportera durant vos repas ! /n",
+      "caracteristiques": {
+      "Couleur": "Noir",
+      "Composition": "Cristallin",
+      "Hauteur": "27 cm", 
+      "Largeur": "15 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwf4d28b53/images/27264072/CARAFE-BACCHUS-27264072-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "35.00",
+      "titre" : "Bacchus Carafe à décanter en verre transparent 1,6l",
+      "full_description": "Carafe à décanter  /n La carafe à décanter est l'accessoire idéal pour tout amateur de bons vins. La mise en carafe se révèle être utile avec un vin jeune à l'astringence marquée, c'est-à-dire qui présente un goût un peu râpeux et légèrement amer en bouche. En effet, décanter un vin est l'action de transvaser le vin dans une carafe aux parois larges. Cette méthode s'avère bénéfique pour le vin. Ainsi, son contact avec l'air lui permettra de s'oxygéner et donc de développer ses arômes. /n",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre",
+      "Hauteur": "24 cm", 
+      "Longeur": "21 cm",
+      "Largeur": "21 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwee55d912/images/26741567/CARAFE-MACASSAR-26741567-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "49.00",
+      "titre" : "Macassar Carafe à whisky en cristallin",
+      "full_description": "Innombrables facettes /n Une carafe en cristallin, élégante avec son bouchon en cristallin et sa forme élancée. Ses facettes lui permettent d'exposer votre whisky ou tout autre spiritueux à la robe ambrée avec style et de jouer subtilement avec les contrastes. On choisit de beaux verres à whisky à ouverture large pour profiter de l'odeur et des saveurs de votre single malt favori. /n",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Cristallin",
+      "Hauteur": "21,3 cm", 
+      "Longeur": "10,2 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw6ed01eb5/images/26319674/CARAFE-CRYSTAL-26319674-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "50.00",
+      "titre" : "Crystal Carafe en cristal avec bouchon 50cl",
+      "full_description": "Elégance à table /n Accessoire indispensable d'une table raffinée, cette belle carafe en cristal transparent vous permettra de servir vos grands crus avec distinction. Elle opte pour une forme originale et travaillée qui s'intégrera parfaitement dans votre cuisine et son bouchon apporte un côté chic à cete belle carafe. /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Cristal fond lourd",
+      "Hauteur": "21 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwa7c67a82/images/27161302/PICHET-FUMEL-27161302-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "15.00",
+      "titre" : "Fumel pichet en verre côtelé - gris 1l",
+      "full_description": "Pichet en verre gris /n Soufflé à la bouche par un maître verrier, chaque pichet Fumet est unique. Ce pichet en verre tient son nom de sa belle nuance fumée. Son gris, doux et élégant, se marie à toute sorte de vaisselle. Si vous disposez de plusieurs services, du plus minimaliste au plus coloré, ce pichet en verre gris est votre meilleur allié pour une décoration de table toujours bien pensée. Outre sa belle robe grise, ce pichet d'eau présente une belle forme élancée, plus large à la base et au col. Cette forme de sablier facilite la manipulation avec une prise plus étroite au centre. Les nombreuses stries apportent de la texture à ce pichet à eau à l'allure vintage. Prévue pour contenir 1L d'eau, cette carafe en verre est légère et se range aisément au réfrigérateur. Pour les plus créatifs, ce pichet peut aussi tenir lieu de vase, dans un style art déco, très tendance. /n",
+      "caracteristiques": {
+      "Couleur": "Gris",
+      "Composition": "Verre 100% sodocalcique",
+      "Longueur": "11,2 cm",
+      "Largeur": "11,2 cm",
+      "Hauteur": "25,5 cm"  
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw65737aae/images/27161500/PICHET-DOURGO-27161500-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "12.00",
+      "titre" : "Dourgo Pichet en verre strié - transparent 0,8l",
+      "full_description": "Pichet texturé en verre/n Si ce pichet en verre se prénomme Dourgo, ce n'est pas par hasard. En effet, un dourgo est une petite cruche en provencal : un récipient pour transporter et conserver l'eau. Aujourd'hui, le dourgo est remplacé par le pichet, une carafe permettent de servir les boissons à table. Ce petit pichet en verre peut contenir de l'eau, mais aussi du lait, du vin ou encore une citronnade, selon vos envies. Avec son col plus étroit et son bec verseur, les liquides se versent proprement grâce à une prise en main savamment pensée. Soufflé à la bouche, sa forme épurée est permise grâce au travail minutieux d'un maître verrier. Ce dernier a aussi fait le choix des stries : un relief régulier qui offre texture et caractère. Sur la table, entouré d'une vaisselle tantôt colorée tantôt classique, ce pichet d'eau apporte une touche d'éclat sophistiqué au repas. /n",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre 100% sodocalcique",
+      "Longueur": "9,2 cm",
+      "Largeur": "9,2 cm",
+      "Hauteur": "25 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwa7c67a82/images/27161302/PICHET-FUMEL-27161302-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "15.00",
+      "titre" : "Fumel pichet en verre côtelé - gris 1l",
+      "full_description": "Pichet en verre gris /n Soufflé à la bouche par un maître verrier, chaque pichet Fumet est unique. Ce pichet en verre tient son nom de sa belle nuance fumée. Son gris, doux et élégant, se marie à toute sorte de vaisselle. Si vous disposez de plusieurs services, du plus minimaliste au plus coloré, ce pichet en verre gris est votre meilleur allié pour une décoration de table toujours bien pensée. Outre sa belle robe grise, ce pichet d'eau présente une belle forme élancée, plus large à la base et au col. Cette forme de sablier facilite la manipulation avec une prise plus étroite au centre. Les nombreuses stries apportent de la texture à ce pichet à eau à l'allure vintage. Prévue pour contenir 1L d'eau, cette carafe en verre est légère et se range aisément au réfrigérateur. Pour les plus créatifs, ce pichet peut aussi tenir lieu de vase, dans un style art déco, très tendance. /n",
+      "caracteristiques": {
+      "Couleur": "Gris",
+      "Composition": "Verre 100% sodocalcique",
+      "Longueur": "11,2 cm",
+      "Largeur": "11,2 cm",
+      "Hauteur": "25,5 cm" 
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw06f31c9f/images/27161388/PICHET-AIGO-27161388-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "15.00",
+      "titre" : "Aigo Pichet en verre avec anse - transparent 1,9l",
+      "full_description": "Grand pichet en verre /n Avec sa grande anse et son bec verseur, le pichet Aigo est inspiré des pichets traditionnels de bistrot. Pourtant, ce pichet d'eau est loin d'être rétro. Son verre, soufflé à la bouche, présente des courbes douces et élégantes. Sa forme est gracieuse et rappelle les verres ballons avec lesquels ce pichet s'associe parfaitement. Son verre sodocalcique est laissé pur : la transparence est parfaite et dévoile une eau limpide ou pourquoi une citronnade faite maison. D'une belle contenance de presque 2L, cette grande carafe en verre rassemble toute la famille autour de moments conviviaux. Un pichet à eau distingué qui accompagne tous vos services de vaisselle, sans fausse note. /n",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre 100% sodocalcique",
+      "Longueur": "18,7 cm",
+      "Largeur": "14,7 cm",
+      "Hauteur": "20,5 cm" 
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw90105b84/images/26826301/CARAFE-BALEM-26826301-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "20.00",
+      "titre" : "Balem Pichet en verre recyclé transparent 1,5l",
+      "full_description": "Histoire romancée /n Surprenez vos invités en leur racontant les processus de fabrication de ce pichet. Fabriquée en verre 100% recyclé, des artisans ont soufflé le verre à la bouche afin de produire des pièces uniques de qualité. Vous servirez vos boissons fraîches dans cette jolie carafe rempli d'authenticité. /n",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre recyclé ",
+      "Diamètre": "9,5 cm",
+      "Hauteur": "24,5 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw5d376350/images/26177083/CARAFE-BELDI-26177083-B-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "20.00",
+      "titre" : "Beldi Carafe en verre recyclé avec anse 1.1l",
+      "full_description": "Jeu de transparence /n On joue sur la transparence pour une présentation tout en finesse avec cette belle carafe en verre recyclé d'une capacité de 1.1 litre. Son design épuré et très original avec son côté authentique et artisanal ravira vos convives à coup sûr ! Sa anse vous assure une excellente prise en main et vous pourrez présenter vos boissons fraîches en toute simplicité ! /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre recyclé ",
+      "Largeur": "12 cm",
+      "Hauteur": "19 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwd4d79914/images/27049105/Broc-1-L-DONI-27049105-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "10.00",
+      "titre" : "Doni Pichet en verre - 1L",
+      "full_description": "Carafe en verre /n Embellissez votre table de cet élégant pichet en verre transparent. De forme cylindrique, doté d'un bec verseur et d'une jolie poignée, il vous servira de carafe pouvant contenir 1 litre d'eau. Composé de verre borosilicate, ce pichet est particulièrement résistant face aux chocs de la vie quotidienne et aux changements de température. Sécuritaire, ce verre aura tendance à se fêler, en cas de chûte, plutôt qu'exploser, ce qui est moins dangereux. Compatible avec un lave-vaisselle, il accompagnera longtemps vos repas en famille ou entre amis, sous le signe du raffinement et la convivialité. /n",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre borosilicate",
+      "Diamètre": "13,3 cm",
+      "Hauteur": "29,7 cm" 
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwdce306f3/images/27180228/PICHET-CACAN-27180228-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "15.00",
+      "titre" : "Cacan Pichet en verre borosilicate avec verre 0,6L - transparent",
+      "full_description": "Bouteille déco /n Une jolie bouteille en verre pour décorer votre table. Elle est accompagnée d'un verre à eau qui fait office de bouchon. Composée de verre borosilicate, elle est particulièrement résistante aux changements de température. Une bouteille idéale pour conserver votre eau ou vos jus au frais et pour les déguster directement. /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verre borosilicate",
+      "Diamètre": "9,5 cm",
+      "Hauteur": "26 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw4c9df9cb/images/27297520/PICHET-MINORQUE-27297520-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "25.00",
+      "titre" : "Minorque Pichet avec anse en grès - beige mat 1.2l ",
+      "full_description": "Nature et authenticité /n Ce pichet avec anse donne du relief et de la hauteur au dressage de votre table. Composé de grès, d'un coloris beige mat, son design atypique avec de charmantes irrégularités confère beaucoup originalité à cette pièce de vaisselle qui conserve ainsi un caractère authentique. Cette carafe d'une capacité d'1.2l, joliment disposée au centre de votre table, ajoute une note naturelle et brute à l'ensemble de votre décoration. /n",
+      "caracteristiques": {
+      "Couleur": "Beige",
+      "Composition": "Grès",
+      "Longueur": "20 cm",
+      "Largeur": "13 cm",
+      "Hauteur": "24,5 cm"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwd4d79914/images/27049105/Broc-1-L-DONI-27049105-F-1.jpg?sw=360&sh=360&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "10.00",
+      "titre" : "Silhouette Pichet en verre 1l",
+      "full_description": "Service de qualité /n Embellissez votre table de cet élégant pichet en verre transparent. De forme cylindrique, doté d'un bec verseur et d'une jolie poignée, il vous servira de carafe pouvant contenir 1 litre d'eau. Composé de verre borosilicate, cette carafe est particulièrement résistante face aux chocs de la vie quotidienne et aux changements de température. Lors de vos repas, il s'accompagne des différents verres de ce service vaisselle pour un dressage de table raffiné. En effet, cette gamme se compose de verres à vin, dont certains pour les grands crus, et de flûtes de champagne. De quoi accueillir vos convives dans les règles de l'art. /n ",
+      "caracteristiques": {
+      "Couleur": "Transparent",
+      "Composition": "Verres en cristallin et carafe en verre"
+}
+},
+{
+      "photo": "https://www.alinea.com/fstrz/r/s/www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwe15b0966/images/26826325/CARAFE-BENA-26826325-F-1.jpg?sw=982&sh=982&sm=fit&sfrm=png&bgcolor=eef1eb&frz-v=77",
+      "prix" : "20.00",
+      "titre" : "Bena Carafe en verre recyclé transparent 1,2L",
+      "full_description": "Histoire romancée /n Une silhouette marquée par une courbe généreuse qui vous facilitera la prise en main de cette carafe. Fabriquée dans un verre 100% recyclé et soufflée à la bouche, elle apporte à votre table de l'authentisme. Sa fabrication artisanale fait de chaque carafe une pièce unique. /n ",
+      "caracteristiques": {
+      "Couleur": "Blanc",
+      "Composition": "Porcelaine"
+}
+}
+]

@@ -1,0 +1,109 @@
+.content{
+    padding-top: 9.5vh;
+}
+
+.columns{
+    margin: 0;
+}
+
+.column{
+    padding: 0;
+}
+
+
+#navbar{
+}
+
+#sub_nav{
+    background-color: #6d4c41;
+    position: fixed;
+    left: -375px;
+    height: 90.5vh;
+    transition: all 0.3s ease;
+}
+
+#sub_nav.open{
+    left: 0;
+}
+
+#main_nav > div:nth-child(1) > a{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#main_nav > div:nth-child(1) > a.open{
+    color: #ffb74d;
+}
+
+#categories_nav{
+    width: 375px;;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #6d4c41;
+    display: flex;
+    min-height: 600px;
+    margin: 0;
+}
+
+.nav_item, .nav_item_clickable{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-grow: 1;
+    border-bottom: 1px solid #5d4037;
+    transition: background-color 1s ease, color 1s ease , width 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+}
+
+.nav_item:hover, .active{
+    color: #6d4c41;
+    background-color: #ffb74d;
+}
+
+.nav_item > .columns, .nav_item_clickable > .columns{
+    width: 100%;
+    margin-top: 0;
+}
+.nav_item > .columns:not(:last-child), .nav_item_clickable > .columns:not(:last-child){
+    margin-bottom: 0;
+}
+.fa-angle-right{
+    color: #6d4c41;
+    font-size: 30px;
+}
+
+.sub_categories_nav_container{
+    background-color: #795548;
+    border-left: #ffb74d solid 5px;
+    transition: background-color 1s ease, color 1s ease , width 0.3s ease;
+    width: 375px;
+    height: 100%;
+    min-height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+}
+
+.sub_categories_nav_container > .nav_item{
+    border-bottom-color: #6d4c41;
+}
+
+.nav_item_clickable > div:nth-child(1) > div:nth-child(3) > :nth-child(1){
+    transition: color 1s ease;
+}
+
+.nav_item_clickable.active > div:nth-child(1) > div:nth-child(3) > :nth-child(1){
+    color: #ffb74d;
+}
+
+.categorie_link:hover{
+    color: #5d4037;
+}
+
+.active{
+
+}

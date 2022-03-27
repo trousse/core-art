@@ -1,0 +1,44 @@
+{% extends 'templates/layout.twig' %}
+
+{% block body %}
+    <div id="product_main_container" class="container {% if not product.full_description %} mb-6 {% endif %}">
+      <div class="columns">
+          <div class="column is-three-fifths">
+                  <img alt="product image" id="product_image" src="{{ product.photo }}">
+          </div>
+          <div class="column is-two-fifths">
+              <div id= "info_card" class="card">
+                  <h1 id="product_title">{{ product.titre }}</h1>
+                  {% set splitPrice = product.prix|split('.') %}
+                  <div class="price container"> {% include 'Includes/Price.twig' with {'unit': splitPrice[0], 'decimal': splitPrice[1]} %}</div>
+                  <div id="add_container"><button id="add_product_button" data-id="{{ product.id }}" data-categorie="{{ product.categorie }}" class="add btn"> Ajouter au panier</button></div>
+              </div>
+              {% if product.caracteristiques %}
+              <div id="product_characteristic" class="container">
+                  <span id="description_title">CARACTERISTIQUES</span>
+                  <div id="description_divider" class="divider is-fullwidth"></div>
+                  <table class="table is-fullwidth">
+                      {% for cara, value in product.caracteristiques %}
+                      <tbody>
+                          <tr>
+                              <th>{{ cara }}</th>
+                              <td>{{ value }}</td>
+                          </tr>
+                      </tbody>
+                      {% endfor %}
+                  </table>
+              </div>
+              {% endif %}
+          </div>
+      </div>
+    </div>
+    {% if product.full_description %}
+    <div id="product_description" class="container">
+        <span id="description_title">DESCRIPTION</span>
+        <div id="description_divider" class="divider is-fullwidth"></div>
+        <div id="product_description_text" class="container card">
+            {{ product.full_description }}
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}

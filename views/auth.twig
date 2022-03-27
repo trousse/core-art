@@ -1,0 +1,9 @@
+{% extends 'templates/layout.twig' %}
+
+{% block body %}
+    <div>
+        <form action="/auth" method="post">
+            <label> code <input type="text" name="code_number" required></label>
+        </form>
+    </div>
+{% endblock %}

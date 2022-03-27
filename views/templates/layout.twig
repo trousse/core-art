@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    {% if Data.Menu.horizontal %}
+      <link rel='stylesheet' href='/stylesheets/Menus/horizontal.css' />
+    {% else %}
+      <link rel='stylesheet' href='/stylesheets/Menus/vertical.css' />
+    {% endif %}
+    {% if styles %}  {% for style in styles %}
+      <link rel='stylesheet' href='/stylesheets/{{style}}' />
+    {% endfor %} {% endif %}
+      <script src="/javascripts/javascript.js"></script>
+    <script defer src="/javascripts/@fortawesome/fontawesome-free/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/javascripts/@fortawesome/fontawesome-free/css/all.css' />
+  </head>
+  <body>
+    {% if Data.Menu.horizontal %}
+      {% include '../Menus/Menu_horizontal.twig' %}
+    {% else %}
+      {% include '../Menus/Menu_vertical.twig' %}
+    {% endif %}
+    <div class="content">
+      {% block body %}{% endblock %}
+    </div>
+  </body>
+</html>

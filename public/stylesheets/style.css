@@ -1,0 +1,180 @@
+@import 'bulma/css/bulma.css';
+
+.chart_item{
+  width: 100%;
+  border-bottom: 1px solid antiquewhite;
+  height: 130px;
+  position: relative;
+}
+
+.chart_cross{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 20px;
+  color: #ffb74d;
+  cursor: pointer;
+}
+
+.add_chart .minus_chart{
+  cursor: pointer;
+}
+
+.chart_item > .columns{
+  height: 100%;
+}
+
+.chart_item > .columns > .column{
+  height: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.chart_nb_item{
+  margin: 0 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#chart_items{
+  max-height: 80%;
+  overflow: scroll;
+  border-bottom: 5px solid #ffb74d;
+}
+
+#bouton_valid{
+  padding: 20px 50px;
+  word-spacing: 5px;
+  border: 3px solid #ffb74d;
+  border-radius: 5px;
+  background-color: #795548;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#bouton_valid > .unit{
+  margin-left: 10px;
+}
+
+#chart_button_container{
+  height: 20%;
+  width: 100%;
+}
+
+#chart_container{
+  position: absolute;
+  padding-top: 0 !important;
+  top: 100%;
+  right: 0;
+  width: 550px;
+  transform: translate(550px);
+  height: 90.5vh;
+  background-color: #6d4c41;
+  transition: all 0.3s ease;
+
+}
+
+#chart_container.open{
+  transform: translate(0);
+}
+
+
+#navbar{
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+a{
+  color: white;
+  cursor: pointer;
+}
+
+a:hover{
+  color: #ffb74d;
+}
+
+a.open{
+  color: #ffb74d;
+}
+
+.divider{
+  border-bottom: 3px solid #5d4037;
+}
+
+body{
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100%;
+  position: absolute;
+  background-color: #ffe0b2;
+  top: 0;
+  left: 0;
+}
+
+.content{
+  width: 100%;
+  min-height: 100vh;
+}
+
+.flex_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main_nav{
+  height: 9.5vh;
+  min-height: 80px;
+  background-color: #5d4037;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+
+#main_nav > div {
+  padding-top: 25px;
+}
+
+#burger_menu{
+  position: absolute;
+  left: 80px;
+  top: 5px;
+}
+
+#shopping-cart{
+  position: absolute;
+  right: 80px;
+  top: 5px; 
+  z-index: 2;
+}
+
+.bullInfo{
+  position: absolute;
+  right: 66px;
+  z-index: 1;
+  top: 16px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background-color: #ffb74d;
+  padding-top: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #5d4037;
+  font-weight: bold;
+}
+
+.fa{
+  color: #ffb74d;
+}
+
+body{
+  font-family: 'Source Serif 4', sans-serif;
+}
+
+
