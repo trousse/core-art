@@ -51,7 +51,7 @@ app.use(function (req,res,next){
     let number = Math.trunc(Math.random() * 8 - 0.01);
     let Menu = { horizontal: false, highNbMenu: false, submenu: false};
     let config = {
-        url:"http://localhost:3000"
+        url:"http://153.92.222.80"
     }
    /* console.log(number);
     for (const menuKey in Menu) {

@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify(body),
             headers: { 'content-type': 'application/json' }
         };
-        fetch("http://localhost:3000/chart/delete", myInit);
+        fetch("http://153.92.222.80/chart/delete", myInit);
         current_chart = current_chart.filter((chart)=>{
             return !(chart.product.id == id && chart.product.categorie === categorie);
         });
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify(body),
                     headers: { 'content-type': 'application/json' }
                 };
-                fetch("http://localhost:3000/chart", myInit)
+                fetch("http://153.92.222.80/chart", myInit)
                     .then(response => response.json())
                     .then((product) => {
                         current_chart.push(product);
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'content-type': 'application/json' }
                 };
 
-                fetch("http://localhost:3000/chart/plus", myInit);
+                fetch("http://153.92.222.80/chart/plus", myInit);
 
                 const categorie = chartElem.dataset.categorie;
                 const id = chartElem.dataset.id;
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'content-type': 'application/json' }
                 };
 
-                fetch("http://localhost:3000/chart/minus", myInit);
+                fetch("http://153.92.222.80/chart/minus", myInit);
 
                 const categorie = chartElem.dataset.categorie;
                 const id = chartElem.dataset.id;
