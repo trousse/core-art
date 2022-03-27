@@ -49,7 +49,7 @@ app.use(function (req,res,next){
   } else{ */
     //recupere data
     let number = Math.trunc(Math.random() * 8 - 0.01);
-    let Menu = { horizontal: false, highNbMenu: false, submenu: false};
+    let Menu = { horizontal: false, highNbMenu: true, submenu: true};
     let config = {
         url:"http://153.92.222.80"
     }
