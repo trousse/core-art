@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify(body),
             headers: { 'content-type': 'application/json' }
         };
-        fetch("http://153.92.222.80/chart/delete", myInit);
+        fetch("http://localhost:3000/chart/delete", myInit);
         current_chart = current_chart.filter((chart)=>{
             return !(chart.product.id == id && chart.product.categorie === categorie);
         });
@@ -92,14 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     adds.forEach((add) => {
         add.addEventListener('click', (event) => {
-            console.log("add");
-            const nb_container = add.parentNode.querySelector(".chart_nb_item");
-            if(nb_container){
-                const categorie = add.dataset.categorie;
-                const id = add.dataset.id;
-                const product = current_chart.find((elem) => {
-                    return elem.product.id == id && elem.product.categorie === categorie;
-                });
+            const categorie = add.dataset.categorie;
+            const id = add.dataset.id;
+            const product = current_chart.find((elem) => {
+                return elem.product.id == id && elem.product.categorie === categorie;
+            });
+            if(product){
                 product.nb++;
                 setTimeout(() => refreshChart(), 100);
             }else{
@@ -112,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify(body),
                     headers: { 'content-type': 'application/json' }
                 };
-                fetch("http://153.92.222.80/chart", myInit)
+                fetch("http://localhost:3000/chart", myInit)
                     .then(response => response.json())
                     .then((product) => {
                         current_chart.push(product);
@@ -138,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 chart_button_container.innerHTML = "";
                 chart_button_container.appendChild(valid_button);
-                valid_button.innerHTML = "<div id=\"bouton_valid\"> Valider la Command "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div>";
+                valid_button.innerHTML = "<div id=\"bouton_valid\"> Valider la Commande "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div>";
                 
             }else{
                 if(shopping_nb.classList.contains("bullInfo")) shopping_nb.classList.toggle("bullInfo");
@@ -162,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'content-type': 'application/json' }
                 };
 
-                fetch("http://153.92.222.80/chart/plus", myInit);
+                fetch("http://localhost:3000/chart/plus", myInit);
 
                 const categorie = chartElem.dataset.categorie;
                 const id = chartElem.dataset.id;
@@ -186,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'content-type': 'application/json' }
                 };
 
-                fetch("http://153.92.222.80/chart/minus", myInit);
+                fetch("http://localhost:3000/chart/minus", myInit);
 
                 const categorie = chartElem.dataset.categorie;
                 const id = chartElem.dataset.id;
@@ -298,9 +296,9 @@ fetch("http://localhost:3000/chart")
         }
     }
 
-    add_product_button.addEventListener('click',(event) => {
+    /*add_product_button.addEventListener('click',(event) => {
         console.log('test');
-    })
+    })*/
 
     const nav_items_clickable = document.querySelectorAll(".nav_item_clickable");
     nav_items_clickable.forEach((elem) => {

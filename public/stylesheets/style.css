@@ -7,6 +7,39 @@
   position: relative;
 }
 
+#logo_container{
+  position: relative;
+}
+
+#img_link{
+  width: 95px;
+  height: 90px
+}
+
+#logo_text{
+  position: absolute;
+  top: 23px;
+  left: 51vw;
+  color: #ffb74d !important;
+   cursor: pointer;
+}
+
+#logo_img{
+  position: absolute;
+   cursor: pointer;
+  top: 10px;
+  left: 45vw;
+  width: 95px;
+  display: inline;  
+}
+
+#logo{
+  position: absolute;
+  top:10px;
+  left:42vw;
+  width: 100px;
+}
+
 .chart_cross{
   position: absolute;
   top: 8px;

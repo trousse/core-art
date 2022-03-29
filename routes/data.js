@@ -43,26 +43,28 @@ router.get('/links', function(req,res,next){
     })
   
         Promise.all(fileArray).then((results) => {
-        results.forEach((file)=>{
-        	file.forEach((result)=>{
-        		 downloadImage(result.photo,"./data/productS2/"+result.categorie+"_"+result.id+".jpg").catch(()=>{
-        		 	let buffer = new Buffer.from(result.categorie + ";" + result.id + ";" + result.photo+"\n");
-        			fs.open("./data/missingPhoto.csv", 'a', function(err, fd) {
-        				 fs.write(fd, buffer, 0, buffer.length, 
-				                null, function(err,writtenbytes) {
-				            if(err) {
-				                console.log('Cant write to file');
-				            }else {
-				                console.log(writtenbytes +
-				                    ' characters added to file');
-				            }
-				        })
-        		 });
-        	})
            
-        })
-    });
-})
+            results.forEach((file)=>{
+            	file.forEach((result)=>{
+                    fs.access("./public/images/products/"+result.categorie+"_"+result.id+".jpg",fs.constants.F_OK,(err)=>{
+                        if(err){
+                             fs.open("./data/missingPhoto.csv","a", function(err, fd) {
+                            let buffer = new Buffer.from(result.categorie + ";" + result.id + ";" + result.photo+"\n");
+                            fs.write(fd, buffer, 0, buffer.length, 
+                                null, function(err,writtenbytes) {
+                            if(err) {
+                                console.log('Cant write to file');
+                            }else {
+                                console.log(writtenbytes +
+                                    ' characters added to file');
+                            }
+                        })
+                            })
+                        }
+        		 });
+            })
+        });
+    })
 })
 
 router.get('/count',function(req,res,next){

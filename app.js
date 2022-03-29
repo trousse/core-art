@@ -49,9 +49,9 @@ app.use(function (req,res,next){
   } else{ */
     //recupere data
     let number = Math.trunc(Math.random() * 8 - 0.01);
-    let Menu = { horizontal: false, highNbMenu: true, submenu: true};
+    let Menu = { horizontal: true, highNbMenu: true, submenu: true};
     let config = {
-        url:"http://153.92.222.80"
+        url:"http://localhost:3000"
     }
    /* console.log(number);
     for (const menuKey in Menu) {
