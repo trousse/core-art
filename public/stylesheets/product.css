@@ -27,7 +27,7 @@ th {
 }
 
 td {
-    background-color: antiquewhite;
+    background-color: #fff3e0;
     color: #6d4c41 !important;
     font-weight: bold;
 }
@@ -35,7 +35,7 @@ td {
 .card{
     padding: 15px;
     border: 3px solid #795548;
-    background-color: antiquewhite;
+    background-color: #fff3e0;
     color: #6d4c41 ;
 }
 

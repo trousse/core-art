@@ -2,7 +2,9 @@ var express = require('express');
 var router = express.Router();
 var ModelHelper = require("../helper/model_helper");
 const fs = require("file-system");
-const Axios = require('axios')
+const Axios = require('axios');
+var imageSize = require('image-size');
+
 
 async function downloadImage(url, filepath) {
     const response = await Axios({
@@ -84,6 +86,19 @@ router.get('/count',function(req,res,next){
         	 console.log(nb);
         })
     
+    })
+})
+
+
+router.get('/images', function(req,res,next){
+    const files = fs.readdirSync("./public/images/products");
+    let nb = 0
+    files.forEach((file)=>{
+        if(file !== ".DS_Store"){
+            let imageDimensions = imageSize('./public/images/products/'+file);
+
+            if(Math.abs((imageDimensions.width/imageDimensions.height)-1) > 0.1) console.log(file);
+        }
     })
 })
 

@@ -1,0 +1,39 @@
+#home_illustration{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/fond.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index:2;
+}
+
+#welcome{
+    font-size: 20px;
+    font-weight: bold;
+    color: antiquewhite;
+    margin-top: 15%;
+    padding-left: 20%;
+    text-align: center;
+    padding-right: 20%;
+    z-index:1;
+}
+
+#team{
+    text-align: right;
+}
+
+h1{
+    color: antiquewhite !important;
+}

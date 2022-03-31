@@ -5,12 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const burger_menu = document.querySelector("#main_nav > div:nth-child(1) > a");
     const chart = document.querySelector("#shopping-cart > a");
     const chart_container = document.querySelector("#chart_container");
-    const chart_items = document.querySelector("#chart_items");
+    const chart_items = document.querySelectorAll(".chart_items");
     const adds = document.querySelectorAll(".add");
     const chart_button_container = document.querySelector("#chart_button_container");
     const products = document.querySelectorAll(".nb_list_container");
     const shopping_nb = document.querySelector("#shopping-nb");
     const add_product_button = document.querySelector("#add_product_button");
+    const total_chart = document.querySelector("#total_chart");
 
 
     var current_chart = [];
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function deleteChartItem(id,categorie){
+
         const body = {
             id: id,
             categorie: categorie
@@ -43,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(products){
             products.forEach((elem) => {
                 if(elem.dataset.id == id && elem.dataset.categorie === categorie){
+                    console.log(elem);
                     elem.innerHTML = "";
                 }
             });
@@ -53,26 +56,33 @@ document.addEventListener('DOMContentLoaded', () => {
     function addChart(categorie,id,prix,titre,image,nb){
         prix *= nb
         totalPrice += parseFloat(prix);
-        let chart_item = document.createElement("div");
-        chart_item.classList.add("chart_item");
-        chart_item.innerHTML = "<div class=\"chart_cross chart_actif\"><i class=\"fas fa-times\"></i></div>" +
-            "                 <div class=\"columns\">\n" +
-            "                <div class=\"flex_center column is-one-fifth\">\n" +
-            "                    <img src=\"" + image + "\" alt=\"product\">\n" +
-            "                </div>\n" +
-            "                <div class=\"column is-two-fifth flex_center has-text-centered\">\n" +
-            titre +
-            "                </div>\n" +
-            "                <div class=\"column is-one-fifth flex_center has-text-centered\">\n" +
-            createPrice(prix) +
-            "                </div>\n" +
-            "                <div class=\"column is-one-fifth flex_center has-text-centered\">\n" +
-            "                    <span><span class=\"minus_chart\" data-categorie=\""+categorie+"\" data-id=\""+id+"\" ><i class=\"fas fa-solid fa-minus is-inline\"></i></span>\n" +
-            "<span class=\"chart_nb_item nb_" + categorie + "_" + id + "\">" + nb + "</span>" +
-            "                    </span> <span class=\"add_chart\" data-categorie=\""+categorie+"\" data-id=\""+id+"\"><i class=\" fas fa-solid fa-plus is-inline\"></i></span></span>\n" +
-            "                </div>\n" +
-            "            </div>\n";
-        chart_items.appendChild(chart_item);
+        chart_items.forEach((elem)=>{
+            let chart_item = document.createElement("div");
+            chart_item.classList.add("chart_item");
+            chart_item.innerHTML = "<div class=\"chart_cross chart_actif\"><i class=\"fas fa-times\"></i></div>" +
+                "                 <div class=\"columns image_chart\">\n" +
+                "                <div class=\"flex_center column  is-one-fifth\">\n" +
+                "                    <img src=\"" + image + "\" alt=\"product\">\n" +
+                "                </div>\n" +
+                "                <div class=\"column is-two-fifth flex_center has-text-centered\">\n" +
+                titre +
+                "                </div>\n" +
+                "                <div class=\"column is-one-fifth flex_center has-text-centered\">\n" +
+                createPrice(prix) +
+                "                </div>\n" +
+                "                <div class=\"column is-one-fifth flex_center has-text-centered\">\n" +
+                "                    <span><span class=\"minus_chart\" data-categorie=\""+categorie+"\" data-id=\""+id+"\" ><i class=\"fas fa-solid fa-minus is-inline\"></i></span>\n" +
+                "<span class=\"chart_nb_item nb_" + categorie + "_" + id + "\">" + nb + "</span>" +
+                "                    </span> <span class=\"add_chart\" data-categorie=\""+categorie+"\" data-id=\""+id+"\"><i class=\" fas fa-solid fa-plus is-inline\"></i></span></span>\n" +
+                "                </div>\n" +
+                "            </div>\n";
+            elem.appendChild(chart_item);
+
+            const chart_cross = chart_item.querySelector(".chart_cross");
+            chart_cross.addEventListener("click",(event)=>{
+                deleteChartItem(id,categorie);
+            })
+        })
 
         if(products){
             products.forEach((elem) => {
@@ -84,10 +94,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        const chart_cross = chart_item.querySelector(".chart_cross");
-        chart_cross.addEventListener("click",(event)=>{
-            deleteChartItem(id,categorie);
-        })
+        if(total_chart){
+            let totalChartElem = document.createElement("div");
+            totalChartElem.classList.add("total_chart_item");
+            totalChartElem.innerHTML = "<div class=\"columns total_e\">" +
+                    "<div class='total_name column is-three-quarters'>" +
+                        titre + " X" + nb+
+                    "</div>"+
+                    "<div class='total_price column is-one-quarter'>" +
+                        createPrice(prix)+
+                    "</div>"+
+                "</div>";
+            total_chart.appendChild(totalChartElem);
+        }
     }
 
     adds.forEach((add) => {
@@ -123,7 +142,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function refreshChart(){
-            chart_items.innerHTML = "";
+            if(total_chart)total_chart.innerHTML=""
+            chart_items.forEach((elem)=>{
+                elem.innerHTML="";
+            })
             totalPrice = 0;
             if(current_chart.length > 0){
                 shopping_nb.classList.add("bullInfo");
@@ -136,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 chart_button_container.innerHTML = "";
                 chart_button_container.appendChild(valid_button);
-                valid_button.innerHTML = "<div id=\"bouton_valid\"> Valider la Commande "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div>";
+                valid_button.innerHTML = "<a href='http://localhost:3000/valid_chart'><div id=\"bouton_valid\"> Valider la Commande "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div></a>";
                 
             }else{
                 if(shopping_nb.classList.contains("bullInfo")) shopping_nb.classList.toggle("bullInfo");
@@ -200,6 +222,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+
+        if(total_chart){
+            const chart_total_price = document.createElement("div");
+            chart_total_price.innerHTML = "<div id='total'>" +
+                    "Total : " + createPrice(totalPrice) +
+                "</div>";
+            total_chart.appendChild(chart_total_price);
+        }
     }
 
 fetch("http://localhost:3000/chart")
@@ -315,6 +345,4 @@ fetch("http://localhost:3000/chart")
             }
         })
     })
-
-
 });

@@ -13,7 +13,8 @@ var modelHelper = new ModelHelper();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('home', { title: 'Home' , Data: req.data});
+  const styles = ['home.css'];
+  res.render('home', { title: 'Home' ,  styles: styles, Data: req.data});
 });
 
 router.get('/produit/:categorie/:id',function (req,res,next){
@@ -26,6 +27,13 @@ router.get('/produit/:categorie/:id',function (req,res,next){
     console.log(e);
   }
 });
+
+router.get('/valid_chart',function (req, res, next){
+  const styles = ['valid_chart.css'];
+  const chart_model = new Chart_model(req);
+  const chart = chart_model.getChart();
+  res.render('valid_chart_page', { title: 'valid chart page', styles: styles, Data: req.data, chart: chart});
+})
 
 router.get('/categorie/:categorie',function(req, res, next) {
   const styles = ["list_product.css"];
