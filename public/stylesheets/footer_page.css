@@ -1,0 +1,14 @@
+#main_container{
+    margin-top: 60px;
+    width: 80%;
+}
+
+#title{
+    font-weight: bold;
+    font-size: 36px;
+    color: #5d4037;
+}
+
+#divider{
+    margin-bottom: 40px;
+}

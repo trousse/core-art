@@ -4,6 +4,7 @@ var ModelHelper = require("../helper/model_helper");
 const fs = require("file-system");
 const Axios = require('axios');
 var imageSize = require('image-size');
+const sharp = require('sharp');
 
 
 async function downloadImage(url, filepath) {
@@ -91,13 +92,28 @@ router.get('/count',function(req,res,next){
 
 
 router.get('/images', function(req,res,next){
-    const files = fs.readdirSync("./public/images/products");
+    const files = fs.readdirSync("./public/images/photoL");
     let nb = 0
     files.forEach((file)=>{
         if(file !== ".DS_Store"){
-            let imageDimensions = imageSize('./public/images/products/'+file);
+            console.log(file);
+            let imageDimensions = imageSize('./public/images/photoL/'+file);
+                nb++
+                sharp('./public/images/photoL/'+file)
+                    .resize(imageDimensions.width ,parseInt(imageDimensions.width * 1.1),{fit:"fill",  background: { r: 255, g: 255, b: 255 }})
+                    .toFile('./public/images/produit/'+file)
+                    .then( data => {
+                    }).catch((err)=>{ console.log(err); })
+        }
+    })
+    console.log(nb);
+})
 
-            if(Math.abs((imageDimensions.width/imageDimensions.height)-1) > 0.1) console.log(file);
+router.get('/rename', function(req,res,next){
+    const files = fs.readdirSync("./public/images/photoL");
+    files.forEach((file)=>{
+        if(file !== ".DS_Store" && file.split('.')[1] === 'jpeg'){
+            fs.renameSync("./public/images/photoL/"+file,"./public/images/photoL/"+file.split('.')[0]+'.jpg')
         }
     })
 })

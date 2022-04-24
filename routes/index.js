@@ -11,6 +11,22 @@ var Chart_model = require('../model/chart_model');
 var modelHelper = new ModelHelper();
 
 
+router.get('/contact',function(req,res,next){
+  const styles = ['footer_page.css'];
+  console.log("dz");
+  res.render('contact', { title: 'Contact' ,  styles: styles, Data: req.data});
+});
+
+router.get('/mention_legal',function(req,res,next){
+  const styles = ['footer_page.css'];
+  res.render('mention_legal', { title: 'Mention legal' ,  styles: styles, Data: req.data});
+});
+
+router.get('/condition_general',function(req,res,next){
+  const styles = ['footer_page.css'];
+  res.render('condition_general', { title: 'Conditions general' ,  styles: styles, Data: req.data});
+});
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   const styles = ['home.css'];
@@ -129,4 +145,3 @@ router.post('/chart/delete', function (req,res,next){
   chart_model.DeleteChart(id, categorie);
   res.send(true);
 });
-

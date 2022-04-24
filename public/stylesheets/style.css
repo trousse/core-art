@@ -27,7 +27,7 @@
 }
 
 #logo_text{
-  color: #ffb74d !important;
+  color: antiquewhite !important;
   cursor: pointer;
   position: absolute;
   top: 30px;
@@ -150,6 +150,7 @@ body{
 .content{
   width: 100%;
   min-height: 100vh;
+  margin-bottom: 0 !important;
 }
 
 .flex_center{
@@ -204,5 +205,23 @@ body{
 }
 
 .fa{
+  color: #ffb74d;
+}
+
+#footer{
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  padding: 0 20%;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 3px solid #ffb74d;
+  background-color: #8d6e63;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#footer > span{
+  font-size: 5px;
   color: #ffb74d;
 }
