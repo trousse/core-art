@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const shopping_nb = document.querySelector("#shopping-nb");
     const add_product_button = document.querySelector("#add_product_button");
     const total_chart = document.querySelector("#total_chart");
+    const mail_container = document.querySelector("#mail_container");
 
 
     var current_chart = [];
@@ -345,4 +346,14 @@ fetch("http://localhost:3000/chart")
             }
         })
     })
+
+    if(mail_container){
+        const submit_button = document.querySelector("#submit_button");
+        const thank_message = document.querySelector("#thank_message");
+        submit_button.addEventListener("click", (event)=>{
+            mail_container.classList.add("is-hidden");
+            thank_message.classList.remove("is-hidden");
+        });
+    }
 });
+

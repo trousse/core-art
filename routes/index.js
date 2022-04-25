@@ -12,8 +12,7 @@ var modelHelper = new ModelHelper();
 
 
 router.get('/contact',function(req,res,next){
-  const styles = ['footer_page.css'];
-  console.log("dz");
+  const styles = ['footer_page.css','contact.css'];
   res.render('contact', { title: 'Contact' ,  styles: styles, Data: req.data});
 });
 
