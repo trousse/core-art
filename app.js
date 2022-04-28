@@ -1,11 +1,10 @@
 const Categories10 = require('./data/categories_10_5.js');
 const Categories3 = require("./data/categories_3_5.js");
+const chart_model = require('./model/chart_model');
 twig = require('twig');
 
 const categories10 = Categories10;
 const categories3 = Categories3;
-
-console.log(categories3)
 
 var createError = require('http-errors');
 var express = require('express');
@@ -16,8 +15,9 @@ var session = require('express-session');
 const bodyParser = require("body-parser");
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var chartRouter = require('./routes/chart');
 var dataRouter = require('./routes/data');
+var clickRouter = require('./routes/click');
 
 var app = express();
 
@@ -48,11 +48,22 @@ app.use(function (req,res,next){
     res.redirect('/auth');
   } else{ */
     //recupere data
-    let number = Math.trunc(Math.random() * 8 - 0.01);
-    let Menu = { horizontal: true, highNbMenu: true, submenu: true};
+    //let number = Math.trunc(Math.random() * 8 - 0.01);
+    let Menu = { horizontal: true, highNbMenu: true, submenu: false};
+    let number = (Menu.horizontal ? 1 : 0) + (Menu.highNbMenu ? 2 : 0) + (Menu.submenu ? 4 : 0);
     let config = {
         url:"http://localhost:3000"
     }
+
+    if(!req.session.connectDateTime){
+        req.session.MenuNumber = number;
+        req.session.connectDateTime = Date.now();
+        req.session.click = 0;
+        req.session.clickMenu = 0;
+        req.session.pageVisited = 0;
+        req.session.ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    }
+
    /* console.log(number);
     for (const menuKey in Menu) {
       Menu[menuKey] = number % 2 === 1;
@@ -63,8 +74,6 @@ app.use(function (req,res,next){
             return total + parseFloat(req.session.chart[index].product.prix);
         },0).toFixed(2).toString();
     }
-
-    console.log(req.session.chart);
 
     req.data = {
       Menu: Menu,
@@ -77,9 +86,9 @@ app.use(function (req,res,next){
 });
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/parsedata', dataRouter);
-
+app.use('/chart', chartRouter);
+app.use('/click',clickRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

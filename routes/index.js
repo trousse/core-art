@@ -10,29 +10,33 @@ var Chart_model = require('../model/chart_model');
 
 var modelHelper = new ModelHelper();
 
-
 router.get('/contact',function(req,res,next){
+  req.session.pageVisited++
   const styles = ['footer_page.css','contact.css'];
   res.render('contact', { title: 'Contact' ,  styles: styles, Data: req.data});
 });
 
 router.get('/mention_legal',function(req,res,next){
+  req.session.pageVisited++
   const styles = ['footer_page.css'];
   res.render('mention_legal', { title: 'Mention legal' ,  styles: styles, Data: req.data});
 });
 
 router.get('/condition_general',function(req,res,next){
+  req.session.pageVisited++
   const styles = ['footer_page.css'];
   res.render('condition_general', { title: 'Conditions general' ,  styles: styles, Data: req.data});
 });
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  req.session.pageVisited++
   const styles = ['home.css'];
   res.render('home', { title: 'Home' ,  styles: styles, Data: req.data});
 });
 
 router.get('/produit/:categorie/:id',function (req,res,next){
+  req.session.pageVisited++
   const styles = ['product.css'];
   try{
     const model = new ModelHelper();
@@ -44,6 +48,7 @@ router.get('/produit/:categorie/:id',function (req,res,next){
 });
 
 router.get('/valid_chart',function (req, res, next){
+  req.session.pageVisited++
   const styles = ['valid_chart.css'];
   const chart_model = new Chart_model(req);
   const chart = chart_model.getChart();
@@ -51,6 +56,7 @@ router.get('/valid_chart',function (req, res, next){
 })
 
 router.get('/categorie/:categorie',function(req, res, next) {
+  req.session.pageVisited++
   const styles = ["list_product.css"];
   const page = req.query.page || 1;
   const sendData = (req,res,data,categorie) => {
@@ -106,41 +112,5 @@ router.get('/auth', function(req, res, next) {
   res.render('home', { title: 'Auth' , Data: req.data});
 });
 
+
 module.exports = router;
-
-router.post('/chart', function (req,res,next){
-  const product_id = req.body.id;
-  const product_categorie = req.body.categorie;
-  const chart_model = new Chart_model(req);
-  const product = chart_model.postChart(product_id, product_categorie);
-  res.send(product);
-});
-
-router.get('/chart', function (req,res,next){
-  const chart_model = new Chart_model(req);
-  res.send(chart_model.getChart());
-});
-
-router.post('/chart/plus', function (req,res,next){
-  const id = req.body.id;
-  const categorie = req.body.categorie;
-  const chart_model = new Chart_model(req);
-  chart_model.PlusChart(id, categorie);
-  res.send(true);
-});
-
-router.post('/chart/minus', function (req,res,next){
-  const id = req.body.id;
-  const categorie = req.body.categorie;
-  const chart_model = new Chart_model(req);
-  chart_model.MoinChart(id, categorie);
-  res.send(true);
-});
-
-router.post('/chart/delete', function (req,res,next){
-  const id = req.body.id;
-  const categorie = req.body.categorie;
-  const chart_model = new Chart_model(req);
-  chart_model.DeleteChart(id, categorie);
-  res.send(true);
-});

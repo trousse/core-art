@@ -9,7 +9,7 @@
                 <div class="product">
                     <div class="card">
                         <a href="../produit/{{ product.categorie }}/{{ product.id }}">
-                        <div class="card-image">
+                        <div class="card-image clickable">
                             <figure class="image">
                                <img class= "product_img" src="/images/products/{{ product.categorie }}_{{ product.id }}.jpg" alt="Placeholder image">
                                 <div class="eye_container"><div class="eye"><i class="fas fa-solid fa-eye"></i></div><div class="seeMore">Voir Plus</div></div>
@@ -24,7 +24,7 @@
                                 </div>
                                <span class="nb_list_container" data-id="{{ product.id }}" data-categorie="{{ product.categorie }}">
                                </span>
-                                <div class="add" data-id="{{ product.id }}" data-categorie="{{ product.categorie }}"><i class="fas fa-solid fa-cart-plus"></i></div>
+                                <div class="add clickable" data-id="{{ product.id }}" data-categorie="{{ product.categorie }}"><i class="fas fa-solid fa-cart-plus"></i></div>
                             </div>
                             <hr>
                             <div class="title_container">
@@ -38,7 +38,7 @@
         <div id="pagination">
            {% for i in Data.pagination %}
             <a href="/categorie/{{ Data.categorieSlug }}?page={{ i+1 }}">
-              <div class="pagination_case {% if Data.page == i+1 %} pagination_current_page {% endif %}">
+              <div class="pagination_case clickable{% if Data.page == i+1 %} pagination_current_page {% endif %}">
                  {{ i+1 }}
               </div>
             </a>

@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const add_product_button = document.querySelector("#add_product_button");
     const total_chart = document.querySelector("#total_chart");
     const mail_container = document.querySelector("#mail_container");
+    const valid_chart_button = document.querySelector("#valid_chart_button")
 
 
     var current_chart = [];
@@ -46,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if(products){
             products.forEach((elem) => {
                 if(elem.dataset.id == id && elem.dataset.categorie === categorie){
-                    console.log(elem);
                     elem.innerHTML = "";
                 }
             });
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chart_items.forEach((elem)=>{
             let chart_item = document.createElement("div");
             chart_item.classList.add("chart_item");
-            chart_item.innerHTML = "<div class=\"chart_cross chart_actif\"><i class=\"fas fa-times\"></i></div>" +
+            chart_item.innerHTML = "<div class=\"chart_cross chart_actif clickable\"><i class=\"fas fa-times\"></i></div>" +
                 "                 <div class=\"columns image_chart\">\n" +
                 "                <div class=\"flex_center column  is-one-fifth\">\n" +
                 "                    <img src=\"" + image + "\" alt=\"product\">\n" +
@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 createPrice(prix) +
                 "                </div>\n" +
                 "                <div class=\"column is-one-fifth flex_center has-text-centered\">\n" +
-                "                    <span><span class=\"minus_chart\" data-categorie=\""+categorie+"\" data-id=\""+id+"\" ><i class=\"fas fa-solid fa-minus is-inline\"></i></span>\n" +
+                "                    <span><span class=\"minus_chart clickable\" data-categorie=\""+categorie+"\" data-id=\""+id+"\" ><i class=\"fas fa-solid fa-minus is-inline\"></i></span>\n" +
                 "<span class=\"chart_nb_item nb_" + categorie + "_" + id + "\">" + nb + "</span>" +
-                "                    </span> <span class=\"add_chart\" data-categorie=\""+categorie+"\" data-id=\""+id+"\"><i class=\" fas fa-solid fa-plus is-inline\"></i></span></span>\n" +
+                "                    </span> <span class=\"add_chart clickable\" data-categorie=\""+categorie+"\" data-id=\""+id+"\"><i class=\" fas fa-solid fa-plus is-inline\"></i></span></span>\n" +
                 "                </div>\n" +
                 "            </div>\n";
             elem.appendChild(chart_item);
@@ -88,9 +88,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if(products){
             products.forEach((elem) => {
                 if(elem.dataset.id == id && elem.dataset.categorie === categorie){
-                    elem.innerHTML = "<span class=\"chart_actif\"><span class=\"minus_chart\" data-categorie=\""+categorie+"\" data-id=\""+id+"\"><i class=\"fas fa-solid fa-minus is-inline\"></i></span>\n" +
+                    elem.innerHTML = "<span class=\"chart_actif\"><span class=\"minus_chart clickable\" data-categorie=\""+categorie+"\" data-id=\""+id+"\"><i class=\"fas fa-solid fa-minus is-inline\"></i></span>\n" +
                         "<span class=\"chart_nb_item nb_" + categorie + "_" + id + "\">" + nb + "</span>" +
-                        "<span class=\"add_chart\" data-categorie=\""+categorie+"\" data-id=\""+id+"\"><i class=\" fas fa-solid fa-plus is-inline\"></i></span></span>\n";
+                        "<span class=\"add_chart clickable\" data-categorie=\""+categorie+"\" data-id=\""+id+"\"><i class=\" fas fa-solid fa-plus is-inline\"></i></span></span>\n";
                 }
             });
         }
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(total_chart){
             let totalChartElem = document.createElement("div");
             totalChartElem.classList.add("total_chart_item");
-            totalChartElem.innerHTML = "<div class=\"columns total_e\">" +
+            totalChartElem.innerHTML = "<div class=\"columns clickable total_e\">" +
                     "<div class='total_name column is-three-quarters'>" +
                         titre + " X" + nb+
                     "</div>"+
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 chart_button_container.innerHTML = "";
                 chart_button_container.appendChild(valid_button);
-                valid_button.innerHTML = "<a href='http://localhost:3000/valid_chart'><div id=\"bouton_valid\"> Valider la Commande "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div></a>";
+                valid_button.innerHTML = "<a href='http://localhost:3000/valid_chart'><div class='clickable' id=\"bouton_valid\"> Valider la Commande "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div></a>";
                 
             }else{
                 if(shopping_nb.classList.contains("bullInfo")) shopping_nb.classList.toggle("bullInfo");
@@ -240,6 +240,16 @@ fetch("http://localhost:3000/chart")
         refreshChart();
     });
 
+    function clickClickable(){
+        var myInit = { method: 'POST', body: "", headers: { 'content-type': 'application/json' } };
+        fetch("http://localhost:3000/click/click", myInit);
+    }
+
+    function clickMenuClickable(){
+        var myInit = { method: 'POST', body: "", headers: { 'content-type': 'application/json' } };
+        fetch("http://localhost:3000/click/clickMenu", myInit);
+    }
+
     let current_clicked = null;
 
     const toggleCategoriesMenu = function (){
@@ -272,15 +282,28 @@ fetch("http://localhost:3000/chart")
         }
     })
 
+    if(valid_chart_button){
+        document.addEventListener('click',(event)=>{
+            var myInit = {method: 'POST', body: "", headers: { 'content-type': 'application/json' }};
+            setTimeout(()=>{fetch("http://localhost:3000/click/valid", myInit)},200);
+        })
+    }
+
     document.addEventListener('click', (event) => {
         let target = event.target;
         let toggle_subnav = false;
         let toggle_chart_container = false;
+        let clickable = false
+        let menu_clickable = false;
         do{
             if (target === sub_nav || target === burger_menu) toggle_subnav = true;
             if (target === chart_container || target === chart || (target.classList && target.classList.contains("add")) || (target.classList && target.classList.contains("chart_actif"))) toggle_chart_container = true;
+            if(target.classList && target.classList.contains("clickable")) clickable = true;
+            if(target.classList && target.classList.contains("menu_clickable")) menu_clickable = true;
             target = target.parentNode;
         } while (target)
+        if (clickable) clickClickable();
+        if (menu_clickable) clickMenuClickable();
         if (!toggle_subnav) toggleCategoriesMenu();
         if (!toggle_chart_container) toggleChartMenu();
     });

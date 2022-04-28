@@ -45,4 +45,9 @@ Chart_model.prototype.DeleteChart = function (id, categorie){
    return true;
 }
 
+Chart_model.prototype.getTotal = function (){
+    let charts = this.getChart();
+    return charts.total || 0;
+}
+
 module.exports = Chart_model;

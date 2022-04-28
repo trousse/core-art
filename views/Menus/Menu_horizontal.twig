@@ -4,10 +4,10 @@
         <div id="categories_nav_container" class="container">
             <div id="categories_nav" class= "columns flex_center">
                 {% for slug, categorie in Data.MenuData %}
-                    <div class=" {% if Data.Menu.submenu %} nav_item_clickable {% endif %} nav_item column flex_center">
+                    <div class="  menu_clickable clickable {% if Data.Menu.submenu %} nav_item_clickable {% endif %} nav_item column flex_center">
                         {% if Data.Menu.submenu %}<p class="has-text-centered">{{ categorie.name }}</p>{% else %}<a class="categorie_link" href="{{ Data.config.url }}/categorie/{{ slug }}">{{ categorie.name }}</a>{% endif %}
                         {% if Data.Menu.submenu %}
-                        <div class= "categories_nav is-hidden columns flex_center">
+                        <div class= "categories_nav is-hidden columns menu_clickable clickable flex_center">
                             {% for subSlug, subCategorie in categorie.compose %}
                             <a class="nav_item column flex_center" href="{{ Data.config.url }}/categorie/{{ subSlug }}">
                                 <div>

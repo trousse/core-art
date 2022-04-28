@@ -25,7 +25,6 @@ async function downloadImage(url, filepath) {
 router.get('/', function(req, res, next) {
    model = new ModelHelper();
    model.ParseCategorieData();
-   console.log('parsed');
 });
 
 function promise(categoriePath){
@@ -96,12 +95,11 @@ router.get('/images', function(req,res,next){
     let nb = 0
     files.forEach((file)=>{
         if(file !== ".DS_Store"){
-            console.log(file);
             let imageDimensions = imageSize('./public/images/photoL/'+file);
                 nb++
                 sharp('./public/images/photoL/'+file)
                     .resize(imageDimensions.width ,parseInt(imageDimensions.width * 1.1),{fit:"fill",  background: { r: 255, g: 255, b: 255 }})
-                    .toFile('./public/images/produit/'+file)
+                    .toFile('./public/images/verre/'+file)
                     .then( data => {
                     }).catch((err)=>{ console.log(err); })
         }
