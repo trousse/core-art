@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const add_product_button = document.querySelector("#add_product_button");
     const total_chart = document.querySelector("#total_chart");
     const mail_container = document.querySelector("#mail_container");
-    const valid_chart_button = document.querySelector("#valid_chart_button")
 
 
     var current_chart = [];
@@ -282,12 +281,12 @@ fetch("http://localhost:3000/chart")
         }
     })
 
-    if(valid_chart_button){
+    /*if(valid_chart_button){
         document.addEventListener('click',(event)=>{
             var myInit = {method: 'POST', body: "", headers: { 'content-type': 'application/json' }};
             setTimeout(()=>{fetch("http://localhost:3000/click/valid", myInit)},200);
         })
-    }
+    }*/
 
     document.addEventListener('click', (event) => {
         let target = event.target;

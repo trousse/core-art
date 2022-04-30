@@ -13,7 +13,7 @@ router.post('/clickMenu', function (req,res,next){
     res.send(true);
 });
 
-router.post("/valid",function(req,res,next){
+/*router.post("/valid",function(req,res,next){
     const chart_model = new Chart_model(req);
     fs.open("./data/navigation_info.csv","a", function(err, fd) {
         const nbChart = chart_model.getChart().length;
@@ -40,6 +40,6 @@ router.post("/valid",function(req,res,next){
             })
     });
     res.send(true);
-});
+});*/
 
 module.exports = router;

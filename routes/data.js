@@ -99,7 +99,7 @@ router.get('/images', function(req,res,next){
                 nb++
                 sharp('./public/images/photoL/'+file)
                     .resize(imageDimensions.width ,parseInt(imageDimensions.width * 1.1),{fit:"fill",  background: { r: 255, g: 255, b: 255 }})
-                    .toFile('./public/images/verre/'+file)
+                    .toFile('./public/images/last/'+file)
                     .then( data => {
                     }).catch((err)=>{ console.log(err); })
         }

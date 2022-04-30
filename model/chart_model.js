@@ -19,6 +19,7 @@ Chart_model.prototype.postChart = function (id, categorie){
     chart.push(newProduct);
     this.req.session.chart = chart;
     return JSON.stringify(newProduct);
+
 }
 
 Chart_model.prototype.PlusChart = function (id, categorie){

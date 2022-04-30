@@ -5,7 +5,7 @@ const categorie_10_5 = {
 			"creuse":"Creuse",
 			"presentation":"Présentation",
 			"plate":"Plate",
-			"dessert":"Déssert",
+			"dessert":"Dessert",
 			"service":"Service"
 		}
 	},
@@ -13,7 +13,7 @@ const categorie_10_5 = {
 		"name": "Café et thé",
 		"compose":{
 			"accessoire":"Accessoire",
-			"bouilloire":"bouilloire",
+			"bouilloire":"Bouilloire",
 			"cafetiere":"Cafétière",
 			"theiere":"Théière",
 			"cafetiere_italienne":"Cafetiere italienne"
@@ -42,12 +42,12 @@ const categorie_10_5 = {
 			"saladier": "Saladier",
 			"coupelle": "Coupelle",
 			"aperitif": "Apéritif",
-			"presentation": "Présentation",
+			"plat_presentation": "Présentation",
 			"dessous_de_plat":"Dessous de plat"
 		}
 	},
 	"couvert":{
-		"name": "couvert",
+		"name": "Couvert",
 		"compose":{
 			"range_couverts":"Range couverts",
 			"menagere": "Ménagère",

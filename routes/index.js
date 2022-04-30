@@ -41,6 +41,12 @@ router.get('/', function(req, res, next) {
   res.render('home', { title: 'Home' ,  styles: styles, Data: req.data});
 });
 
+router.get('/goodbye',function(req,res,next){
+  const styles = ['home.css'];
+  req.session.chart = ["dzdaz"];
+  res.render('goodbye', { title: 'Goodbye' , styles: styles, Data: req.data});
+});
+
 router.get('/produit/:categorie/:id',function (req,res,next){
   req.session.pageVisited++
   const styles = ['product.css'];

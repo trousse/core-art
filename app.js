@@ -1,6 +1,7 @@
 const Categories10 = require('./data/categories_10_5.js');
 const Categories3 = require("./data/categories_3_5.js");
-const chart_model = require('./model/chart_model');
+const Watcher = require('./model/watcher');
+
 twig = require('twig');
 
 const categories10 = Categories10;
@@ -12,7 +13,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
+var FileStore = require('session-file-store')(session);
 const bodyParser = require("body-parser");
+const watcher = new Watcher();
+
 
 var indexRouter = require('./routes/index');
 var chartRouter = require('./routes/chart');
@@ -26,11 +30,16 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'twig');
 app.set('trust proxy', 1) // trust first proxy
 
+var fileStoreOptions = {};
+var SessionStore = new FileStore(fileStoreOptions);
+const maxSessionAge = 1000*60*60;
+
 app.use(session({
-  secret: 'keyboard cat',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: false, maxAge:1000*60*60 }
+    store: SessionStore,
+    secret: 'keyboard cat',
+    resave: true,
+    saveUninitialized: true,
+    cookie: { secure: false, sameSite: false, maxAge: maxSessionAge }
 }))
 
 app.use(logger('dev'));
@@ -49,7 +58,7 @@ app.use(function (req,res,next){
   } else{ */
     //recupere data
     //let number = Math.trunc(Math.random() * 8 - 0.01);
-    let Menu = { horizontal: true, highNbMenu: true, submenu: false};
+    let Menu = { horizontal: true, highNbMenu: true, submenu: true};
     let number = (Menu.horizontal ? 1 : 0) + (Menu.highNbMenu ? 2 : 0) + (Menu.submenu ? 4 : 0);
     let config = {
         url:"http://localhost:3000"
@@ -62,6 +71,13 @@ app.use(function (req,res,next){
         req.session.clickMenu = 0;
         req.session.pageVisited = 0;
         req.session.ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+        setTimeout(()=>{
+            console.log("sessiosn")
+            SessionStore.get(req.session.id,(error,session)=>{
+                if(error)console.log(error);
+                else watcher.writeCSV(req,session);
+            });
+        },maxSessionAge);
     }
 
    /* console.log(number);

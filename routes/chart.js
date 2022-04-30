@@ -7,7 +7,10 @@ router.post('/', function (req,res,next){
     const product_categorie = req.body.categorie;
     const chart_model = new Chart_model(req);
     const product = chart_model.postChart(product_id, product_categorie);
-    res.send(product);
+    req.session.save((error)=> {
+        if(error)console.log(error);
+        res.send(product);
+    });
 });
 
 router.get('/', function (req,res,next){
@@ -20,7 +23,10 @@ router.post('/plus', function (req,res,next){
     const categorie = req.body.categorie;
     const chart_model = new Chart_model(req);
     chart_model.PlusChart(id, categorie);
-    res.send(true);
+    req.session.save((error)=> {
+        if(error)console.log(error);
+         res.send(true);
+    });
 });
 
 router.post('/minus', function (req,res,next){
@@ -28,7 +34,10 @@ router.post('/minus', function (req,res,next){
     const categorie = req.body.categorie;
     const chart_model = new Chart_model(req);
     chart_model.MoinChart(id, categorie);
-    res.send(true);
+    req.session.save((error)=> {
+        if(error)console.log(error);
+        res.send(true);
+    });
 });
 
 router.post('/delete', function (req,res,next){
@@ -36,7 +45,10 @@ router.post('/delete', function (req,res,next){
     const categorie = req.body.categorie;
     const chart_model = new Chart_model(req);
     chart_model.DeleteChart(id, categorie);
-    res.send(true);
+    req.session.save((error)=> {
+        if(error)console.log(error);
+        res.send(true);
+    });
 });
 
 

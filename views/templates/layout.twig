@@ -19,14 +19,17 @@
     <link rel='stylesheet' href='/javascripts/@fortawesome/fontawesome-free/css/all.css' />
   </head>
   <body>
+  {% block Menu %}
     {% if Data.Menu.horizontal %}
       {% include '../Menus/Menu_horizontal.twig' %}
     {% else %}
       {% include '../Menus/Menu_vertical.twig' %}
     {% endif %}
+  {% endblock %}
     <div class="content">
       {% block body %}{% endblock %}
     </div>
+  {% block Footer %}
   <div id="footer">
     <div id="footer-container" class="container">
       <a href="{{ Data.config.url }}/mention_legal" class="clickable">Mentions légales</a>
@@ -35,8 +38,9 @@
       <span><i class="fas fa-solid fa-circle"></i></span>
       <a href="{{ Data.config.url }}/contact" class="clickable">Nous contacter</a>
       <span><i class="fas fa-solid fa-circle"></i></span>
-      <a href="{{ Data.config.url }}/condition_general" class="clickable">Condition d'utilisation</a>
+      <a href="{{ Data.config.url }}/condition_general" class="clickable">Conditions d'utilisation</a>
     </div>
   </div>
+  {% endblock %}
   </body>
 </html>
