@@ -28,11 +28,15 @@
       {% block body %}{% endblock %}
     </div>
   <div id="footer">
-    <a href="{{ Data.config.url }}/mention_legal" class="clickable">Mentions légal</a>
-    <span><i class="fas fa-solid fa-circle"></i></span>
-    <a href="{{ Data.config.url }}/contact" class="clickable">Qui sommes nous</a>
-    <span><i class="fas fa-solid fa-circle"></i></span>
-    <a href="{{ Data.config.url }}/condition_general" class="clickable">Condition d'utilisation</a>
+    <div id="footer-container" class="container">
+      <a href="{{ Data.config.url }}/mention_legal" class="clickable">Mentions légales</a>
+      <span><i class="fas fa-solid fa-circle"></i></span>
+      <a href="{{ Data.config.url }}/presentation" class="clickable">Qui sommes nous</a>
+      <span><i class="fas fa-solid fa-circle"></i></span>
+      <a href="{{ Data.config.url }}/contact" class="clickable">Nous contacter</a>
+      <span><i class="fas fa-solid fa-circle"></i></span>
+      <a href="{{ Data.config.url }}/condition_general" class="clickable">Condition d'utilisation</a>
+    </div>
   </div>
   </body>
 </html>

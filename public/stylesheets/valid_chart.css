@@ -55,8 +55,9 @@ p{
     height: 45px;
 }
 
-.total_e:last-child{
-    border-bottom: 2px solid #ffb74d;
+#total{
+    border-top: 2px solid #ffb74d;
+    padding-top: 5px;
 }
 
 .total_nb{

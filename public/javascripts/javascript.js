@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 shopping_nb.classList.add("bullInfo");
                 shopping_nb.innerHTML = current_chart.length;
                 current_chart.forEach((product)=>{
-                    addChart(product.product.categorie, product.product.id, product.product.prix, product.product.titre, product.product.photo, product.nb);
+                    addChart(product.product.categorie, product.product.id, product.product.prix, product.product.titre, "/images/products/" + product.product.categorie+ "_" + product.product.id + ".jpg", product.nb);
                 });
                 if(!valid_button){
                     valid_button = document.createElement("a");
