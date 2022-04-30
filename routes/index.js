@@ -13,7 +13,13 @@ var modelHelper = new ModelHelper();
 router.get('/contact',function(req,res,next){
   req.session.pageVisited++
   const styles = ['footer_page.css','contact.css'];
-  res.render('contact', { title: 'Contact' ,  styles: styles, Data: req.data});
+  res.render('presentation', { title: 'Contact' ,  styles: styles, Data: req.data});
+});
+
+router.get('/presentation',function (req,res,next){
+  req.session.pageVisited++
+  const styles = ['footer_page.css'];
+  res.render('contact', { title: 'Presentation',  styles: styles, Data: req.data});
 });
 
 router.get('/mention_legal',function(req,res,next){
