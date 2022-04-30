@@ -3,11 +3,11 @@
     <div id= "sub_nav" class="is-flex">
         <div id="categories_nav" class="{% if not Data.Menu.highNbMenu %} is-justify-content-flex-start {% endif %}">
             {% for slug, categorie in Data.MenuData %}
-            {% if not Data.Menu.submenu %}<a class=" clickable menu_clickable categorie_link" href="{{ Data.config.url }}/categorie/{{ slug }}">{% endif %}
+            {% if not Data.Menu.submenu %}<a class="{% if Data.Menu.highNbMenu %} is-fullheight {% endif %} clickable flex_center menu_clickable categorie_link " href="{{ Data.config.url }}/categorie/{{ slug }}">{% endif %}
                 <div class="nav_item flex_center clickable menu_clickable  {% if Data.Menu.submenu %} nav_item_clickable {% endif %} {% if not Data.Menu.highNbMenu %} is-flex-grow-0 {% else %} p-0 {% endif %}">
                     <div class="columns">
                         <div class="column is-one-fifth"></div>
-                        <div class="column is-three-fifth"><p class="{% if Data.Menu.submenu %}pt-1{% endif %} has-text-centered">{{ categorie.name }}</p></div>
+                        <div class="column is-three-fifth"><p class="pt-1 has-text-centered">{{ categorie.name }}</p></div>
                         <div class="column is-one-fifth has-text-centered">{% if Data.Menu.submenu %}<i class="fas fa-angle-right"></i>{% endif %}</div>
                     </div>
                     {% if Data.Menu.submenu %}

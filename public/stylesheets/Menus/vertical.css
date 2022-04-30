@@ -1,4 +1,4 @@
-.content{
+    .content{
     padding-top: 9.5vh;
 }
 
@@ -19,6 +19,7 @@
     position: fixed;
     left: -375px;
     height: 90.5vh;
+    overflow: scroll;
     transition: all 0.3s ease;
 }
 
@@ -37,7 +38,8 @@
 
 #categories_nav{
     width: 375px;;
-    height: 100%;
+    height: 90vh;
+    overflow: scroll;
     justify-content: space-evenly;
     flex-direction: column;
     background-color: #6d4c41;
@@ -50,8 +52,8 @@
     color: white;
     font-weight: bold;
     font-size: 18px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     flex-grow: 1;
     border-bottom: 1px solid #5d4037;
     transition: background-color 1s ease, color 1s ease , width 0.3s ease;
@@ -64,10 +66,21 @@
     background-color: #ffb74d;
 }
 
+.is-fullheight{
+    height: 100%;
+}
+
 .nav_item > .columns, .nav_item_clickable > .columns{
     width: 100%;
     margin-top: 0;
 }
+
+ .categorie_link{
+    width: 100%;
+}
+    .categorie_link > .nav_item {
+        height: 100%;
+    }
 .nav_item > .columns:not(:last-child), .nav_item_clickable > .columns:not(:last-child){
     margin-bottom: 0;
 }
@@ -95,6 +108,7 @@
 .nav_item_clickable > div:nth-child(1) > div:nth-child(3) > :nth-child(1){
     transition: color 1s ease;
 }
+
 
 .nav_item_clickable.active > div:nth-child(1) > div:nth-child(3) > :nth-child(1){
     color: #ffb74d;
