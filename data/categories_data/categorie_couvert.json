@@ -1,8 +1,8 @@
 [
   {
     "photo": "https://lebonemballage.com/218-large_default/kit-couverts-transparent.jpg",
-    "prix": "",
-    "titre": "Kit couverts transparents",
+    "prix": "9.99",
+    "titre": "Kit couverts transparents - Lot de 100",
     "caracteristiques": {
       "Matière": "Plastique PS",
       "Formes":"Couverts 2/1 (couteau, fourchette), 3/1 (couteau, fourchette, serviette), 4/1(couteau, fourchette, cuillère, serviette), 6/1 (couteau, fourchette, cuillère, serviette, sachet de poivre, sachet de sel)",
@@ -15,8 +15,8 @@
   },
     {
     "photo": "https://lebonemballage.com/1825-large_default/kit-couverts.jpg",
-    "prix": "Kit Couverts bois 4 en 1",
-    "titre": "Kit couverts transparents",
+    "prix": "15.99",
+    "titre": "Kit Couverts bois 4 en 1 - Lot de 100",
     "caracteristiques": {
       "Matière": "Bois de bouleau",
       "Formes":"Cuillère à soupe, Fourchette, Couteau, Serviette",
