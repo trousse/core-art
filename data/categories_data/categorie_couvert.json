@@ -10,7 +10,7 @@
       "Utilisations":"Aliments chauds et froids",
       "Information":"Agréé contact alimentaire"
     },
-    "categorie": "couverts",
+    "categorie": "couvert",
     "id": 0
   },
     {
@@ -24,7 +24,7 @@
       "Utilisations":"Plats chauds et froids",
       "Information":"Écologique, agréé contact alimentaire"
     },
-    "categorie": "couverts",
+    "categorie": "couvert",
     "id": 1
   },
     {
@@ -38,7 +38,7 @@
       "Utilisations":"Plats chauds et froids",
       "Information":"Écologique, agréé contact alimentaire"
     },
-    "categorie": "couverts",
+    "categorie": "couvert",
     "id": 2
   },
     {
@@ -51,7 +51,7 @@
       "Atouts":"Couverts en bois très robustes qui ne changent pas le goût des aliments",
       "Utilisations":"Idéal pour la vente à emporter, le kit couvert en bois 3 en 1 contient une cuillère, des baguettes et une serviette"
     },
-    "categorie": "couverts",
+    "categorie": "couvert",
     "id": 3
   },
     {
@@ -65,7 +65,7 @@
       "Utilisations":"Tout type de plat",
       "Information":"Écologique, agréé contact alimentaire"
     },
-    "categorie": "couverts",
+    "categorie": "couvert",
     "id": 4
   },
 ]
