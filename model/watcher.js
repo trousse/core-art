@@ -13,13 +13,15 @@ Watcher.prototype.writeCSV = function (req,session){
             const ip = session.ip;
             const version = session.MenuNumber;
             const horodateur = new Date(session.connectDateTime).toString();
-            const timePass = new Date(Date.now() - session.connectDateTime);
-            const timePassString = timePass.getHours()-1 + ':' +timePass.getMinutes() + ':' + timePass.getSeconds();
+            const timePass = session.allPing ? (session.allPing.reduce((prev,current)=>{return prev + current})) : 0;
+            const pageAverageTime = session.allPing ? (timePass / session.allPing.length) : 0;
+            const catalogueAverageTime = session.catalogueNav ? (session.catalogueNav.reduce((prev,current)=>{return prev + current}) / session.catalogueNav.length) : 0;
+            const productAverageTime = session.productNav ? (session.productNav.reduce((prev,current)=>{return prev + current}) / session.productNav.length) : 0;
             const nbClick = session.click;
             const nbPageVisited = session.pageVisited;
             const nbMenu = session.clickMenu;
 
-            let buffer = new Buffer.from(version + ";" + horodateur + ";" + timePassString + ";" + nbClick + ";" + nbPageVisited + ";" +nbMenu + ";"+ nbChart + ";" + totalPrice + "€;" + ip + "\n");
+            let buffer = new Buffer.from(version + ";" + horodateur + ";" + timePass + ";" + nbClick + ";" + nbPageVisited + ";" +nbMenu + ";"+ nbChart + ";" + totalPrice + "€;" + pageAverageTime + ";" + catalogueAverageTime + ";" + productAverageTime +";" + ip + "\n");
             fs.write(fd, buffer, 0, buffer.length,
                 null, function(err,writtenbytes) {
                     if(err) {
