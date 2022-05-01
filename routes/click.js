@@ -4,13 +4,27 @@ const Chart_model = require("../model/chart_model");
 var router = express.Router();
 
 router.post('/click', function (req,res,next){
-    req.session.click++;
-    res.send(true);
+    setTimeout(()=>{
+        req.session.reload(function(err) {
+            req.session.click++;
+            console.log(req.session.click)
+            req.session.save(()=>{
+                res.send(true);
+            });
+        })
+    },134);
 });
 
 router.post('/clickMenu', function (req,res,next){
-    req.session.clickMenu++;
-    res.send(true);
+    setTimeout(()=>{
+        req.session.reload(function(err) {
+            req.session.clickMenu++;
+            console.log(req.session.clickMenu)
+            req.session.save(()=>{
+                res.send(true);
+            });
+        })
+    },52)
 });
 
 /*router.post("/valid",function(req,res,next){

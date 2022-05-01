@@ -19,7 +19,7 @@ router.get('/contact',function(req,res,next){
 router.get('/presentation',function (req,res,next){
   req.session.pageVisited++
   const styles = ['footer_page.css'];
-  res.render('contact', { title: 'Presentation',  styles: styles, Data: req.data});
+  res.render('contact', { title: 'Presentation', styles: styles, Data: req.data});
 });
 
 router.get('/mention_legal',function(req,res,next){
@@ -50,6 +50,7 @@ router.get('/goodbye',function(req,res,next){
 router.get('/produit/:categorie/:id',function (req,res,next){
   req.session.pageVisited++
   const styles = ['product.css'];
+  req.data.scripts.push('product.js');
   try{
     const model = new ModelHelper();
     const product = model.getProductData(req.params.categorie, req.params.id);
@@ -70,6 +71,7 @@ router.get('/valid_chart',function (req, res, next){
 router.get('/categorie/:categorie',function(req, res, next) {
   req.session.pageVisited++
   const styles = ["list_product.css"];
+  req.data.scripts.push('catalogue.js');
   const page = req.query.page || 1;
   const sendData = (req,res,data,categorie) => {
     req.session.arrayData = data;
@@ -77,12 +79,14 @@ router.get('/categorie/:categorie',function(req, res, next) {
     req.data.page = page;
     req.data.categorieSlug = req.params.categorie;
     try{
-      res.render('list_products', { title: 'List product', styles: styles, Data: req.data, categorie: data.slice((page-1)*39,page*39), categorieName: categorie.name});
+      req.session.save((error)=>{
+        if(error)console.log(error)
+        res.render('list_products', { title: 'List product', styles: styles, Data: req.data, categorie: data.slice((page-1)*39,page*39), categorieName: categorie.name});
+      })
     }catch(e){
       console.log(e);
     }
   }
-
 
   var categorie_model = {};
 

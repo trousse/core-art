@@ -11,7 +11,11 @@
     {% if styles %}  {% for style in styles %}
       <link rel='stylesheet' href='/stylesheets/{{style}}' />
     {% endfor %} {% endif %}
-      <script src="/javascripts/javascript.js"></script>
+    {% if Data.scripts %}  {% for js in Data.scripts %}
+      <script type = "module" src="/javascripts/{{js}}"></script>
+    {% endfor %} {% endif %}
+    <script src="/javascripts/javascript.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script defer src="/javascripts/@fortawesome/fontawesome-free/js/all.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
