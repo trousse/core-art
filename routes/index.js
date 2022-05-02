@@ -43,7 +43,6 @@ router.get('/', function(req, res, next) {
 
 router.get('/goodbye',function(req,res,next){
   const styles = ['home.css'];
-  req.session.chart = ["dzdaz"];
   res.render('goodbye', { title: 'Goodbye' , styles: styles, Data: req.data});
 });
 
@@ -70,6 +69,8 @@ router.get('/valid_chart',function (req, res, next){
 
 router.get('/categorie/:categorie',function(req, res, next) {
   req.session.pageVisited++
+  req.session.clickMenu++;
+  console.log(req.session.clickMenu);
   const styles = ["list_product.css"];
   req.data.scripts.push('catalogue.js');
   const page = req.query.page || 1;

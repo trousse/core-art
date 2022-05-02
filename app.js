@@ -27,6 +27,7 @@ var indexRouter = require('./routes/index');
 var chartRouter = require('./routes/chart');
 var dataRouter = require('./routes/data');
 var clickRouter = require('./routes/click');
+const {integer} = require("sharp/lib/is");
 
 var app = express();
 var port = normalizePort('3000');
@@ -60,6 +61,7 @@ io.use(wrap(sessionMiddleware));
 io.on("connection", (socket) => {
     var count = -1
     let isConnect = true
+    const allAttr = ['catalogueNav','allPing','productNav'];
     socket.emit('ping');
     socket.on('pong',(attr)=>{
         isConnect = true;
@@ -71,6 +73,7 @@ io.on("connection", (socket) => {
         setTimeout(() => {
             if(!isConnect){
                 socket.request.session.reload(()=>{
+                    console.log(1098 + 200 * allAttr.indexOf(attr));
                     let array = socket.request.session[attr] || [];
                     array.push(count);
                     socket.request.session[attr] = array;
@@ -79,7 +82,7 @@ io.on("connection", (socket) => {
                     })
                 })
             }
-        },1098);
+        },1098 + 200 * allAttr.indexOf(attr));
     })
 });
 
