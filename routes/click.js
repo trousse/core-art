@@ -12,19 +12,7 @@ router.post('/click', function (req,res,next){
                 res.send(true);
             });
         })
-    },134);
-});
-
-router.post('/clickMenu', function (req,res,next){
-    setTimeout(()=>{
-        req.session.reload(function(err) {
-            req.session.clickMenu++;
-            console.log(req.session.clickMenu)
-            req.session.save(()=>{
-                res.send(true);
-            });
-        })
-    },52)
+    },254);
 });
 
 /*router.post("/valid",function(req,res,next){

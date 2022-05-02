@@ -244,11 +244,6 @@ fetch("http://localhost:3000/chart")
         fetch("http://localhost:3000/click/click", myInit);
     }
 
-    function clickMenuClickable(){
-        var myInit = { method: 'POST', body: "", headers: { 'content-type': 'application/json' } };
-        fetch("http://localhost:3000/click/clickMenu", myInit);
-    }
-
     let current_clicked = null;
 
     const toggleCategoriesMenu = function (){
@@ -298,11 +293,9 @@ fetch("http://localhost:3000/chart")
             if (target === sub_nav || target === burger_menu) toggle_subnav = true;
             if (target === chart_container || target === chart || (target.classList && target.classList.contains("add")) || (target.classList && target.classList.contains("chart_actif"))) toggle_chart_container = true;
             if(target.classList && target.classList.contains("clickable")) clickable = true;
-            if(target.classList && target.classList.contains("menu_clickable")) menu_clickable = true;
             target = target.parentNode;
         } while (target)
         if (clickable) clickClickable();
-        if (menu_clickable) clickMenuClickable();
         if (!toggle_subnav) toggleCategoriesMenu();
         if (!toggle_chart_container) toggleChartMenu();
     });
