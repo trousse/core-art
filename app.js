@@ -101,7 +101,7 @@ app.use(function (req,res,next){
     res.redirect('/auth');
   } else{ */
     //recupere data//let number = Math.trunc(Math.random() * 8 - 0.01);
-    let Menu = { horizontal: true, highNbMenu: true, submenu: true};
+    let Menu = { horizontal: true, highNbMenu: false, submenu: true};
     let number = (Menu.horizontal ? 1 : 0) + (Menu.highNbMenu ? 2 : 0) + (Menu.submenu ? 4 : 0);
     let config = {
         url:"http://localhost:3000"
