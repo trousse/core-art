@@ -1,18 +1,21 @@
 var express = require('express');
-const fs = require("file-system");
-const Chart_model = require("../model/chart_model");
 var router = express.Router();
 
-router.post('/click', function (req,res,next){
-    setTimeout(()=>{
-        req.session.reload(function(err) {
-            req.session.click++;
-            console.log(req.session.click)
-            req.session.save(()=>{
-                res.send(true);
-            });
-        })
-    },254);
+router.post('/click', function (req, res, next){
+    try{
+        res.send(true);
+        setTimeout(() => {
+            req.session.reload(function (err){
+                req.session.click++;
+                console.log(req.session.click)
+                req.session.save(() => {
+                    res.send(true);
+                });
+            })
+        }, 254);
+    } catch (e){
+        console.log(e)
+    }
 });
 
 /*router.post("/valid",function(req,res,next){

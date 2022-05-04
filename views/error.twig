@@ -1,7 +1,21 @@
 {% extends 'templates/layout.twig' %}
 
+
+{% block Menu %}
+{% endblock %}
+
 {% block body %}
-  <h1>{{message}}</h1>
-  <h2>{{error.status}}</h2>
-  <pre>{{error.stack}}</pre>
+  <div id="home_illustration">
+    <div id="overlay">
+      <article id="welcome">
+        <h1>{{message}}</h1>
+        <h1>{{error.status}}</h1>
+      </article>
+    </div>
+  </div>
+{% endblock %}
+
+{% block Footer %}
+  <div id="footer">
+  </div>
 {% endblock %}
