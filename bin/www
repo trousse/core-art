@@ -7,7 +7,9 @@
 var app = require('../app');
 var debug = require('debug')('table-art-online-shop:server');
 var http = require('http');
+var ServerIO = require('socket.io');
 
+var io = new ServerIO.Server(http);
 
 /**
  * Get port from environment and store in Express.

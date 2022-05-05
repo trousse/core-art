@@ -24,7 +24,7 @@ Model_helper.prototype.pagination_get_interval = function (page, nbResult, nb_pr
     const add = page <= nb_pagination_number_around ? nb_pagination_number_around - page : -1;
 
     for(let i = page + add - remove; i <= page + nbPaginationNumber + add - remove; i++){
-        result.push(i+1)
+        result.push(i)
     }
     return result;
 }
