@@ -7,48 +7,77 @@ function Chart_model(req){
 }
 
 Chart_model.prototype.getChart = function (){
-    return this.req.session.chart || [];
+    return new Promise((resolve) => {
+            resolve(this.req.session.chart || []);
+    })
 }
 
-Chart_model.prototype.postChart = function (id, categorie){
-    let chart = this.getChart();
-    const newProduct = {
-        nb: 1,
-        product: modelHelper.getProductData(categorie, id)
-    };
-    chart.push(newProduct);
-    this.req.session.chart = chart;
-    return JSON.stringify(newProduct);
-
-}
-
-Chart_model.prototype.PlusChart = function (id, categorie){
-    let charts = this.getChart();
-    let index = charts.findIndex((chart)=>{
-        return (chart.product.id == id && chart.product.categorie === categorie);
+Chart_model.prototype.postChart = async function (id, categorie){
+    let chart = await this.getChart();
+    return new Promise((resolve) => {
+        const newProduct = {
+            nb: 1,
+            product: modelHelper.getProductData(categorie, id)
+        };
+        chart.push(newProduct);
+        this.req.session.reload(() => {
+            this.req.session.chart = chart;
+            this.req.session.save(() => {
+                resolve(JSON.stringify(newProduct));
+            });
+        });
     });
-    this.req.session.chart[index].nb++;
 }
 
-Chart_model.prototype.MoinChart = function (id, categorie){
-    let charts = this.getChart();
-    let index = charts.findIndex((chart)=>{
-        return (chart.product.id == id && chart.product.categorie === categorie);
+Chart_model.prototype.PlusChart = async function (id, categorie){
+    let charts = await this.getChart();
+    return new Promise((resolve) => {
+        let index = charts.findIndex((chart) => {
+            return (chart.product.id == id && chart.product.categorie === categorie);
+        });
+        this.req.session.reload(() => {
+             this.req.session.chart[index].nb++;
+            this.req.session.save(() => {
+                resolve();
+            })
+        })
     });
-    if(this.req.session.chart[index].nb > 1) this.req.session.chart[index].nb--;
 }
 
-Chart_model.prototype.DeleteChart = function (id, categorie){
-    let charts = this.getChart();
-    this.req.session.chart = charts.filter((chart)=>{
-        return !(chart.product.id == id && chart.product.categorie === categorie);
+Chart_model.prototype.MoinChart = async function (id, categorie){
+    let charts = await this.getChart();
+    return new Promise((resolve) => {
+        let index = charts.findIndex((chart) => {
+            return (chart.product.id == id && chart.product.categorie === categorie);
+        });
+        this.req.session.reload(() => {
+        if (this.req.session.chart[index].nb > 1) this.req.session.chart[index].nb--;
+            this.req.session.save(() => {
+                resolve();
+            })
+        })
     });
-   return true;
 }
 
-Chart_model.prototype.getTotal = function (){
-    let charts = this.getChart();
-    return charts.total || 0;
+Chart_model.prototype.DeleteChart = async function (id, categorie){
+    let charts = await this.getChart();
+    return new Promise((resolve) => {
+        this.req.session.reload(() => {
+        this.req.session.chart = charts.filter((chart) => {
+            return (!(chart.product.id == id && chart.product.categorie === categorie));
+        });
+            this.req.session.save(() => {
+                resolve(true);
+            })
+        })
+    });
+}
+
+Chart_model.prototype.getTotal = async function (){
+    let charts = await this.getChart();
+    return new Promise((resolve) => {
+        resolve(charts.total || 0);
+    });
 }
 
 module.exports = Chart_model;

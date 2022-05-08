@@ -43,7 +43,7 @@ app.set('trust proxy', 1) // trust first proxy
 
 var fileStoreOptions = {};
 var SessionStore = new FileStore(fileStoreOptions);
-const maxSessionAge = 1000 * 60 * 60;
+const maxSessionAge = 1000 * 60 * 30;
 const sessionMiddleware = session({
     store: SessionStore,
     secret: 'keyboard cat',
@@ -59,28 +59,30 @@ const wrap = middleware => (socket, next) => middleware(socket.request, {}, next
 io.use(wrap(sessionMiddleware));
 
 io.on("connection", (socket) => {
-    var count = -1
-    let isConnect = true
+    var count = -0.5
+    var attr = 'allPing'
     const allAttr = ['catalogueNav', 'allPing', 'productNav'];
     socket.emit('ping');
-    socket.on('pong', (attr) => {
-        isConnect = true;
-        count++
+    socket.on("disconnect",()=>{
+        socket.request.session.reload(() => {
+            if(attr !== "allPing"){
+                let array = socket.request.session[attr] || [];
+                array.push(count);
+                socket.request.session[attr] = array;
+            }
+            let allPingArray = socket.request.session['allPing'] || [];
+            allPingArray.push(count);
+            socket.request.session['allPing'] = allPingArray;
+            socket.request.session.save(() => {
+            })
+        })
+    })
+    socket.on('pong', (attribut) => {
+        attr = attribut;
+        if(count < 60) count++;
         setTimeout(() => {
-            isConnect = false;
             socket.emit('ping')
         }, 1000)
-        setTimeout(() => {
-            if (!isConnect){
-                socket.request.session.reload(() => {
-                    let array = socket.request.session[attr] || [];
-                    array.push(count);
-                    socket.request.session[attr] = array;
-                    socket.request.session.save(() => {
-                    })
-                })
-            }
-        }, 1098 + 200 * allAttr.indexOf(attr));
     })
 });
 
@@ -112,7 +114,6 @@ app.use(function (req, res, next){
     } else{
         try{
             let number = req.session.MenuNumber
-            console.log(req.session.MenuNumber);
             if (!req.session.connectDateTime){
                 req.session.connectDateTime = Date.now();
                 req.session.click = 0;
@@ -120,10 +121,10 @@ app.use(function (req, res, next){
                 req.session.pageVisited = 0;
                 req.session.ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
                 setTimeout(() => {
-                    SessionStore.get(req.session.id, (error, session) => {
-                        if (error) console.log(error);
-                        else watcher.writeCSV(req, session);
-                    });
+                        SessionStore.get(req.session.id, (error, session) => {
+                            if (error) console.log(error);
+                            else watcher.writeCSV(req, session);
+                        });
                 }, maxSessionAge);
             }
 
@@ -140,7 +141,7 @@ app.use(function (req, res, next){
 
             req.data = {
                 Menu: Menu,
-                scripts: ['allping.js'],
+                scripts: [],
                 MenuData: Menu.highNbMenu ? categories10 : categories3,
                 config: config,
                 chart: req.session.chart || []

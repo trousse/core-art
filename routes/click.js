@@ -3,16 +3,14 @@ var router = express.Router();
 
 router.post('/click', function (req, res, next){
     try{
-        res.send(true);
         setTimeout(() => {
             req.session.reload(function (err){
                 req.session.click++;
-                console.log(req.session.click)
                 req.session.save(() => {
                     res.send(true);
                 });
             })
-        }, 254);
+        }, 354);
     } catch (e){
         console.log(e)
     }

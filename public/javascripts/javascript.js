@@ -119,12 +119,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if(product){
                 product.nb++;
                 setTimeout(() => refreshChart(), 100);
+                const body = {
+                    id: product.product.id,
+                    categorie: product.product.categorie
+                };
+                let myInit = {
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                    headers: { 'content-type': 'application/json' }
+                };
+
+               fetch("http://localhost:3000/chart/plus", myInit);
             }else{
                 const body = {
                     id: add.dataset.id,
                     categorie: add.dataset.categorie
                 };
-                var myInit = {
+                let myInit = {
                     method: 'POST',
                     body: JSON.stringify(body),
                     headers: { 'content-type': 'application/json' }
@@ -240,7 +251,7 @@ fetch("http://localhost:3000/chart")
     });
 
     function clickClickable(isMenu = false){
-        var myInit = { method: 'POST', body: {}, headers: { 'content-type': 'application/json' } };
+        var myInit = { method: 'POST', body: JSON.stringify({isMenu: isMenu}), headers: { 'content-type': 'application/json' } };
         fetch("http://localhost:3000/click/click", myInit);
     }
 
