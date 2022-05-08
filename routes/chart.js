@@ -7,10 +7,12 @@ router.post('/', function (req, res, next){
         const product_id = req.body.id;
         const product_categorie = req.body.categorie;
         const chart_model = new Chart_model(req);
-        const product = chart_model.postChart(product_id, product_categorie);
-        req.session.save((error) => {
-            if (error) console.log(error);
-            res.send(product);
+        req.session.reload(async function (err){
+            const product = await chart_model.postChart(product_id, product_categorie);
+            req.session.save((error) => {
+                if (error) console.log(error);
+                res.send(product);
+            });
         });
     } catch (e){
         console.log(e)
@@ -19,8 +21,10 @@ router.post('/', function (req, res, next){
 
 router.get('/', function (req, res, next){
     try{
-        const chart_model = new Chart_model(req);
-        res.send(chart_model.getChart());
+        req.session.reload(async function (err){
+            const chart_model = new Chart_model(req);
+            res.send(await chart_model.getChart());
+        });
     } catch (e){
         console.log(e)
     }
@@ -31,10 +35,12 @@ router.post('/plus', function (req, res, next){
         const id = req.body.id;
         const categorie = req.body.categorie;
         const chart_model = new Chart_model(req);
-        chart_model.PlusChart(id, categorie);
-        req.session.save((error) => {
-            if (error) console.log(error);
-            res.send(true);
+        req.session.reload(async function (err){
+            await chart_model.PlusChart(id, categorie);
+            req.session.save((error) => {
+                if (error) console.log(error);
+                res.send(true);
+            });
         });
     } catch (e){
         console.log(e)
@@ -46,10 +52,12 @@ router.post('/minus', function (req, res, next){
         const id = req.body.id;
         const categorie = req.body.categorie;
         const chart_model = new Chart_model(req);
-        chart_model.MoinChart(id, categorie);
-        req.session.save((error) => {
-            if (error) console.log(error);
-            res.send(true);
+        req.session.reload(async function (err){
+            await chart_model.MoinChart(id, categorie);
+            req.session.save((error) => {
+                if (error) console.log(error);
+                res.send(true);
+            });
         });
     } catch (e){
         console.log(e)
@@ -61,10 +69,12 @@ router.post('/delete', function (req, res, next){
         const id = req.body.id;
         const categorie = req.body.categorie;
         const chart_model = new Chart_model(req);
-        chart_model.DeleteChart(id, categorie);
-        req.session.save((error) => {
-            if (error) console.log(error);
-            res.send(true);
+        req.session.reload(async function (err){
+            await chart_model.DeleteChart(id, categorie);
+            req.session.save((error) => {
+                if (error) console.log(error);
+                res.send(true);
+            });
         });
     } catch (e){
         console.log(e)

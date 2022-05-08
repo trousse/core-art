@@ -37,3 +37,19 @@
 h1{
     color: antiquewhite !important;
 }
+
+#return_button{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#return_button > a{
+    padding: 10px 30px;
+    border: #ffb74d;
+    background-color: #6d4c41;
+    color: #ffb74d;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
