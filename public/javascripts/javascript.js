@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let chart_item = document.createElement("div");
             chart_item.classList.add("chart_item");
             chart_item.innerHTML = "<div class=\"chart_cross chart_actif clickable\"><i class=\"fas fa-times\"></i></div>" +
-                "                 <div class=\"columns image_chart\">\n" +
+                "                 <div class=\"columns is-mobile image_chart\">\n" +
                 "                <div class=\"flex_center column  is-one-fifth\">\n" +
                 "                    <img src=\"" + image + "\" alt=\"product\">\n" +
                 "                </div>\n" +
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(total_chart){
             let totalChartElem = document.createElement("div");
             totalChartElem.classList.add("total_chart_item");
-            totalChartElem.innerHTML = "<div class=\"columns clickable total_e\">" +
+            totalChartElem.innerHTML = "<div class=\"columns is-mobile clickable total_e\">" +
                     "<div class='total_name column is-three-quarters'>" +
                         titre + " X" + nb+
                     "</div>"+
