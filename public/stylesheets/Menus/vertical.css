@@ -17,7 +17,7 @@
 #sub_nav{
     background-color: #6d4c41;
     position: fixed;
-    left: -375px;
+    left: -400px;
     height: 90.5vh;
     overflow: scroll;
     transition: all 0.3s ease;
@@ -37,7 +37,7 @@
 }
 
 #categories_nav{
-    width: 375px;;
+    width: 375px;
     height: 90vh;
     overflow: scroll;
     justify-content: space-evenly;
