@@ -7,6 +7,7 @@ var Categorie_model_3_1 = require("../model/categori_model_3_1");
 const {forEach} = require("async");
 var ModelHelper = require("../helper/model_helper");
 var Chart_model = require('../model/chart_model');
+var atob = require('atob');
 
 var modelHelper = new ModelHelper();
 

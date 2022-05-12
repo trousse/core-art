@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify(body),
             headers: { 'content-type': 'application/json' }
         };
-        fetch("http://localhost:3000/chart/delete", myInit);
+        fetch("http://146.59.151.125:3000/chart/delete", myInit);
         current_chart = current_chart.filter((chart)=>{
             return !(chart.product.id == id && chart.product.categorie === categorie);
         });
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'content-type': 'application/json' }
                 };
 
-               fetch("http://localhost:3000/chart/plus", myInit);
+               fetch("http://146.59.151.125:3000/chart/plus", myInit);
             }else{
                 const body = {
                     id: add.dataset.id,
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify(body),
                     headers: { 'content-type': 'application/json' }
                 };
-                fetch("http://localhost:3000/chart", myInit)
+                fetch("http://146.59.151.125:3000/chart", myInit)
                     .then(response => response.json())
                     .then((product) => {
                         current_chart.push(product);
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'content-type': 'application/json' }
                 };
 
-                fetch("http://localhost:3000/chart/plus", myInit);
+                fetch("http://146.59.151.125:3000/chart/plus", myInit);
 
                 const categorie = chartElem.dataset.categorie;
                 const id = chartElem.dataset.id;
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'content-type': 'application/json' }
                 };
 
-                fetch("http://localhost:3000/chart/minus", myInit);
+                fetch("http://146.59.151.125:3000/chart/minus", myInit);
 
                 const categorie = chartElem.dataset.categorie;
                 const id = chartElem.dataset.id;
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-fetch("http://localhost:3000/chart")
+fetch("http://146.59.151.125:3000/chart")
     .then(response => response.json())
     .then((chart) => {
         current_chart = chart;
@@ -252,7 +252,7 @@ fetch("http://localhost:3000/chart")
 
     function clickClickable(isMenu = false){
         var myInit = { method: 'POST', body: JSON.stringify({isMenu: isMenu}), headers: { 'content-type': 'application/json' } };
-        fetch("http://localhost:3000/click/click", myInit);
+        fetch("http://146.59.151.125:3000/click/click", myInit);
     }
 
     let current_clicked = null;
