@@ -101,9 +101,14 @@ app.use(function (req, res, next){
        res.redirect('/auth');
      } else{ */
     //recupere data//let number = Math.trunc(Math.random() * 8 - 0.01);
+<<<<<<< Updated upstream
     let Menu = {horizontal: true, highNbMenu: false, submenu: false};
 
     //|| (Menu.horizontal ? 1 : 0) + (Menu.highNbMenu ? 2 : 0) + (Menu.submenu ? 4 : 0);
+=======
+    let Menu = { horizontal: true, highNbMenu: true, submenu: false};
+    let number = (Menu.horizontal ? 1 : 0) + (Menu.highNbMenu ? 2 : 0) + (Menu.submenu ? 4 : 0);
+>>>>>>> Stashed changes
     let config = {
         url: "http://localhost:3000"
     }
