@@ -104,7 +104,6 @@ app.use(function (req, res, next){
     let Menu = {horizontal: true, highNbMenu: false, submenu: false};
 
     //|| (Menu.horizontal ? 1 : 0) + (Menu.highNbMenu ? 2 : 0) + (Menu.submenu ? 4 : 0);
-
     let config = {
         url: "http://localhost:3000"
     }
