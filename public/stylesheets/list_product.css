@@ -8,7 +8,7 @@
 }
 
 .card{
-    background-color: #6d4c41;
+    background-color: #616161;
     height: 100%;
     width: 100%;
 }
@@ -19,7 +19,7 @@
 
 .card-image:hover::before{
     content: "";
-    background-color: #5d4037;
+    background-color: #424242;
     opacity: 0.7;
     height: 100%;
     width: 100%;
@@ -39,7 +39,7 @@ img:hover + .eye_container{
 }
 
 .eye_container{
-    border: 15px solid #ffb74d;
+    border: 8px solid #ffca28;
     position: absolute;
     top: 0;
     left: 0;
@@ -50,28 +50,29 @@ img:hover + .eye_container{
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color: #ffb74d;
+    color: #ffca28;
     z-index: 3;
 }
 
 .card-footer{
-    border-top: 4px solid #ffb74d;
     height: 140px;
     padding: 2px 20px;
     line-height: 27px;
-    background-color: #6d4c41;
-    color: #ffb74d;
+    background-color: white;
+    color: black;
     display: block;
 }
 
 .title_container{
     overflow-wrap: break-word;
-    font-weight: bold;
+    font-weight: 500;
+    max-height: 80px;
+    overflow: hidden;
 }
 
 hr{
     margin: 5px 0 ;
-    background-color: #ffb74d;
+    background-color: black;
 }
 
 figure{
@@ -82,14 +83,14 @@ figure{
 .product_img{
     width: 100%;
     height: 100%;
-    border-bottom: 5px solid #ffb74d;
     cursor: pointer;
+    border-radius: 0 !important;
 }
 
 #list_categorie_name{
     font-weight: bold;
     font-size: 36px;
-    color: #5d4037;
+    color: #424242;
 }
 
 #list_divider{
@@ -110,7 +111,7 @@ figure{
     justify-content: space-between;
     align-items: center;
     margin-top: 7px;
-    color: antiquewhite;
+    color: #eceff1;
     height: 31px;
 }
 
@@ -123,18 +124,24 @@ figure{
 }
 
 .pagination_case{
-    background-color: #6d4c41;
+    background-color: #616161;
+    color: white;
     font-weight: bold;
-    color: #ffb74d;
-    padding: 15px 20px;
+    padding: 10px 15px;
     font-size: 20px;
     margin: 30px 10px;
     cursor: pointer;
 }
 
 .pagination_current_page{
-    color: #6d4c41;
-    background-color: #ffb74d;
+    color: #616161;
+    background-color: white;
+    border: 1px solid #616161;
+}
+
+.pagination_current_page:hover{
+    color : #ffca28;
+    background-color: #616161 ;
 }
 
 @media (max-width: 1160px) {
@@ -158,10 +165,11 @@ h1{
 .add{
     font-size: 20px;
     cursor: pointer;
+    color: black;
 }
 
 .add:hover{
-    color: #ffb74d;
+    color: #ffca28;
 }
 
 .unit{
@@ -170,5 +178,6 @@ h1{
 
 .price > p{
     font-weight: bold;
+    color: black;
     display: inline;
 }

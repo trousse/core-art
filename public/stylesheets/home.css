@@ -22,7 +22,7 @@
 #welcome{
     font-size: 20px;
     font-weight: bold;
-    color: antiquewhite;
+    color: #eceff1;
     margin-top: 15%;
     padding-left: 20%;
     text-align: center;
@@ -35,7 +35,7 @@
 }
 
 h1{
-    color: antiquewhite !important;
+    color: #eceff1 !important;
 }
 
 #return_button{
@@ -46,11 +46,14 @@ h1{
 
 #return_button > a{
     padding: 10px 30px;
-    background-color: #6d4c41;
-    color: #ffb74d;
+    background-color: white;
+    color: #424242;
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #ffb74d;
     border-radius: 5px;
+}
+
+#return_button > a:hover{
+    background-color: #ffca28;
 }

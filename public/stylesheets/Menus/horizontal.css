@@ -38,17 +38,18 @@
 }
 
 .active{
-    color: #6d4c41;
-    background-color: #ffb74d;
+    color: #616161;
+    background-color: #ffca28;
 }
 
 #sub_nav{
-    background-color: #6d4c41;
+    background-color: #616161;
+    margin-top: 12px;
 }
 
 #sub_categories_nav{
-    background-color: #795548;
-    border-top: #ffb74d solid 3px;
+    background-color: #757575;
+    border-top: #ffca28 solid 3px;
     margin-top: 12px;
     height: 0;
     transition: all 0.5s ease;
@@ -64,7 +65,7 @@
 
 .nav_item::after{
     content: "";
-    background-color: #ffb74d;
+    background-color: #ffca28;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -75,7 +76,7 @@
 }
 
 .nav_item:hover{
-    color: #ffb74d;
+    color: #ffca28;
 }
 
 .nav_item:hover::after{

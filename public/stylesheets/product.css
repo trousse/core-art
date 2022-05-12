@@ -5,7 +5,7 @@
 
 #product_image{
     width: 85%;
-    border: 5px solid #795548;
+    border: 5px solid #757575;
 }
 
 #info_card{
@@ -16,31 +16,31 @@
 
 table{
     line-height: 35px;
-    border: 2px solid #6d4c41;
+    border: 2px solid #616161;
 }
 
 th {
-    background-color: #6d4c41;
-    color: #ffe0b2 !important;
+    background-color: #616161;
+    color: white !important;
     font-weight: bold;
     width: 40%;
 }
 
 td {
-    background-color: #fff3e0;
-    color: #6d4c41 !important;
+    background-color: white;
+    color: black !important;
     font-weight: bold;
 }
 
 .card{
     padding: 15px;
-    border: 3px solid #795548;
-    background-color: #fff3e0;
-    color: #6d4c41 ;
+    border: 3px solid #757575;
+    background-color: white;
+    color: black ;
 }
 
 #product_title{
-    color: #6d4c41;
+    color: black;
     font-size: 25px;
     overflow-wrap: break-word;
 }
@@ -62,7 +62,7 @@ td {
     font-size: 18px;
     margin-bottom: 40px;
     font-weight: 600;
-    color: #6d4c41;
+    color: black;
     line-height: 30px;
 }
 
@@ -79,20 +79,20 @@ td {
 }
 
 .btn{
-    padding: 20px 30px;
-    border: 2px solid #ffe0b2;
-    background-color:  #795548;
-    color: #ffe0b2;
-    font-size: 25px;
+    padding: 15px 25px;
+    background-color:  #757575;
+    color: white;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 15px;
     border-radius: 5px;
+    border: none;
 }
 
 .btn:hover{
-    color: #ffb74d;
-    border: 2px solid #ffb74d;
+    background-color: #ffca28;
+    color: #757575;
 }
 
 #add_container{
@@ -103,7 +103,7 @@ td {
 #description_title{
     font-size: 25px;
     font-weight: bold;
-    color: #6d4c41;
+    color: black;
 }
 
 #product_description{
@@ -112,7 +112,7 @@ td {
 }
 
 #description_divider{
-    color: #6d4c41;
+    color: #616161;
     margin-bottom: 20px;
     margin-top: 10px;
 }
