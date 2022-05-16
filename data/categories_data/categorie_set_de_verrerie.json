@@ -1,15 +1,15 @@
 [
   {
     "photo": "https://cdn.laredoute.com/products/6/c/3/6c32384a15a4f88c55be4c1cde1a1262.jpg?imgopt=twic&twic=v1/cover=400x400",
-    "prix": "24.99",
+    "prix": "24\n.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 4 verres striés",
     "full_description": "Ce lot de 4 verres striés et délicatement soulignés d'un liseré doré apportera une touche d'élégance et de style à votre table de repas ! <br> Description <br>  •  En verre strié, souligné d'un liseré doré <br> Entretien <br>  •  Incompatible lave-vaisselle et micro-ondes <br> Dimensions <br>  •  Ø6,7 x H11 cm <br>",
     "categorie": "set_de_verrerie",
     "id": 0
   },
   {
-    "photo": "https://cdn.laredoute.com/products/4/9/9/49968ff8decaba15aa0df55c5ef8ae09.jpg?imgopt=twic&twic=v1/cover=400x400",
-    "prix": "24.99",
+    "photo": "https://cdn.laredoute.com/products/4/9/9/49068ff8decaba15aa0df55c5ef8ae09.jpg?imgopt=twic&twic=v1/cover=400x400",
+    "prix": "24.90",
     "titre": "LA REDOUTE INTERIEURS Lot 4 verres à vin",
     "full_description": "Ce lot de 4 verres à vin striés et délicatement soulignés d'un liseré doré apportera une touche d'élégance et de style à votre table de repas ! <br> Description  <br> •  En verre strié, souligné d'un liseré doré  <br> Entretien  <br>  •  Incompatible lave-vaisselle et micro-ondes <br> Dimensions  <br>  •  Diamètre : 7,4 cm <br>  •  Hauteur : 23 cm <br> ",
     "categorie": "set_de_verrerie",
@@ -17,7 +17,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/1/6/9/169487b38561fa530a43928d4fec23d3.jpg?imgopt=twic&twic=v1/cover=400x400",
-    "prix": "25.99",
+    "prix": "25.90",
     "titre": "LA REDOUTE INTERIERUS Lot 4 flûtes à champagne",
     "full_description": "Les 4 flûtes à champagne au design cubique pour dresser une table au style contemporain. <br> Description •  Flûte à champagne :n  •  Forme cubique <br>  •  Dimensions : 5 x 24 cm <br>  •  Compatible lave-vaisselle <br>",
     "categorie": "set_de_verrerie",
@@ -25,7 +25,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/3/b/f/3bf3170de6bad2153fb796468683dac4.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "31.99",
+    "prix": "31.90",
     "titre": "LA REDOUTE INTERIEURS Lot 4 verres à eau",
     "full_description": "Lot de 4 verres à eau transparent AMMANE. Délicatement soulignés d’un liseré doré, ces verres feront honneur à votre table. <br> Description <br>  •  Verres à eau en borosilicate transparent soulignés d’un liseré gold  <br>  •  Entretien : Incompatible micro-onde et lave-vaisselle <br>  •  Hauteur : 9 cm  <br>  •  Vendus par lot de 4 <br> ",
     "categorie": "set_de_verrerie",
@@ -41,14 +41,14 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/a/7/a/a7aadf5dbc65884103b8e7d952d39a80.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "32.99",
+    "prix": "32.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 4 verres",
     "full_description": "Une texture bullée réalisée dans la matière, une forme tout en rondeur qui mêle de jolies tonalités passant d'une transparence cristalline aux teintes plus contemporaines, on craque ! Ce lot de 4 verres à eau de qualité apporte du pep's à la table. <br> Description :n  •  Verre bullé <br>  •  Lot de 4 <br> Entretien : <br>  •  Compatible lave-vaisselle <br>  •  incompatible micro-ondes <br> Dimensions <br>  •  Diamètre haut : 7,8 cm <br>  •  Diamètre bas : 6 cm <br>  •  Hauteur : 9,7 cm <br>  •  Contenance 320 ml <br> ",
     "categorie": "set_de_verrerie",
     "id": 5
   },
   {
-    "photo": "https://cdn.laredoute.com/products/a/5/4/a54265e2722288d9b99d7dd6f5132dee.jpg?imgopt=twic&twic=v1/cover=250x250",
+    "photo": "https://cdn.laredoute.com/products/a/5/4/a54265e2722288d9b90d7dd6f5132dee.jpg?imgopt=twic&twic=v1/cover=250x250",
     "prix": "39.00",
     "titre": "Lot de 6 verres à eau Gimani",
     "full_description": "Les 6 verres à eau Gimani. <br> Description <br> •  En verre recyclé soufflé à la bouche <br>  •  Travail artisanal, chaque pièce est unique <br>  •  Contenance 25 cl <br>  •  Compatibles lave-vaisselle <br>  •  Non compatibles micro-ondes <br>  •  Les reflets turquoises du produit lui viennent du verre recyclé utilisé pour sa fabrication. 100% du verre utilisé provient du recyclage. <br> ",
@@ -57,7 +57,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/8/f/9/8f9d6d707e8e9d3c7cb836ced2ae388e.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "24.99",
+    "prix": "24.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 4 verres à eau striés",
     "full_description": "Ce lot de 4 verres à eau striés et délicatement soulignés d'un liseré doré apportera une touche d'élégance et de style à votre table de repas ! <br> Description  <br>  •  En verre strié, souligné d'un liseré doré  <br> Entretien <br>  •  Incompatible lave-vaisselle et micro-ondes <br> Dimensions <br>  •  Diamètre : 6,5 cm <br>  •  Hauteur :15 cm <br>",
     "categorie": "set_de_verrerie",
@@ -65,7 +65,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/5/9/d/59db39a613c15590c66e1a608c623c29.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "25.99",
+    "prix": "25.90",
     "titre": "LA REDOUTE INTERIEURS Lot 4 verres à vin",
     "full_description": "Les 4 verres à vin Coblace au design cubique pour dresser une table au style contemporain.<br> Description <br>  •  Verre à vin <br>  •  Forme cubique <br>  •  Dimensions : 7 x 17,5 cm <br>  •  Compatible lave-vaisselle <br> ",
     "categorie": "set_de_verrerie",
@@ -73,7 +73,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/d/a/0/da0352de04ff32c672d01b29ea186944.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "19.99",
+    "prix": "19.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 4 verres à whysky",
     "full_description": "Magnifiquement réalisé dans un verre richement sculpté, ce lot de 4 verres à whisky dit tumbler (verre droit à fond épais et de large diamètre) sublimera votre single malt avec élégance. Un cadeau à offrir ou à s'offrir.<br> Description  <br>  •  Verre ciselé <br> •  Lot de 4 <br> Entretien : <br>  •  Compatible lave-vaisselle et incompatible micro-ondes <br> Dimensions  <br>  •  Diamètre : 8 cm <br>  •  Hauteur : 9 cm <br>",
     "categorie": "set_de_verrerie",
@@ -81,7 +81,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/1/f/f/1ffd337a13f75b6190f947b8f20050d0.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "34.99",
+    "prix": "34.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 6 verres à eau",
     "full_description": "Ce lot de 6 verres Staklo forme gobelet apporte une touche rétro à votre table. A vous les soirées entre amis ! <br> Description <br>  •  En verre fumé <br>  •  Vendus par lot de 6 <br> Dimensions <br>  •  Diamètre : 7,3 cm  <br>  •  Hauteur : 9,7 cm <br> Entretien <br>  •  Compatibles lave-vaisselle et incompatibles micro-ondes <br>",
     "categorie": "set_de_verrerie",
@@ -89,7 +89,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/1/1/5/1156ac65818c08d8cfd39ee29abea575.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "24.99",
+    "prix": "24.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 4 verres",
     "full_description": "L'heure est à la sobriété pour ces 4 verres à eau réalisés en verre recyclé...  <br> Description <br>  •  En verre <br> Entretien <br>  •  Compatible lave-vaisselle. <br>  •  Ne pas passer au micro-onde. <br> Dimensions  <br>  •  Ø9 x H9 cm <br> ",
     "categorie": "set_de_verrerie",
@@ -105,7 +105,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/4/a/a/4aa2cc0ec19ce2fe081d88a13493eb82.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "19.99",
+    "prix": "19.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 4 verres à whisky",
     "full_description": "Réalisé en verre transparent ciselé, cet élégant lot de 4 verres à whisky dit tumbler, (verre droit à fond épais et de large diamètre) fera ressortir les arômes de votre single malt favori. Un cadeau à offrir ou à s'offrir.<br> Description  <br>  •  Verre ciselé <br>  •  Lot de 4 <br> Entretien : <br>  •  Compatible lave-vaisselle et incompatible micro-ondes <br> Dimensions  <br>  •  Diamètre : 8 cm <br>  •  Hauteur : 9 cm <br>",
     "categorie": "set_de_verrerie",
@@ -113,7 +113,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/b/9/f/b9f64d84e77d6933568ed37160468dca.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "34.99",
+    "prix": "34.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 6 verres à pied",
     "full_description": "Ce lot de 6 verres à pied Staklo apporte une touche rétro à votre table. A vous les soirées entre amis ! <br> Description <br>  •  En verre fumé <br>  •  Vendus par lot de 6 <br> Dimensions <br> •  Diamètre : 7,7 cm <br>  •  Hauteur : 12,5 cm <br> Entretien <br>  •  Compatibles lave-vaisselle et incompatibles micro-ondes <br>",
     "categorie": "set_de_verrerie",
@@ -121,7 +121,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/5/0/a/50aa6773eac58cb5545e2d1e9fd4fcee.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "42.99",
+    "prix": "42.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 6 verres à pied bullé",
     "full_description": "Une texture bullée réalisée dans la matière, une forme tout en rondeur, on craque ! Ce lot de 6 verres à pied de qualité apporte du pep's à la table. <br> Description <br>  •  En verre bullé <br> Dimensions <br>  •  Diamètre : 8 cm <br>  •  Hauteur : 14 cm <br> Entretien  <br>  •  Compatibles lave-vaisselle et incomptaibles micro-ondes <br>",
     "categorie": "set_de_verrerie",
@@ -129,7 +129,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/4/8/a/48ab98b633ce34ea347eb8c9170ebc51.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "39.99",
+    "prix": "39.90",
     "titre": "Lot 6  verres à vin décor abeilles",
     "full_description": "Les 6 verres à vin en verre, décor abeilles : élégance d'un verre travaillé pour une table raffinée. <br>  Description <br>  •  Verre pressé, très résistant <br>  •  Décoré de 4 abeilles <br>  •  Contenance 24 cl <br>  •  Diamètre 9 x Hauteur 14,10 cm <br>  •  Compatible avec le lave-vaisselle <br>  •  Fabrication française <br> ",
     "categorie": "set_de_verrerie",
@@ -137,15 +137,15 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/d/d/6/dd69bf3790d94c64066014272df8e0d1.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "27.99",
+    "prix": "27.90",
     "titre": "LA REDOUTE INTERIEURS lot de 4 verres empilables",
     "full_description": "4 verres pour apporter de la gaieté à vos rafraîchissements ! <br> Description<br>  •  En verre <br>  •  Empilables <br> Entretien : <br>  •  Compatible lave-vaisselle. <br>  •  Ne pas passer au micro-ondes  <br> Dimensions  <br>  •  Ø9 x H10 cm <br>  •  Capacité : 300 ml <br>",
     "categorie": "set_de_verrerie",
     "id": 17
   },
   {
-    "photo": "https://cdn.laredoute.com/products/8/7/b/87b0588149c1ada6bd0838b8ff99edbd.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "59.99",
+    "photo": "https://cdn.laredoute.com/products/8/7/b/87b0588149c1ada6bd0838b8ff90edbd.jpg?imgopt=twic&twic=v1/cover=250x250",
+    "prix": "59.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 6 verres à vin",
     "full_description": "Les 6 verres à vin Rigato adoptent le raffinement d'un motif strié.Description <br>  •  En verre strié <br>  •  Vendus par lot de 6 <br> Dimensions <br>  •  Diamètre : 8,5 cm <br>  •  Hauteur : 16 cm <br>  •  Contenance : 30 cl <br> Entretien <br>  •  Compatibles lave-vaisselle <br> ",
     "categorie": "set_de_verrerie",
@@ -153,7 +153,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/9/8/5/985842d793eec8d0efe09383acd6126d.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "32.99",
+    "prix": "32.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 6 verres à whisky reliéfé",
     "full_description": "Lot de 6 gobelets en verre reliéfé pour faire ressortir les meilleurs malts... <br> Description <br>  •  En verre reliefé <br>  •  Vendues par lot de 6 <br> Dimensions <br>  •  Daimètre : 8 cm <br>  •  Hauteur : 12,8 cm <br>  •  Contenance : 34 cl <br> Entretien  <br>  •  Compatibles lave-vaisselle <br>",
     "categorie": "set_de_verrerie",
@@ -177,7 +177,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/b/1/a/b1a5165a014d446698c2d9dc89c3c4c6.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "32.99",
+    "prix": "32.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 6 gobelets à eau",
     "full_description": "Sobres et intemporels. Les 6 gobelets à eau Manille s’invitent sur toutes les tables, en toutes circonstances. Et si on trinquait ? <br> Description <br>  •  En verre <br>  •  Vendus par lot de 6 <br> Dimensions <br>  •  Diamètre : 6,3 cm <br>  •  Hauteur : 10,4 cm <br> Entretien <br>  •  Compatibles lave-vaisselle et incompatibles micro-ondes<br> ",
     "categorie": "set_de_verrerie",
@@ -209,7 +209,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/0/b/6/0b6ff3d031d2bddc452be3d23f6d738e.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "49.99",
+    "prix": "49.90",
     "titre": "LA REDOUTE INTERIEURS Lot  de 6 verres",
     "full_description": "Les 6 verres Rigato adoptent le raffinement d'un motif strié. <br> Description <br>  •  En verre strié <br>  •  Vendus par lot de 6 <br> Dimensions <br>  •  Diamètre : 7,4 cm <br> •  Hauteur : 10 cm <br>  •  Contenance : 23 cl <br> Entretien <br>  •  Compatibles lave-vaisselle <br>",
     "categorie": "set_de_verrerie",
@@ -217,7 +217,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/b/f/0/bf0e493f74a271ebbe57fa459f8bf3ea.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "32.99",
+    "prix": "32.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 2 coupes à champagne",
     "full_description": "Les 2 coupes à champagne Rigato adoptent le raffinement d'un motif strié. <br> Description <br>  •  En verre strié <br>  •  Vendus par lot de 2 <br> Dimensions <br>  •  Diamètre : 11 cm <br>  •  Hauteur : 14 cm <br>  •  Contenance : 23 cl <br> Entretien <br>  •  Compatibles lave-vaisselle <br>",
     "categorie": "set_de_verrerie",
@@ -225,7 +225,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/7/1/5/715b7f954bfb389fe76e2dcd406b9ac2.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "29.99",
+    "prix": "29.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 6 verres à whisky en verre Alivio",
     "full_description": "Des gobelets à whisky en verre reliefé rien de tel pour mettre en valeur vos meilleurs malts ! <br> Description <br>  •  En verre reliefé <br>  •  Vendues par lot de 6 <br> Dimensions <br>  •  Diamètre : 8 cm <br>  •  Hauteur : 10 cm <br>  •  Contenance : 30 cl <br> Entretien  <br>  •  Compatibles lave-vaisselle <br>",
     "categorie": "set_de_verrerie",
@@ -233,7 +233,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/e/9/7/e975e9b883d027ff04ee9106df92f302.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "25.99",
+    "prix": "25.90",
     "titre": "LA REDOUTE INTERIEURS Lot 4 verres à base tressée",
     "full_description": "Le lot de 4 verres à eau La Redoute Intérieurs. Surfez sur la tendance 100% nature avec ces 4 verres Qualimna au superbe aspect authentique.<br> Description <br>  •  Tressage naturel amovible <br>  •  Entretien : retirer la base en tressage avant de passer le verre au lave-vaisselle <br> Dimensions <br>  •  8 x 9,5 cm <br> •  Capacité : 250 ml <br>",
     "categorie": "set_de_verrerie",
@@ -241,15 +241,15 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/f/e/6/fe697d7465c74e4605851e7c8a3c23ae.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "24.99",
+    "prix": "24.90",
     "titre": "LA REDOUTE INTERIEURS Lot 4 verres à cognac",
     "full_description": "Sobres, épurés, contemporains. Les verres Alak aiment autant les apéritifs entre amis que les repas quotidiens. <br>     Description <br>  •  En verre  <br>  •  Vendus par lot de 4 <br> Dimensions <br>  •  Largeur : 6 cm <br>  •  Hauteur : 13 cm <br>  •  Contenance : 40 cl  <br> Entretien  <br> Compatibles lave-vaisselle et incompatibles micro-ondes <br>",
     "categorie": "set_de_verrerie",
     "id": 30
   },
   {
-    "photo": "https://cdn.laredoute.com/products/3/5/4/354f963b1d840d406a759937d7933be3.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "35.99",
+    "photo": "https://cdn.laredoute.com/products/3/5/4/354f963b1d840d406a759037d7933be3.jpg?imgopt=twic&twic=v1/cover=250x250",
+    "prix": "35.90",
     "titre": "LA REDOUTE INTERIEURS Lot 6 verres à eau alvéoles",
     "full_description": "Les 6 verres à eau, décor alvéoles, Cohani : élégance d'un verre travaillé pour une table raffinée. <br> Description <br>  •  Verre pressé, très résistant <br>  •  Décor alvéoles en relief <br>  •  Contenance 31,5 cl <br>  •  Diamètre 8,3 x Hauteur 12,6 cm <br>  •  Compatible avec le lave-vaisselle <br>  •  Fabrication française <br>",
     "categorie": "set_de_verrerie",
@@ -257,7 +257,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/c/e/2/ce26b0247bd015fd38d921a72f88042e.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "22.99",
+    "prix": "22.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 4 verres à liqueur",
     "full_description": "Sobres, épurés, contemporains. Les verres Alak aiment autant les apéritifs entre amis que les repas quotidiens. <br> Description <br>  •  En verre <br>  •  Vendus par lot de 4 <br> Dimensions <br>  •  Diamètre : 4.2 cm <br>  •  Hauteur : 7.1 cm <br>  •  Contenance : 00 cl  <br> Entretien  <br>  •  Compatible lave-vaisselle et incompatible micro-ondes <br> ",
     "categorie": "set_de_verrerie",
@@ -265,7 +265,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/3/4/0/340797b63e12cb9297e9a8024ddeaf31.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "39.99",
+    "prix": "39.90",
     "titre": "LA REDOUTE INTERIEURS Lot 6 verres à eau décor",
     "full_description": "Les 6 verres à eau en verre, décor abeilles : élégance d'un verre travaillé pour une table raffinée. <br> Description <br>  •  Verre pressé, très résistant :n  •  Décoré de 4 abeilles :n  •  Contenance 27 cl <br>  •  Diamètre 9 x Hauteur 10,30 cm <br>  •  Compatible avec le lave-vaisselle <br>  •  Fabrication française <br>",
     "categorie": "set_de_verrerie",
@@ -273,7 +273,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/2/1/4/2141fe1367f694bc4e59b801da87acbe.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "39.99",
+    "prix": "39.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 6 verres",
     "full_description": "Les 6 verres à eau en verre, décor abeilles : élégance d'un verre travaillé pour une table raffinée.  <br> Fabriqués en France. <br> Description <br>  •  Verre pressé, très résistant <br>  •  Décoré de 4 abeilles <br> Entretien <br>  •  Compatible lave-vaisselle <br>  •  incompatible micro-ondes <br> Dimensions <br>  •  Diamètre : 9 cm <br>  •  Hauteur : 10,3 cm <br>  •  Contenance 270 ml <br> ",
     "categorie": "set_de_verrerie",
@@ -281,7 +281,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/2/c/4/2c4766af5090f25a564c29f83a8a8702.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "37.99",
+    "prix": "37.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 6 verres",
     "full_description": "Pure merveille pour ces verres à eau gravés de plis verticaux. Design intemporel et verre transparent, ils subliment toutes les tables ! Description <br>  •  Verre transparent <br>  •  Verre gravé de plis verticaux <br>  •  Lot de 6 <br> Entretien : <br>  •  Compatible lave-vaisselle :n  •  incompatible micro-ondes <br> Dimensions <br>  •  Diamètre : 7,8 cm  <br>  •  Hauteur : 9,8 cm <br>  •  Contenance 260 ml <br>",
     "categorie": "set_de_verrerie",
@@ -289,7 +289,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/1/c/c/1cc72541d367308445b0955e48965aa9.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "44.99",
+    "prix": "44.90",
     "titre": "LA REDOUTE INTERIEURS Lot 6 flutes",
     "full_description": "Joliement gravé. Avec son motif élégant, frais et original, Eulalie apportera une touche de fantaisie à votre table. Une création La Redoute Intérieurs. <br> Description <br>  •  En verre <br>  •  3 motifs différents <br> Dimensions <br>  •  Diamètre : 4.7 cm <br>  •  Hauteur : 24 cm <br> Entretien <br>  •  Compatibles lave-vaisselle et incompatible micro-ondes <br>",
     "categorie": "set_de_verrerie",
@@ -297,7 +297,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/6/0/a/60a91d3181539042a5731d7be774b611.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "39.99",
+    "prix": "39.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 4 verres à whisky",
     "full_description": "Ligne classique et élégante, verre transparent, motif ciselé... ce lot de 6 verres est idéal pour déguster whisky et alcools. <br> Description <br>  •  Verre ciselé <br>  •  Vendus en lot de 4 <br> Dimensions <br>  •  Diamètre : 8,5 cm  <br>  •  Hauteur : 10 cm <br> Entretien  <br>  •  Compatibles lave-vaisselle, incompatibles micro-ondes <br>",
     "categorie": "set_de_verrerie",
@@ -305,7 +305,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/4/3/6/436c6f90d0dbbc81f1df67cb0aa56ffe.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "36.99",
+    "prix": "36.90",
     "titre": "LA REDOUTE INTERIEURS Lot de 6 verres à pied",
     "full_description": "Sobres et intemporels. Les 6 verres à pied Manille s’invitent sur toutes les tables, en toutes circonstances. Et si on trinquait ? <br> Description <br>  •  En verre <br>  •  Vendus par lot de 6 <br> Dimensions <br>  •  Diamètre : 8 cm <br>  •  Hauteur : 10 cm <br> Entretien <br>  •  Compatibles lave-vaisselle et incompatibles micro-ondes <br>",
     "categorie": "set_de_verrerie",
@@ -313,7 +313,7 @@
   },
   {
     "photo": "https://cdn.laredoute.com/products/1/c/a/1caa1295c6fe84e02b51c4613f725268.jpg?imgopt=twic&twic=v1/cover=250x250",
-    "prix": "29.99",
+    "prix": "29.90",
     "titre": "LA REDOTE INTERIEURS Lot de 4 verres à bière 25cl",
     "full_description": "Sobres, épurés, contemporains. Les verres Alak aiment autant les apéritifs entre amis que les repas quotidiens.",
     "caracteristiques": {

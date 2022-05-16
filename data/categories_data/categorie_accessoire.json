@@ -120,7 +120,7 @@
   },
   {
     "photo":"https://static.bhv.fr/media/746/74611755/G_74611755_38_VPM_1.jpg",
-    "prix":"14.95",
+    "prix":"14.90",
     "titre":"WMF Stick à thé",
     "full_description":"Les amateurs de thé et d'infusion apprécieront ce stick à thé WMF en Cromargan®. <br> Original et esthétique, il permet de faire infuser votre boisson favorite avec une dose individuelle dans un verre ou un mug. <br> ",
     "caracteristiques":{
@@ -256,7 +256,7 @@
   {
     "photo":"https://static.bhv.fr/media/3004061/300406146069/G_300406146069_394_VPM_1.jpg",
     "prix":"12.50",
-    "titre":"DEGRENNE FRAGMENT COLOR - Soucoupe à café ronde 12,6 cm",
+    "titre":"DEGRENNE FRAGMENT COLOR Soucoupe à café ronde 12,6 cm",
     "full_description":"",
     "caracteristiques":{
       "Couleur":"Rose framboise",
@@ -268,7 +268,7 @@
   {
     "photo":"https://static.bhv.fr/media/3004060/300406078396/G_300406078396_85_VPM_1.jpg",
     "prix":"41.40",
-    "titre":"MEDARD DE NOBLAT Lolly Pop - Coffret 6 tasses café et thé",
+    "titre":"MEDARD DE NOBLAT Lolly Pop coffret 6 tasses café et thé",
     "full_description":"Lolly Pop, c'est une ligne de grès coloré, parsemé de touches aquarellées qui illuminent les tables d'une modernité rafraîchissante. Pétillant, le décor est un motif abstrait travaillé en camaïeux de bleus. <br> La gamme comporte les essentiels de la table au quotidien : les assiettes coupes, les bols et les mugs aux formes généreuses et confortables. <br> Originaire de Limoges, Médard de Noblat perpétue un savoir-faire et une tradition de qualité depuis 1836. Les formes, aux lignes fines et élégantes dégagent une personnalisé créant des tables expressives au fort pouvoir de séduction. Aussi précis que stylés, les décors habillent les porcelaines pour les sublimer. <br> ",
     "caracteristiques":{
       "Couleur":"Blanc",
@@ -279,7 +279,7 @@
   },
   {
     "photo":"https://static.bhv.fr/media/3004060/300406086057/G_300406086057_230_VPM_1.jpg",
-    "prix":"6.99",
+    "prix":"6.90",
     "titre":"MELITTA Boule à thé MELITTA à thé CILIA",
     "caracteristiques":{
       "Couleur":"Gris",
@@ -293,7 +293,7 @@
   },
   {
     "photo":"https://static.bhv.fr/media/747/74790989/G_74790989_230_VPM_1.jpg",
-    "prix":"13.95",
+    "prix":"13.90",
     "titre":"COTE TABLE Paire à déjeuner Contance grise",
     "full_description":"Pain tasse à déjeuner en faience de couleur grise",
     "caracteristiques":{
@@ -307,7 +307,7 @@
   },
   {
     "photo":"https://static.bhv.fr/media/790/79054251/G_79054251_43_VPM_1.jpg",
-    "prix":"14.95",
+    "prix":"14.90",
     "titre":"VIVA SCANDINAVIA Infuseur à thé rétractable",
     "full_description":"Grâce à cet infuseur à thé, savourez chaque jour une délicieuse tasse de thé ou autre infusion, mais son avantage principale est d'être rétractable ce qui vous permettra de l'emmener partout.",
     "caracteristiques":{
@@ -334,7 +334,7 @@
   },
   {
     "photo":"https://static.bhv.fr/media/790/79054302/G_79054302_101_VPM_1.jpg",
-    "prix":"9.95",
+    "prix":"9.90",
     "titre":"VIVA SCANDINAVIA Infuseur à thé Egg bleu",
     "full_description":"L'infuseur à thé Egg propose un design original et pratique. <br> La boule est en acier inoxydable, facile à ouvrir, tandis que le système de suspension est en silicone et s'adapte parfaitement à votre tasse. <br>",
     "caracteristiques":{
@@ -348,7 +348,7 @@
   },
   {
     "photo":"https://static.bhv.fr/media/790/79054299/G_79054299_230_VPM_1.jpg",
-    "prix":"9.95",
+    "prix":"9.90",
     "titre":"VIVA SCANDINAVA Infuseur à thé Egg gris",
     "full_description":"L'infuseur à thé Egg propose un design original et pratique. <br> La boule est en acier inoxydable, facile à ouvrir, tandis que le système de suspension est en silicone et s'adapte parfaitement à votre tasse. <br>",
     "caracteristiques":{
@@ -363,7 +363,7 @@
   {
     "photo":"https://static.bhv.fr/media/3004008/300400889387/G_300400889387_230_VPM_1.jpg",
     "prix":"17.00",
-    "titre":"DEGRENNE COLLECTION L LIENS - Soucoupe à thé ronde 15,8 cm",
+    "titre":"DEGRENNE COLLECTION L LIENS Soucoupe à thé ronde 15,8 cm",
     "caracteristiques":{
       "Couleur":"Gris"
     },
@@ -373,7 +373,7 @@
   {
     "photo":"https://static.bhv.fr/media/3004061/300406146070/G_300406146070_85_VPM_1.jpg",
     "prix":"7.00",
-    "titre":"DEGRENNE SMOOS - Soucoupe à café ronde 15 c",
+    "titre":"DEGRENNE SMOOS Soucoupe à café ronde 15 c",
     "caracteristiques":{
       "Couleur":"Blanc"
     },
@@ -383,7 +383,7 @@
   {
     "photo":"https://static.bhv.fr/media/3004052/300405277653/G_300405277653_230_VPM_1.png",
     "prix":"129.00",
-    "titre":"DEGRENNE ECLIPSE - Sucrier 15 cl",
+    "titre":"DEGRENNE ECLIPSE Sucrier 15 cl",
     "full_description":"ECLIPSE",
     "caracteristiques":{
       "Couleur":"Gris",
