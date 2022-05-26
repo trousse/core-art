@@ -9,6 +9,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "async": "^3.2.3",
+    "atob": "^2.1.2",
     "axios": "^0.26.1",
     "body-parser": "^1.19.2",
     "bulma": "^0.9.3",

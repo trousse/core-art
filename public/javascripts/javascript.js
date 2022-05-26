@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify(body),
             headers: { 'content-type': 'application/json' }
         };
-        fetch("http://localhost:3000/chart/delete", myInit);
+        fetch("https://core-art-sorbonne.fr/chart/delete", myInit);
         current_chart = current_chart.filter((chart)=>{
             return !(chart.product.id == id && chart.product.categorie === categorie);
         });
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'content-type': 'application/json' }
                 };
 
-               fetch("http://localhost:3000/chart/plus", myInit);
+               fetch("https://core-art-sorbonne.fr/chart/plus", myInit);
             }else{
                 const body = {
                     id: add.dataset.id,
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify(body),
                     headers: { 'content-type': 'application/json' }
                 };
-                fetch("http://localhost:3000/chart", myInit)
+                fetch("https://core-art-sorbonne.fr/chart", myInit)
                     .then(response => response.json())
                     .then((product) => {
                         current_chart.push(product);
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 chart_button_container.innerHTML = "";
                 chart_button_container.appendChild(valid_button);
-                valid_button.innerHTML = "<a href='http://localhost:3000/valid_chart'><div class='clickable' id=\"bouton_valid\"> Valider la Commande "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div></a>";
+                valid_button.innerHTML = "<a href='https://core-art-sorbonne.fr/valid_chart'><div class='clickable' id=\"bouton_valid\"> Valider la Commande "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div></a>";
                 
             }else{
                 if(shopping_nb.classList.contains("bullInfo")) shopping_nb.classList.toggle("bullInfo");
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'content-type': 'application/json' }
                 };
 
-                fetch("http://localhost:3000/chart/plus", myInit);
+                fetch("https://core-art-sorbonne.fr/chart/plus", myInit);
 
                 const categorie = chartElem.dataset.categorie;
                 const id = chartElem.dataset.id;
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'content-type': 'application/json' }
                 };
 
-                fetch("http://localhost:3000/chart/minus", myInit);
+                fetch("https://core-art-sorbonne.fr/chart/minus", myInit);
 
                 const categorie = chartElem.dataset.categorie;
                 const id = chartElem.dataset.id;
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-fetch("http://localhost:3000/chart")
+fetch("https://core-art-sorbonne.fr/chart")
     .then(response => response.json())
     .then((chart) => {
         current_chart = chart;
@@ -252,7 +252,7 @@ fetch("http://localhost:3000/chart")
 
     function clickClickable(isMenu = false){
         var myInit = { method: 'POST', body: JSON.stringify({isMenu: isMenu}), headers: { 'content-type': 'application/json' } };
-        fetch("http://localhost:3000/click/click", myInit);
+        fetch("https://core-art-sorbonne.fr/click/click", myInit);
     }
 
     let current_clicked = null;

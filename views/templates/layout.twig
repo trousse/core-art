@@ -2,25 +2,25 @@
 <html>
   <head>
     <title>{{ title }}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' type="text/css" href='{{ Data.config.url }}/stylesheets/style.css' />
     {% if Data.Menu.horizontal %}
-      <link rel='stylesheet' href='/stylesheets/Menus/horizontal.css' />
+      <link rel='stylesheet' type="text/css" href='{{ Data.config.url }}/stylesheets/Menus/horizontal.css' />
     {% else %}
-      <link rel='stylesheet' href='/stylesheets/Menus/vertical.css' />
+      <link rel='stylesheet' type="text/css" href='{{ Data.config.url }}/stylesheets/Menus/vertical.css' />
     {% endif %}
     {% if styles %}  {% for style in styles %}
-      <link rel='stylesheet' href='/stylesheets/{{style}}' />
+      <link rel='stylesheet' type="text/css" href='/stylesheets/{{style}}' />
     {% endfor %} {% endif %}
     {% if Data.scripts %}  {% for js in Data.scripts %}
-      <script type = "module" src="/javascripts/{{js}}"></script>
+      <script type = "module" src="javascripts/{{js}}"></script>
     {% endfor %} {% endif %}
-    <script src="/javascripts/javascript.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script defer src="/javascripts/@fortawesome/fontawesome-free/js/all.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="{{ Data.config.url }}/javascripts/javascript.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script defer src="{{ Data.config.url }}/javascripts/@fortawesome/fontawesome-free/js/all.js"></script>
+    <link rel="preconnect" type="text/css" href="https://fonts.googleapis.com">
+    <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='/javascripts/@fortawesome/fontawesome-free/css/all.css' />
+    <link rel='stylesheet' type="text/css" href='{{ Data.config.url }}/javascripts/@fortawesome/fontawesome-free/css/all.css' />
   </head>
   <body>
   {% block Menu %}
