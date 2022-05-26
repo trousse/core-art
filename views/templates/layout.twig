@@ -2,14 +2,14 @@
 <html>
   <head>
     <title>{{ title }}</title>
-    <link rel='stylesheet' type="text/css" href='stylesheets/style.css' />
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' />
     {% if Data.Menu.horizontal %}
-      <link rel='stylesheet' type="text/css" href='stylesheets/Menus/horizontal.css' />
+      <link rel='stylesheet' type="text/css" href='/stylesheets/Menus/horizontal.css' />
     {% else %}
-      <link rel='stylesheet' type="text/css" href='stylesheets/Menus/vertical.css' />
+      <link rel='stylesheet' type="text/css" href='/stylesheets/Menus/vertical.css' />
     {% endif %}
     {% if styles %}  {% for style in styles %}
-      <link rel='stylesheet' type="text/css" href='stylesheets/{{style}}' />
+      <link rel='stylesheet' type="text/css" href='/stylesheets/{{style}}' />
     {% endfor %} {% endif %}
     {% if Data.scripts %}  {% for js in Data.scripts %}
       <script type = "module" src="javascripts/{{js}}"></script>
