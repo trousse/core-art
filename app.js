@@ -106,7 +106,7 @@ app.use(function (req, res, next){
     //|| (Menu.horizontal ? 1 : 0) + (Menu.highNbMenu ? 2 : 0) + (Menu.submenu ? 4 : 0);
 
     let config = {
-        url: "http://146.59.151.125:3000"
+        url: "https://core-art-sorbonne.fr"
     }
 
     if (req.url.split('/')[1] !== "menu" && !req.session.MenuNumber){
