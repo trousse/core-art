@@ -1,5 +1,3 @@
-!/usr/bin/env node
-
 const Categories10 = require('./data/categories_10_5.js');
 const Categories3 = require("./data/categories_3_5.js");
 const Watcher = require('./model/watcher');
