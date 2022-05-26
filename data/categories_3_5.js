@@ -3,7 +3,7 @@ const categorie_10_5 = require('./categories_10_5.js');
 
 const categorie_3_5 = {
 	"deco":{
-		"name":"Déco",
+		"name":"Décoration",
 		"compose":{
 			"plat":{
 				"name":" Plat",
@@ -20,7 +20,7 @@ const categorie_3_5 = {
 		}
 	},
 	"vaiselle":{
-		"name": "Vaiselle",
+		"name": "Vaisselle",
 		"compose":{
 			"assiette":{
 				"name":"Assiette",

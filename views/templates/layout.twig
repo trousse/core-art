@@ -9,10 +9,10 @@
       <link rel='stylesheet' type="text/css" href='{{ Data.config.url }}/stylesheets/Menus/vertical.css' />
     {% endif %}
     {% if styles %}  {% for style in styles %}
-      <link rel='stylesheet' type="text/css" href='/stylesheets/{{style}}' />
+      <link rel='stylesheet' type="text/css" href='{{ Data.config.url }}/stylesheets/{{style}}' />
     {% endfor %} {% endif %}
     {% if Data.scripts %}  {% for js in Data.scripts %}
-      <script type = "module" src="javascripts/{{js}}"></script>
+      <script type = "module" src="{{ Data.config.url }}/javascripts/{{js}}"></script>
     {% endfor %} {% endif %}
     <script src="{{ Data.config.url }}/javascripts/javascript.js"></script>
     <script src="socket.io/socket.io.js"></script>
