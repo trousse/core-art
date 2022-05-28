@@ -143,7 +143,7 @@
     "photo":"https://medias.maisonsdumonde.com/image/upload/q_auto,f_auto/w_1000/img/saladier-aperitif-en-bambou-1000-9-11-207307_2.jpg",
     "prix":"12.90",
     "titre":"Saladier apéritif en bambou",
-    "caracteristique":{
+    "caracteristiques":{
       "Matière principale":"Porcelaine",
       "Matière":"Bois",
       "Hauteur":"5 cm",
@@ -183,7 +183,7 @@
   {
     "photo":"https://medias.maisonsdumonde.com/image/upload/q_auto,f_auto/w_1000/img/coupelles-aperitives-en-gres-motifs-graphiques-multicolores-et-plateau-en-acacia-1000-0-12-217804_1.jpg",
     "prix":"32.90",
-    "titre":"WAIROA - Coupelles apéritives en grès motifs graphiques multicolores et plateau en acacia",
+    "titre":"WAIROA Coupelles apéritives en grès motifs graphiques multicolores et plateau en acacia",
     "caracteristiques":{
       "Couleur principale":"Beige",
       "Matière principale":"Bois",
