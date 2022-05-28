@@ -12,7 +12,7 @@ module.exports = {
       repo : 'https://github.com/trousse/core-art.git',
       path : '/home/ubuntu/pm2Stuff',
       'pre-deploy-local': '',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
+      'post-deploy' : 'npm install && pm2 startOrRestart ecosystem.config.js --env production',
       'pre-setup': ''
     }
   }
