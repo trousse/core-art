@@ -110,20 +110,5 @@
     },
     "categorie": "bouteille",
     "id": 8
-  },
-  {
-    "photo": "https://static.bhv.fr/media/492/49237473/G_49237473_444_VPM_1.jpg",
-    "prix": "25.90",
-    "titre": "BLACK + BLUM Carfe Eau Good Charcoal Filter tritan 80cl",
-    "full_description": "La carafe Eau Good est une bouteille d'eau qui utilise un filtre charbon de bois traditionnel japonais Binchotan pour donner à votre eau du robinet un goût délicieux.  <br> Le filtre à charbon actif binchotan (durée de vie de 6 mois) est fourni avec la carafe. <br> ",
-    "caracteristiques": {
-      "Couleur": "Transparent",
-      "Hauteur": "24 cm",
-      "Diamètre": "8,5 cm",
-      "Contenance": "800 ml",
-      "Composition": "Verre"
-    },
-    "categorie": "bouteille",
-    "id": 9
   }
 ]
