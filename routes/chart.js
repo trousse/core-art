@@ -82,6 +82,7 @@ router.post('/delete', function (req, res, next){
 });
 
 router.get('/delete/all', function (req, res, next){
+    const chart_model = new Chart_model(req);
     req.session.reload(async function (err){
         await chart_model.DeleteAll();
         req.session.save((error) => {
