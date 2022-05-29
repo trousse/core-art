@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     trash.addEventListener("click",()=>{
-        fetch("https://core-art-sorbonne.fr/chart")
+        fetch("https://core-art-sorbonne.fr/chart/delete/all")
             .then(()=>{
                 current_chart = [];
                 refreshChart();
