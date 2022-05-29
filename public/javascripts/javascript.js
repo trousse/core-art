@@ -250,6 +250,7 @@ fetch("https://core-art-sorbonne.fr/chart")
     .then(response => response.json())
     .then((chart) => {
         current_chart = chart;
+        console.log(current_chart);
         refreshChart();
     });
 
@@ -388,13 +389,6 @@ fetch("https://core-art-sorbonne.fr/chart")
     }
 });
 
-window.addEventListener('load', (event) => {
-    console.log("load")
-});
-
-document.addEventListener('readystatechange', (event) => {
-    console.log("readystate")
-});
 
 document.addEventListener('DOMContentLoaded', (event) => {
    console.log('loadedDom')
