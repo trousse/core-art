@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     shopping_nb.innerHTML = "";
                 }
                 if(valid_button){
-                    chart_button_container.innerHTML = "";
+                    valid_button.innerHTML = "";
                 }
             }
 
