@@ -87,7 +87,7 @@ const categorie_10_5 = {
 	"accessoire_de_table":{
 		"name":"Accessoire de table",
 		"compose":{
-				"vin_et_coktail": "Vin et coktail",
+				"vin_et_coktail": "Vin et cocktail",
 				"coquetier": "Coquetier",
 				"saliere_poivriere": "Saliere Poivrière",
 				"beurrier": "Beurrier",
