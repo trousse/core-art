@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const add_product_button = document.querySelector("#add_product_button");
     const total_chart = document.querySelector("#total_chart");
     const mail_container = document.querySelector("#mail_container");
-
+    const trash = document.querySelector(".trash");
 
     var current_chart = [];
     var valid_button = null;
@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 //chart_button_container.innerHTML = "";
                 chart_button_container.appendChild(valid_button);
                 valid_button.innerHTML = "<a href='https://core-art-sorbonne.fr/valid_chart'><div class='clickable' id=\"bouton_valid\"> Valider la Commande "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div></a>";
+                trash.classList.remove("is-hidden");
 
             }else{
                 if(shopping_nb.classList.contains("bullInfo")){
@@ -178,6 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 if(valid_button){
                     valid_button.innerHTML = "";
+                    trash.classList.add("is-hidden");
                 }
             }
 
