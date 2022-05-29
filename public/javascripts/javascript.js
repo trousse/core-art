@@ -249,6 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 fetch("https://core-art-sorbonne.fr/chart")
     .then(response => response.json())
     .then((chart) => {
+        console.log(chart);
         current_chart = chart;
         console.log(current_chart);
         refreshChart();
