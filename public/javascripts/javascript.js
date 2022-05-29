@@ -154,14 +154,13 @@ document.addEventListener('DOMContentLoaded', () => {
     trash.addEventListener("click",()=>{
         fetch("https://core-art-sorbonne.fr/chart/delete/all")
             .then(()=>{
-                current_chart = [];
+
                 if(products){
                     products.forEach((elem) => {
-                        if(elem.dataset.id == id && elem.dataset.categorie === categorie){
-                            elem.innerHTML = "";
-                        }
+                        elem.innerHTML = "";
                     });
                 }
+                current_chart = [];
                 refreshChart();
             })
     })
