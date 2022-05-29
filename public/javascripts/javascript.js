@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('readystatechange', () => {
     const sub_categories_nav = document.querySelector("#sub_categories_nav");
     const sub_categories_nav_container = document.querySelector(".sub_categories_nav_container");
     const sub_nav = document.querySelector("#sub_nav");
@@ -388,14 +388,3 @@ fetch("https://core-art-sorbonne.fr/chart")
     }
 });
 
-window.addEventListener('load', (event) => {
-    console.log("load")
-});
-
-document.addEventListener('readystatechange', (event) => {
-    console.log("readystate")
-});
-
-document.addEventListener('DOMContentLoaded', (event) => {
-   console.log('loadedDom')
-});
