@@ -128,4 +128,8 @@ router.get('/rename', function (req, res, next){
     })
 })
 
+app.get('/download', function(req, res){
+    const file = `../navigation_data.csv`;
+    res.download(file); // Set disposition and send it.
+});
 module.exports = router;
