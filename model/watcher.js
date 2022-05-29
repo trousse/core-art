@@ -7,7 +7,7 @@ function Watcher(){
 Watcher.prototype.writeCSV = function (req,session){
     if(session){
         const chart_model = new Chart_model(req);
-        fs.open("./data/navigation_info.csv","a", function(err, fd) {
+        fs.open("../navigation_data.csv","a", function(err, fd) {
                 const nbChart = session.chart ? session.chart.length : 0;
                 let totalPrice = 0;
                 if(session.chart){session.chart.forEach((product)=>{

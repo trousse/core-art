@@ -105,7 +105,6 @@ app.use(function (req, res, next){
     let config = {
         url: "https://core-art-sorbonne.fr"
     }
-    console.log(req.headers['x-forwarded-for']);
 
     if (req.url.split('/')[1] !== "menu" && !req.session.MenuNumber){
         next(createError(404));
