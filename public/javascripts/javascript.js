@@ -172,7 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 valid_button.innerHTML = "<a href='https://core-art-sorbonne.fr/valid_chart'><div class='clickable' id=\"bouton_valid\"> Valider la Commande "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div></a>";
                 
             }else{
-                if(shopping_nb.classList.contains("bullInfo")) shopping_nb.classList.toggle("bullInfo");
+                if(shopping_nb.classList.contains("bullInfo")){
+                    shopping_nb.classList.toggle("bullInfo");
+                    shopping_nb.innerHTML = "";
+                }
                 if(valid_button){
                     chart_button_container.innerHTML = "";
                 }
