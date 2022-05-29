@@ -10,7 +10,7 @@
     "Utilisation": "Tout type de plat",
     "Informations": "Micro-ondable, congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 0
   },
     {
@@ -24,7 +24,7 @@
     "Utilisation": "Plats chauds et froids",
     "Informations":"Écologique, micro-ondable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 1
   },
     {
@@ -38,7 +38,7 @@
       "Utilisation": "Tout type de plat",
       "Information": "Écologique, micro-ondable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 2
   },
     {
@@ -52,7 +52,7 @@
       "Utilisation": "Salades, plats chauds et froids",
       "Information": "Écologique, micro-ondable (barquette), ingraissable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 3
   },
     {
@@ -66,7 +66,7 @@
     "Utilisation": "Plat chaud et froid",
     "Information": "Écologique, micro-ondable (barquette), ingraissable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 4
   },
     {
@@ -80,7 +80,7 @@
     "Utilisation": "Plat chaud, salade, plat froid et tiède",
     "Information":  "Écologique, ingraissable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 5
   },
       {
@@ -94,7 +94,7 @@
     "Utilisation":"Plat chaud et froid",
     "Information":"Écologique, ingraissable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 6
   },
         {
@@ -108,7 +108,7 @@
     "Utilisation": "Plat chaud et froid",
     "Information":  "Écologique, ingraissable, personnalisable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 7
   },
         {
@@ -122,7 +122,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  "Ingraissable, personnalisable,  écologique, micro-ondable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 8
   },
         {
@@ -136,7 +136,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  " Ingraissable, personnalisable, écologique, micro-ondable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 9
   },
         {
@@ -150,7 +150,7 @@
     "Utilisation": "Plat chaud et froid",
     "Information":  " Écologique, micro-ondable, ingraissable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 10
   },
         {
@@ -164,7 +164,7 @@
     "Utilisation": " Plat chaud et froid",
     "Information":  " Écologique, personnalisable, micro-ondable, ingraissable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 11
   },
         {
@@ -178,7 +178,7 @@
     "Utilisation": "Plat chaud et froid",
     "Information":  "Écologique, micro-ondable, ingraissable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 12
   },
         {
@@ -192,7 +192,7 @@
     "Utilisation": "Salades, frites, apéritifs ...",
     "Information":  "Écologique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 13
   },
         {
@@ -206,7 +206,7 @@
     "Utilisation": " Plats chauds et froids",
     "Information":  "Écologique, congelable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 14
   },
         {
@@ -220,7 +220,7 @@
     "Utilisation": "Tout type de plat",
     "Information": "Micro-ondable, congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 15
   },
   {
@@ -234,7 +234,7 @@
     "Utilisation": "Plat chaud",
     "Information":  "Micro-ondable, hermétique et agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 16
   },
   {
@@ -248,7 +248,7 @@
     "Utilisation": "Plat chaud, salade, plat froid",
     "Information":  "Congelable, micro-ondable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 17
   },
   {
@@ -262,7 +262,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  "Micro-ondable, hermétique, étanche, congelable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 18
   },
   {
@@ -276,7 +276,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  " Micro-ondable (barquette), congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 19
   },
   {
@@ -290,7 +290,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  "Hermétique, micro-ondable (barquette), congelable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 20
   },
   {
@@ -304,7 +304,7 @@
     "Utilisation": "Plat froid",
     "Information":  "Hermétique,  congelable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 21
   },
   {
@@ -318,7 +318,7 @@
     "Utilisation": " Tout type de plat",
     "Information":  "Micro-ondable, congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 22
   },
   {
@@ -332,7 +332,7 @@
     "Utilisation": "Plats chauds et plats froids. Convient pour les plats en sauce.",
     "Information":  "Congelable, hermétique et agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 23
   },
   {
@@ -346,7 +346,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  "Micro-ondable, congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 24
   },
   {
@@ -360,7 +360,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  "Micro-ondable, congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 25
   },
   {
@@ -374,7 +374,7 @@
     "Utilisation": "Tout type de plat",
     "Information": "Micro-ondable, congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 26
   },
   {
@@ -388,7 +388,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  "Congelable, micro-ondable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 27
   },
   {
@@ -402,7 +402,7 @@
     "Utilisation": "Plat froid, salade",
     "Information":  "Congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 28
   },
   {
@@ -416,7 +416,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  "Micro-ondable, congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 29
   },
   {
@@ -430,7 +430,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  " Micro-ondable, congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 30
   },
   {
@@ -444,7 +444,7 @@
     "Utilisation": "Tout type de plat",
     "Information":  "Micro-ondable, congelable, hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 31
   },
   {
@@ -458,7 +458,7 @@
     "Utilisation": "Plat froid",
     "Information":  "Hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 32
   },
     {
@@ -472,7 +472,7 @@
     "Utilisation": "Dessert",
     "Information":  "Écologique, ingraissable, personnalisable, agréée contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 33
   },
     {
@@ -486,7 +486,7 @@
     "Utilisation": "Pâtisseries, donuts ...",
     "Information":  "Agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 34
   },
     {
@@ -498,7 +498,7 @@
     "Forme": "Boite à tarte ronde",
     "Atouts": "Cette boite à éclair hermétique se ferme en un clic, elle est idéale pour la livraison et la vente à emporter. Sa matière est 100% recyclable : un atout de première importance. Cette barquette à tarte est ingraissable et son couvercle antibuée"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 35
   },
     {
@@ -510,7 +510,7 @@
     "Forme": "Barquette à éclairs en longueur",
     "Atouts": "Cette boite à éclair hermétique se ferme en un clic, elle est idéale pour la livraison et la vente à emporter. Sa matière est 100% recyclable : un atout de première importance. Cette barquette à éclair est ingraissable et son couvercle antibuée"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 36
   },
     {
@@ -524,7 +524,7 @@
     "Utilisation": "Tartes salées ou sucrées",
     "Information":  "Hermétique, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 37
   },
     {
@@ -538,7 +538,7 @@
     "Utilisation": "Pizza, quiche, pâtisserie, dessert...",
     "Information":  "Congelable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 38
   },
       {
@@ -552,7 +552,7 @@
     "Utilisation": "Réchauffer les plats au four, présenter les plats",
     "Information":  "Congelable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 39
   },
       {
@@ -566,7 +566,7 @@
     "Utilisation": "Réchauffer les plats au four, présenter les plats",
     "Information":  "Congelable, agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 40
   },
       {
@@ -580,7 +580,7 @@
     "Utilisation": "Cuisson, transport et dégustation de vos gâteaux, quiches...",
     "Information":  "Agréé contact alimentaire"
     },
-    "categorie": "Barquette",
+    "categorie": "barquette",
     "id": 41
   }
 ]
