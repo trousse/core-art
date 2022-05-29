@@ -6,7 +6,8 @@
 }
 
 #chart_container{
-    top: 138px;
+    top: calc(9.5vh + 70px);
+    height: calc(90.5vh - 70px) !important;
 }
 
 .content{
