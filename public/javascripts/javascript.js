@@ -151,6 +151,13 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
+    trash.addEventListener("click",()=>{
+        fetch("https://core-art-sorbonne.fr/chart")
+            .then(()=>{
+                current_chart = [];
+                refreshChart();
+            })
+    })
 
     function refreshChart(){
             if(total_chart)total_chart.innerHTML=""
@@ -168,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     valid_button = document.createElement("a");
                 }
                 //chart_button_container.innerHTML = "";
-                chart_button_container.appendChild(valid_button);
+                chart_button_container.insertBefore(valid_button,trash);
                 valid_button.innerHTML = "<a href='https://core-art-sorbonne.fr/valid_chart'><div class='clickable' id=\"bouton_valid\"> Valider la Commande "+ createPrice(parseFloat(totalPrice).toFixed(2))+"</div></a>";
                 trash.classList.remove("is-hidden");
 

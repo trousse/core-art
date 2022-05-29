@@ -110,7 +110,14 @@
 #chart_button_container{
   height: 100px;
   width: 100%;
+  justify-content: space-evenly !important;
 }
+
+.trash{
+  color: #ffb300;
+  cursor: pointer;
+}
+
 
 #chart_container{
   position: absolute;

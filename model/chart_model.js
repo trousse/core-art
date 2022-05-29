@@ -73,6 +73,17 @@ Chart_model.prototype.DeleteChart = async function (id, categorie){
     });
 }
 
+Chart_model.prototype.DeleteAll = async function (){
+    let charts = await this.getChart();
+    return new Promise((resolve) => {
+        this.req.session.chart = [];
+        this.req.session.save(() => {
+            resolve(true);
+        })
+    })
+}
+
+
 Chart_model.prototype.getTotal = async function (){
     let charts = await this.getChart();
     return new Promise((resolve) => {
