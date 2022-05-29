@@ -246,7 +246,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-fetch("https://core-art-sorbonne.fr/chart")
+    var myHeaders = new Headers();
+    myHeaders.append('pragma', 'no-cache');
+    myHeaders.append('cache-control', 'no-cache');
+
+    var myInit = {
+        method: 'GET',
+        headers: myHeaders,
+    };
+
+fetch("https://core-art-sorbonne.fr/chart",myInit)
     .then(response => response.json())
     .then((chart) => {
         console.log(chart);
