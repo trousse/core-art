@@ -59,6 +59,7 @@ io.use(wrap(sessionMiddleware));
 io.on("connection", (socket) => {
     var count = -0.5
     var attr = 'allPing'
+
     const allAttr = ['catalogueNav', 'allPing', 'productNav'];
     socket.emit('ping');
     socket.on("disconnect",()=>{
@@ -104,6 +105,7 @@ app.use(function (req, res, next){
     let config = {
         url: "https://core-art-sorbonne.fr"
     }
+    console.log(req.headers['x-forwarded-for']);
 
     if (req.url.split('/')[1] !== "menu" && !req.session.MenuNumber){
         next(createError(404));
