@@ -14,10 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const total_chart = document.querySelector("#total_chart");
     const mail_container = document.querySelector("#mail_container");
     const trash = document.querySelector(".trash");
+    const return_form = document.querySelector("#return_form");
+
+    if(return_form){
+        return_form.addEventListener("click",()=>{
+            if(confirm("Voulez-vous vraiment quitter le site et revenir à l'enquête ?")){
+                Window.location("https://essec.qualtrics.com/jfe/form/SV_cBGtxZzmisdwGMe");
+            }
+        })
+    }
 
     var current_chart = [];
     var valid_button = null;
     var totalPrice = 0;
+
+
 
     function createPrice(price){
         price = parseFloat(price).toFixed(2);
