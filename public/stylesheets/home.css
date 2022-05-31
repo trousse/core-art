@@ -52,6 +52,7 @@ h1{
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    margin: 20px;
 }
 
 #return_button > a:hover{
