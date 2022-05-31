@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(return_form){
         return_form.addEventListener("click",()=>{
             if(confirm("Voulez-vous vraiment quitter le site et revenir à l'enquête ?")){
-                Window.location("https://essec.qualtrics.com/jfe/form/SV_cBGtxZzmisdwGMe");
+                location.href = "https://essec.qualtrics.com/jfe/form/SV_cBGtxZzmisdwGMe";
             }
         })
     }
