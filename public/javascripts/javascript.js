@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(return_form.dataset.timepass < 30){
             setTimeout(()=>{
                 return_form.classList.remove('is-hidden');
-            },(return_form.dataset.timepass - 30)*1000)
+            },(parseInt(return_form.dataset.timepass) - 30)*1000)
         }
         return_form.addEventListener("click",()=>{
             if(confirm("Voulez-vous vraiment quitter le site et revenir à l'enquête ?")){
