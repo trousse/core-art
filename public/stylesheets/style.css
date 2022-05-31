@@ -210,6 +210,27 @@ body{
   z-index: 2;
 }
 
+#return_form_text{
+  margin-right: 2px;
+}
+
+#return_form{
+  position: absolute;
+  top: 29px;
+  right: 138px;
+  font-size: 14px;
+  background-color: white;
+  color: #424242;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#return_form:hover{
+  background-color: #ffca28;
+  color: white;
+}
+
 .bullInfo{
   position: absolute;
   right: 66px;
