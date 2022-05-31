@@ -141,7 +141,8 @@ app.use(function (req, res, next){
                 scripts: [],
                 MenuData: Menu.highNbMenu ? categories10 : categories3,
                 config: config,
-                chart: req.session.chart || []
+                chart: req.session.chart || [],
+                timepass: (Date.now() - req.session.connectDateTime) * 1000
             }
 
         } catch (e){
