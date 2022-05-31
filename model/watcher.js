@@ -23,9 +23,10 @@ Watcher.prototype.writeCSV = function (req,session){
                 const productAverageTime = session.productNav ? (session.productNav.reduce((prev,current)=>{return prev + current}) / session.productNav.length).toFixed(2) : 0;
                 const nbClick = session.click;
                 const nbPageVisited = session.pageVisited;
+                const gateAway = session.gateAway;
                 const nbMenu = session.clickMenu;
 
-                let buffer = new Buffer.from(version + ";" + horodateur + ";" + timePass + ";" + nbClick + ";" + nbPageVisited + ";" +nbMenu + ";"+ nbChart + ";" + totalPrice + "€;" + pageAverageTime + ";" + catalogueAverageTime + ";" + productAverageTime +";" + ip + "\n");
+                let buffer = new Buffer.from(version + ";" + horodateur + ";" + timePass + ";" + nbClick + ";" + nbPageVisited + ";" +nbMenu + ";"+ nbChart + ";" + totalPrice + "€;" + pageAverageTime + ";" + catalogueAverageTime + ";" + productAverageTime + ";" + gateAway + ";" + ip + "\n");
                 fs.write(fd, buffer, 0, buffer.length,
                     null, function(err,writtenbytes) {
                         if(err) {

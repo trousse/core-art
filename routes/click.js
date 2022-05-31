@@ -16,6 +16,21 @@ router.post('/click', function (req, res, next){
     }
 });
 
+router.post('/clickEnd', function (req, res, next){
+    try{
+        setTimeout(() => {
+            req.session.reload(function (err){
+                req.session.gateAway = req.body.gateAway;
+                req.session.save(() => {
+                    res.send(true);
+                });
+            })
+        }, 1354);
+    } catch (e){
+        console.log(e)
+    }
+});
+
 /*router.post("/valid",function(req,res,next){
     const chart_model = new Chart_model(req);
     fs.open("./data/navigation_info.csv","a", function(err, fd) {
