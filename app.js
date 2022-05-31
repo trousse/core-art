@@ -142,7 +142,7 @@ app.use(function (req, res, next){
                 MenuData: Menu.highNbMenu ? categories10 : categories3,
                 config: config,
                 chart: req.session.chart || [],
-                timepass: (Date.now() - req.session.connectDateTime) * 1000
+                timepass: (Date.now() - req.session.connectDateTime) / 1000
             }
 
         } catch (e){
