@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify(body),
                     headers: { 'content-type': 'application/json' }
                 };
-                fetch("https://core-art-sorbonne.fr/click/clickEnd", myInit);
-                location.href = "https://essec.qualtrics.com/jfe/form/SV_cBGtxZzmisdwGMe";
+                fetch("https://core-art-sorbonne.fr/click/clickEnd", myInit)
+                    .then(()=>{location.href = "https://essec.qualtrics.com/jfe/form/SV_cBGtxZzmisdwGMe";});
             }
         })
     }
@@ -41,8 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var current_chart = [];
     var valid_button = null;
     var totalPrice = 0;
-
-
 
     function createPrice(price){
         price = parseFloat(price).toFixed(2);
