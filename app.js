@@ -4,6 +4,7 @@ const Watcher = require('./model/watcher');
 var http = require('http');
 var ServerIO = require('socket.io');
 
+
 twig = require('twig');
 
 const categories10 = Categories10;
@@ -15,18 +16,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
-const redis = require('redis');
-const connectRedis = require('connect-redis')
-//var FileStore = require('session-file-store')(session);
+var FileStore = require('session-file-store')(session);
 const bodyParser = require("body-parser");
 const watcher = new Watcher();
 
-const RedisStore = connectRedis(session);
-//Configure redis client
-const redisClient = redis.createClient({
-    host: 'localhost',
-    port: 6379,
-})
 
 var indexRouter = require('./routes/index');
 var chartRouter = require('./routes/chart');
@@ -46,9 +39,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'twig');
 app.set('trust proxy', 1) // trust first proxy
 
-
 var fileStoreOptions = {};
-var SessionStore = new RedisStore({ client: redisClient });
+var SessionStore = new FileStore(fileStoreOptions);
 const maxSessionAge = 1000 * 60 * 30;
 const sessionMiddleware = session({
     store: SessionStore,
@@ -93,10 +85,6 @@ io.on("connection", (socket) => {
     })
 });
 
-app.use(async (req,res,next)=>{
-   await redisClient.connect();
-   next();
-})
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -130,10 +118,10 @@ app.use(function (req, res, next){
                 req.session.pageVisited = 0;
                 req.session.ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
                 setTimeout(() => {
-                    SessionStore.get(req.session.id, (error, session) => {
-                        if (error) console.log(error);
-                        else watcher.writeCSV(req, session);
-                    });
+                        SessionStore.get(req.session.id, (error, session) => {
+                            if (error) console.log(error);
+                            else watcher.writeCSV(req, session);
+                        });
                 }, maxSessionAge);
             }
 
