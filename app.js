@@ -21,6 +21,7 @@ const connectRedis = require('connect-redis')
 const bodyParser = require("body-parser");
 const watcher = new Watcher();
 
+const RedisStore = connectRedis(session);
 //Configure redis client
 const redisClient = redis.createClient({
     host: 'localhost',
