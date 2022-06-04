@@ -47,12 +47,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'twig');
 app.set('trust proxy', 1) // trust first proxy
 
-redisClient.on('error', function (err) {
-    console.log('Could not establish a connection with redis. ' + err);
-});
-redisClient.on('connect', function (err) {
-    console.log('Connected to redis successfully');
-});
 
 var fileStoreOptions = {};
 var SessionStore = new RedisStore({ client: redisClient });
