@@ -28,8 +28,6 @@ const redisClient = redis.createClient({
     port: 6379,
 })
 
-redisClient.connect();
-
 var indexRouter = require('./routes/index');
 var chartRouter = require('./routes/chart');
 var dataRouter = require('./routes/data');
@@ -95,6 +93,10 @@ io.on("connection", (socket) => {
     })
 });
 
+app.use(async (req,res,next)=>{
+   await redisClient.connect();
+   next();
+})
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -128,10 +130,10 @@ app.use(function (req, res, next){
                 req.session.pageVisited = 0;
                 req.session.ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
                 setTimeout(() => {
-                        SessionStore.get(req.session.id, (error, session) => {
-                            if (error) console.log(error);
-                            else watcher.writeCSV(req, session);
-                        });
+                    SessionStore.get(req.session.id, (error, session) => {
+                        if (error) console.log(error);
+                        else watcher.writeCSV(req, session);
+                    });
                 }, maxSessionAge);
             }
 
