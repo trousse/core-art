@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var current_chart = [];
     var valid_button = null;
     var totalPrice = 0;
+    var loading = false;
 
     function createPrice(price){
         price = parseFloat(price).toFixed(2);
@@ -156,21 +157,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     fetch("https://core-art-sorbonne.fr/chart/plus", myInit);
                 }else{
-                    const body = {
-                        id: add.dataset.id,
-                        categorie: add.dataset.categorie
-                    };
-                    let myInit = {
-                        method: 'POST',
-                        body: JSON.stringify(body),
-                        headers: { 'content-type': 'application/json' }
-                    };
-                    fetch("https://core-art-sorbonne.fr/chart", myInit)
-                        .then(response => response.json())
-                        .then((product) => {
-                            current_chart.push(product);
-                            refreshChart();
-                        })
+                    if (!loading){
+                        loading = true;
+                        const body = {
+                            id: add.dataset.id,
+                            categorie: add.dataset.categorie
+                        };
+                        let myInit = {
+                            method: 'POST',
+                            body: JSON.stringify(body),
+                            headers: {'content-type': 'application/json'}
+                        };
+                        fetch("https://core-art-sorbonne.fr/chart", myInit)
+                            .then(response => response.json())
+                            .then((product) => {
+                                current_chart.push(product);
+                                refreshChart();
+                                loading = false;
+                            })
+                    }
                 }
             });
         })
