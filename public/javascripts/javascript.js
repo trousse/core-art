@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const return_button = document.querySelector(".return_button");
 
     if(return_button){
-        if(return_form.dataset.timepass && return_button.dataset.timepass < 30){
+        if(return_button.dataset.timepass && return_button.dataset.timepass < 30){
             setTimeout(()=>{
                 return_button.classList.remove('is-hidden');
             },(parseInt(return_button.dataset.timepass) - 30)*1000)
