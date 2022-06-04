@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const total_chart = document.querySelector("#total_chart");
     const mail_container = document.querySelector("#mail_container");
     const trash = document.querySelector(".trash");
+    const main_nav = document.querySelector("#main_nav");
     const return_form = document.querySelector("#return_form");
 
     if(return_form){
@@ -300,12 +301,15 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: myHeaders,
     };
 
-fetch("https://core-art-sorbonne.fr/chart",myInit)
-    .then(response => response.json())
-    .then((chart) => {
-        current_chart = chart;
-        refreshChart();
-    });
+    if(main_nav){
+        fetch("https://core-art-sorbonne.fr/chart",myInit)
+            .then(response => response.json())
+            .then((chart) => {
+                current_chart = chart;
+                refreshChart();
+            });
+    }
+
 
     function clickClickable(isMenu = false){
         var myInit = { method: 'POST', body: JSON.stringify({isMenu: isMenu}), headers: { 'content-type': 'application/json' } };
@@ -352,25 +356,27 @@ fetch("https://core-art-sorbonne.fr/chart",myInit)
             setTimeout(()=>{fetch("http://localhost:3000/click/valid", myInit)},200);
         })
     }*/
+        if(main_nav){
+            document.addEventListener('click', (event) => {
+                let target = event.target;
+                let toggle_subnav = false;
+                let toggle_chart_container = false;
+                let clickable = false
+                let menu_clickable = false;
+                do {
+                    if (target === sub_nav || target === burger_menu) toggle_subnav = true;
+                    if (target === chart_container || target === chart || (target.classList && target.classList.contains("add")) || (target.classList && target.classList.contains("chart_actif"))) toggle_chart_container = true;
+                    if (target.classList && target.classList.contains("clickable")) clickable = true;
+                    if (target.classList && target.classList.contains('menu_clickable')) menu_clickable = true;
+                    target = target.parentNode;
+                } while (target)
+                if (clickable) clickClickable(false);
+                if (!toggle_subnav) toggleCategoriesMenu();
+                if (!toggle_chart_container) toggleChartMenu();
+                if (menu_clickable) clickClickable(true);
+            });
+        }
 
-    document.addEventListener('click', (event) => {
-        let target = event.target;
-        let toggle_subnav = false;
-        let toggle_chart_container = false;
-        let clickable = false
-        let menu_clickable = false;
-        do {
-            if (target === sub_nav || target === burger_menu) toggle_subnav = true;
-            if (target === chart_container || target === chart || (target.classList && target.classList.contains("add")) || (target.classList && target.classList.contains("chart_actif"))) toggle_chart_container = true;
-            if (target.classList && target.classList.contains("clickable")) clickable = true;
-            if (target.classList && target.classList.contains('menu_clickable')) menu_clickable = true;
-            target = target.parentNode;
-        } while (target)
-        if (clickable) clickClickable(false);
-        if (!toggle_subnav) toggleCategoriesMenu();
-        if (!toggle_chart_container) toggleChartMenu();
-        if (menu_clickable) clickClickable(true);
-    });
 
     if (burger_menu){
         burger_menu.addEventListener('click', (ve) => {
@@ -417,22 +423,24 @@ fetch("https://core-art-sorbonne.fr/chart",myInit)
     /*add_product_button.addEventListener('click',(event) => {
         console.log('test');
     })*/
-
-    const nav_items_clickable = document.querySelectorAll(".nav_item_clickable");
-    nav_items_clickable.forEach((elem) => {
-        elem.addEventListener('click', (event) => {
-            if (elem !== current_clicked){
-                if (!!current_clicked){
-                    toggleElem(current_clicked);
+    if(main_nav){
+        const nav_items_clickable = document.querySelectorAll(".nav_item_clickable");
+        nav_items_clickable.forEach((elem) => {
+            elem.addEventListener('click', (event) => {
+                if (elem !== current_clicked){
+                    if (!!current_clicked){
+                        toggleElem(current_clicked);
+                    }
+                    current_clicked = elem;
+                    addSubCat(elem);
+                } else{
+                    current_clicked = null;
+                    toggleElem(elem)
                 }
-                current_clicked = elem;
-                addSubCat(elem);
-            } else{
-                current_clicked = null;
-                toggleElem(elem)
-            }
+            })
         })
-    })
+    }
+
 
     if(mail_container){
         const submit_button = document.querySelector("#submit_button");
