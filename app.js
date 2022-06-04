@@ -26,8 +26,9 @@ const RedisStore = connectRedis(session);
 const redisClient = redis.createClient({
     host: 'localhost',
     port: 6379,
-    legacyMode: true
 })
+
+redisClient.connect();
 
 var indexRouter = require('./routes/index');
 var chartRouter = require('./routes/chart');
