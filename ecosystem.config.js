@@ -1,8 +1,7 @@
 module.exports = {
   apps : [{
     script: 'app.js',
-    watch: '.',
-    interpreter : 'node@16.15.1'
+    watch: '.'
   }],
 
   deploy : {
