@@ -4,7 +4,6 @@ const Watcher = require('./model/watcher');
 var http = require('http');
 var ServerIO = require('socket.io');
 
-
 twig = require('twig');
 
 const categories10 = Categories10;
@@ -16,9 +15,17 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
-var FileStore = require('session-file-store')(session);
+const redis = require('redis');
+const connectRedis = require('connect-redis')
+//var FileStore = require('session-file-store')(session);
 const bodyParser = require("body-parser");
 const watcher = new Watcher();
+
+//Configure redis client
+const redisClient = redis.createClient({
+    host: 'localhost',
+    port: 6379
+})
 
 
 var indexRouter = require('./routes/index');
@@ -39,8 +46,15 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'twig');
 app.set('trust proxy', 1) // trust first proxy
 
+redisClient.on('error', function (err) {
+    console.log('Could not establish a connection with redis. ' + err);
+});
+redisClient.on('connect', function (err) {
+    console.log('Connected to redis successfully');
+});
+
 var fileStoreOptions = {};
-var SessionStore = new FileStore(fileStoreOptions);
+var SessionStore = new RedisStore({ client: redisClient });
 const maxSessionAge = 1000 * 60 * 30;
 const sessionMiddleware = session({
     store: SessionStore,
