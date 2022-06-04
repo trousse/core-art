@@ -15,18 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const mail_container = document.querySelector("#mail_container");
     const trash = document.querySelector(".trash");
     const main_nav = document.querySelector("#main_nav");
-    const return_form = document.querySelector("#return_form");
+    const return_button = document.querySelector(".return_button");
 
-    if(return_form){
-        if(return_form.dataset.timepass && return_form.dataset.timepass < 30){
+    if(return_button){
+        if(return_form.dataset.timepass && return_button.dataset.timepass < 30){
             setTimeout(()=>{
-                return_form.classList.remove('is-hidden');
-            },(parseInt(return_form.dataset.timepass) - 30)*1000)
+                return_button.classList.remove('is-hidden');
+            },(parseInt(return_button.dataset.timepass) - 30)*1000)
         }
-        return_form.addEventListener("click",()=>{
+        return_button.addEventListener("click",()=>{
             if(confirm("Voulez-vous vraiment quitter le site et revenir à l'enquête ?")){
                 const body = {
-                    gateAway: return_form.dataset.gateaway
+                    gateAway: return_button.dataset.gateaway
                 };
                 var myInit = {
                     method: 'POST',
