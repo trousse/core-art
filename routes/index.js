@@ -71,6 +71,7 @@ router.get('/goodbye', function (req, res, next){
     try{
         const styles = ['home.css'];
         req.data.scripts.push('allping.js');
+        req.data.scripts.push('goodbye.js');
         res.render('goodbye', {title: 'Goodbye', styles: styles, Data: req.data});
     } catch (e){
         console.log(e)
