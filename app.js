@@ -28,6 +28,7 @@ const redisClient = redis.createClient({
     port: 6379
 })
 
+await redisClient.connect();
 
 var indexRouter = require('./routes/index');
 var chartRouter = require('./routes/chart');
