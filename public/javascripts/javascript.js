@@ -14,6 +14,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const total_chart = document.querySelector("#total_chart");
     const mail_container = document.querySelector("#mail_container");
     const trash = document.querySelector(".trash");
+    const return_form = document.querySelector("#return_form");
+
+    if(return_form){
+        if(return_form.dataset.timepass && return_form.dataset.timepass < 30){
+            setTimeout(()=>{
+                return_form.classList.remove('is-hidden');
+            },(parseInt(return_form.dataset.timepass) - 30)*1000)
+        }
+        return_form.addEventListener("click",()=>{
+            if(confirm("Voulez-vous vraiment quitter le site et revenir à l'enquête ?")){
+                const body = {
+                    gateAway: return_form.dataset.gateaway
+                };
+                var myInit = {
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                    headers: { 'content-type': 'application/json' }
+                };
+                fetch("https://core-art-sorbonne.fr/click/clickEnd", myInit)
+                    .then(()=>{location.href = "https://essec.qualtrics.com/jfe/form/SV_cBGtxZzmisdwGMe";});
+            }
+        })
+    }
 
     var current_chart = [];
     var valid_button = null;
@@ -109,61 +132,64 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    adds.forEach((add) => {
-        add.addEventListener('click', (event) => {
-            const categorie = add.dataset.categorie;
-            const id = add.dataset.id;
-            const product = current_chart.find((elem) => {
-                return elem.product.id == id && elem.product.categorie === categorie;
-            });
-            if(product){
-                product.nb++;
-                setTimeout(() => refreshChart(), 100);
-                const body = {
-                    id: product.product.id,
-                    categorie: product.product.categorie
-                };
-                let myInit = {
-                    method: 'POST',
-                    body: JSON.stringify(body),
-                    headers: { 'content-type': 'application/json' }
-                };
+    if(adds){
+        adds.forEach((add) => {
+            add.addEventListener('click', (event) => {
+                const categorie = add.dataset.categorie;
+                const id = add.dataset.id;
+                const product = current_chart.find((elem) => {
+                    return elem.product.id == id && elem.product.categorie === categorie;
+                });
+                if(product){
+                    product.nb++;
+                    setTimeout(() => refreshChart(), 100);
+                    const body = {
+                        id: product.product.id,
+                        categorie: product.product.categorie
+                    };
+                    let myInit = {
+                        method: 'POST',
+                        body: JSON.stringify(body),
+                        headers: { 'content-type': 'application/json' }
+                    };
 
-               fetch("https://core-art-sorbonne.fr/chart/plus", myInit);
-            }else{
-                const body = {
-                    id: add.dataset.id,
-                    categorie: add.dataset.categorie
-                };
-                let myInit = {
-                    method: 'POST',
-                    body: JSON.stringify(body),
-                    headers: { 'content-type': 'application/json' }
-                };
-                fetch("https://core-art-sorbonne.fr/chart", myInit)
-                    .then(response => response.json())
-                    .then((product) => {
-                        current_chart.push(product);
-                        refreshChart();
-                    })
-            }
-        });
-    })
-
-
-    trash.addEventListener("click",()=>{
-        fetch("https://core-art-sorbonne.fr/chart/delete/all")
-            .then(()=>{
-
-                if(products){
-                    products.forEach((elem) => {
-                        elem.innerHTML = "";
-                    });
+                    fetch("https://core-art-sorbonne.fr/chart/plus", myInit);
+                }else{
+                    const body = {
+                        id: add.dataset.id,
+                        categorie: add.dataset.categorie
+                    };
+                    let myInit = {
+                        method: 'POST',
+                        body: JSON.stringify(body),
+                        headers: { 'content-type': 'application/json' }
+                    };
+                    fetch("https://core-art-sorbonne.fr/chart", myInit)
+                        .then(response => response.json())
+                        .then((product) => {
+                            current_chart.push(product);
+                            refreshChart();
+                        })
                 }
-                current_chart = [];
-                refreshChart();
-            })
-    })
+            });
+        })
+    }
+
+    if(trash){
+        trash.addEventListener("click",()=>{
+            fetch("https://core-art-sorbonne.fr/chart/delete/all")
+                .then(()=>{
+
+                    if(products){
+                        products.forEach((elem) => {
+                            elem.innerHTML = "";
+                        });
+                    }
+                    current_chart = [];
+                    refreshChart();
+                })
+        })
+    }
 
     function refreshChart(){
             if(total_chart)total_chart.innerHTML=""
@@ -199,58 +225,62 @@ document.addEventListener('DOMContentLoaded', () => {
         const minusCharts = document.querySelectorAll(".minus_chart");
         const addCharts = document.querySelectorAll(".add_chart");
 
-        addCharts.forEach((chartElem)=>{
-            chartElem.addEventListener('click', (event) => {
-                const body = {
-                    id: chartElem.dataset.id,
-                    categorie: chartElem.dataset.categorie
-                };
-                var myInit = {
-                    method: 'POST',
-                    body: JSON.stringify(body),
-                    headers: { 'content-type': 'application/json' }
-                };
+        if(addCharts){
+            addCharts.forEach((chartElem)=>{
+                chartElem.addEventListener('click', (event) => {
+                    const body = {
+                        id: chartElem.dataset.id,
+                        categorie: chartElem.dataset.categorie
+                    };
+                    var myInit = {
+                        method: 'POST',
+                        body: JSON.stringify(body),
+                        headers: { 'content-type': 'application/json' }
+                    };
 
-                fetch("https://core-art-sorbonne.fr/chart/plus", myInit);
+                    fetch("https://core-art-sorbonne.fr/chart/plus", myInit);
 
-                const categorie = chartElem.dataset.categorie;
-                const id = chartElem.dataset.id;
-                const product = current_chart.find((elem)=>{
-                    return elem.product.id == id && elem.product.categorie === categorie;
-                });
-                product.nb++;
-                setTimeout(()=> refreshChart(),100);
-            });
-        })
-
-        minusCharts.forEach((chartElem)=>{
-            chartElem.addEventListener('click', (event) => {
-                const body = {
-                    id: chartElem.dataset.id,
-                    categorie: chartElem.dataset.categorie
-                };
-                var myInit = {
-                    method: 'POST',
-                    body: JSON.stringify(body),
-                    headers: { 'content-type': 'application/json' }
-                };
-
-                fetch("https://core-art-sorbonne.fr/chart/minus", myInit);
-
-                const categorie = chartElem.dataset.categorie;
-                const id = chartElem.dataset.id;
-                const product = current_chart.find((elem)=>{
-                    return elem.product.id == id && elem.product.categorie === categorie;
-                });
-                if(product.nb > 1) {
-                    product.nb--;
+                    const categorie = chartElem.dataset.categorie;
+                    const id = chartElem.dataset.id;
+                    const product = current_chart.find((elem)=>{
+                        return elem.product.id == id && elem.product.categorie === categorie;
+                    });
+                    product.nb++;
                     setTimeout(()=> refreshChart(),100);
-                }else{
-                    deleteChartItem(id,categorie);
-                    if(chartElem.parentNode.parentNode) chartElem.parentNode.parentNode.innerHTML = "";
-                }
+                });
+            })
+        }
+
+        if(minusCharts){
+            minusCharts.forEach((chartElem)=>{
+                chartElem.addEventListener('click', (event) => {
+                    const body = {
+                        id: chartElem.dataset.id,
+                        categorie: chartElem.dataset.categorie
+                    };
+                    var myInit = {
+                        method: 'POST',
+                        body: JSON.stringify(body),
+                        headers: { 'content-type': 'application/json' }
+                    };
+
+                    fetch("https://core-art-sorbonne.fr/chart/minus", myInit);
+
+                    const categorie = chartElem.dataset.categorie;
+                    const id = chartElem.dataset.id;
+                    const product = current_chart.find((elem)=>{
+                        return elem.product.id == id && elem.product.categorie === categorie;
+                    });
+                    if(product.nb > 1) {
+                        product.nb--;
+                        setTimeout(()=> refreshChart(),100);
+                    }else{
+                        deleteChartItem(id,categorie);
+                        if(chartElem.parentNode.parentNode) chartElem.parentNode.parentNode.innerHTML = "";
+                    }
+                });
             });
-        });
+        }
 
         if(total_chart){
             const chart_total_price = document.createElement("div");
@@ -306,13 +336,15 @@ fetch("https://core-art-sorbonne.fr/chart",myInit)
         chart_container.classList.add('open');
     }
 
-    chart.addEventListener('click', (event) => {
-        if (chart.classList.contains('open')){
-            toggleChartMenu();
-        } else{
-            openChartMenu();
-        }
-    })
+    if(chart){
+        chart.addEventListener('click', (event) => {
+            if (chart.classList.contains('open')){
+                toggleChartMenu();
+            } else{
+                openChartMenu();
+            }
+        })
+    }
 
     /*if(valid_chart_button){
         document.addEventListener('click',(event)=>{
@@ -327,11 +359,11 @@ fetch("https://core-art-sorbonne.fr/chart",myInit)
         let toggle_chart_container = false;
         let clickable = false
         let menu_clickable = false;
-        do{
+        do {
             if (target === sub_nav || target === burger_menu) toggle_subnav = true;
             if (target === chart_container || target === chart || (target.classList && target.classList.contains("add")) || (target.classList && target.classList.contains("chart_actif"))) toggle_chart_container = true;
-            if(target.classList && target.classList.contains("clickable")) clickable = true;
-            if(target.classList && target.classList.contains('menu_clickable')) menu_clickable = true;
+            if (target.classList && target.classList.contains("clickable")) clickable = true;
+            if (target.classList && target.classList.contains('menu_clickable')) menu_clickable = true;
             target = target.parentNode;
         } while (target)
         if (clickable) clickClickable(false);
