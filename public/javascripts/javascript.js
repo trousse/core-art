@@ -294,20 +294,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         fetch("https://core-art-sorbonne.fr/chart/minus", myInit)
                             .then(() => {
                                 loading = false;
+                                const categorie = chartElem.dataset.categorie;
+                                const id = chartElem.dataset.id;
+                                const product = current_chart.find((elem) => {
+                                    return elem.product.id == id && elem.product.categorie === categorie;
+                                });
+                                if (product.nb > 1){
+                                    product.nb--;
+                                    setTimeout(() => refreshChart(), 100);
+                                } else{
+                                    deleteChartItem(id, categorie);
+                                    if (chartElem.parentNode.parentNode) chartElem.parentNode.parentNode.innerHTML = "";
+                                }
                             });
-
-                        const categorie = chartElem.dataset.categorie;
-                        const id = chartElem.dataset.id;
-                        const product = current_chart.find((elem) => {
-                            return elem.product.id == id && elem.product.categorie === categorie;
-                        });
-                        if (product.nb > 1){
-                            product.nb--;
-                            setTimeout(() => refreshChart(), 100);
-                        } else{
-                            deleteChartItem(id, categorie);
-                            if (chartElem.parentNode.parentNode) chartElem.parentNode.parentNode.innerHTML = "";
-                        }
                     }
                 });
             });
