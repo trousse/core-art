@@ -41,7 +41,7 @@ app.set('trust proxy', 1) // trust first proxy
 
 var fileStoreOptions = {};
 var SessionStore = new FileStore(fileStoreOptions);
-const maxSessionAge = 1000 * 60 * 1;
+const maxSessionAge = 1000 * 60 * 30;
 const sessionMiddleware = session({
     store: SessionStore,
     secret: 'keyboard cat',
