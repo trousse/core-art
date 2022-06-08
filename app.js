@@ -141,9 +141,7 @@ app.use(function (req, res, next){
                 scripts: [],
                 MenuData: Menu.highNbMenu ? categories10 : categories3,
                 config: config,
-                chart: req.session.chart || [],
-                timepass: ( (Date.now() - req.session.connectDateTime) / 1000 ) < 30,
-                secondpass: (Date.now() - req.session.connectDateTime) / 1000
+                chart: req.session.chart || []
             }
 
         } catch (e){

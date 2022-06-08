@@ -18,13 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const return_button = document.querySelector(".return_button");
 
     if (return_button){
-        if (return_button.dataset.timepass && return_button.dataset.timepass < 30){
-            setTimeout(() => {
-                return_button.classList.remove('is-hidden');
-            }, (parseInt(return_button.dataset.timepass) - 30) * 1000)
-        }
         return_button.addEventListener("click", () => {
-            if (confirm("Voulez-vous vraiment quitter le site et revenir à l'enquête ?")){
+            if (return_button.classList.contains("goodbye_return") ? true : confirm("Voulez-vous vraiment quitter le site et revenir à l'enquête ?")){
                 const body = {
                     gateAway: return_button.dataset.gateaway
                 };
